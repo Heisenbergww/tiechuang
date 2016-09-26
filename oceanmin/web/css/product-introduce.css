@@ -1,0 +1,107 @@
+/*导航的下划线*/
+.menu ul li:nth-child(2) a{
+    border-bottom:2px solid #0767bd;
+}
+/*主体部分*/
+.product_item{
+    border: 1px solid #efefef;
+    padding: 10px;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+.product_item img{
+    width: 100%;
+}
+.product_item:hover {
+    box-shadow: 5px 5px 30px #d8d8d8;
+}
+/*第一部分*/
+.product_goto{
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+// .product_goto .col-lg-3{
+//     border: 1px solid #efefef;
+//     border-collapse: collapse;
+//     /*border-collapse: separate;*/
+// }
+.the_table{
+    border:1;  
+    margin:0 auto;
+    border-collapse:collapse;      
+}
+.the_table_td{
+    border:1px solid #d8d8d8;
+    
+}
+.the_table_tr{
+    border:1px solid #d8d8d8;    
+}
+.product_goto  a{
+    display: inline-block;
+    height: 45px;
+    padding: 10px 100px;
+    text-align: center;
+    /*vertical-align: baseline;*/
+    /* line-height: 45px; */
+    color: #2b2c33;
+    font-size: 18px;
+    /* min-width: 327px; */
+    margin: 0;
+}
+.product_goto_fixed{
+    position: fixed;
+    top:0px;
+   margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+    z-index: 999;
+}
+.product_goto_container{
+    padding-right: 7.5%;
+    padding-left: 7.5%;
+    width: 100%;
+    min-width: 900px;
+
+}
+/*.product_goto .the_middle{*/
+    /*border-left: 1px solid transparent;*/
+    /*border-right: 1px solid transparent;*/
+/*}*/
+/*第二部分*/
+.section2{
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+.product_category_title h2{
+    text-align: center;
+    font-family: DINOT-Medium;
+    font-size: 24px;
+    color: #2b2c33;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.the_p_fa{
+    padding-top:20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 40px;
+    height: 96px;
+}
+.the_p_fa p{
+    color: #2b2c33;
+}
+
+/*第三部分*/
+.section3{
+    padding-bottom: 50px;
+}
+/*第四部分*/
+.section4{
+    padding-bottom: 50px;
+}

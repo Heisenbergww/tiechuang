@@ -1,0 +1,87 @@
+.menu ul li:nth-child(5) a{
+    border-bottom:2px solid #0767bd;
+}
+/*主体部分*/
+/*第一部分*/
+.contact_us_pic{
+    text-align: center;
+}
+.section1{
+    height: 300px;
+}
+/*第二部分*/
+.section2{
+    padding-top: 114px;
+    padding-bottom: 136px;
+}
+.container_contact_us_map{
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    width:81% ;
+    min-width: 900px;
+    max-width: 1200px;
+}
+.contact_us_map p{
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: #2b2c33;
+}
+.contact_us_map p span{
+    color: #66676e;
+}
+.map_pic{
+    float: right;
+}
+.map_pic img{
+    width: 100%;
+}
+
+/*第三部分*/
+.contact_us_form h1{
+    text-align: left;
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.contact_us_form{
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+.contact_us_form p{
+    text-align: left;
+    /*font-family: STHeitiSC-Medium;*/
+    font-size: 14px;
+    color: #818185;
+    letter-spacing: 0px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.contact_us_form input{
+    border: 1px solid #D5D5D5;
+    border-radius: 4px;
+    width: 480px;
+    height: 48px;
+    text-indent: 10px;
+}
+.contact_us_form  textarea{
+    border: 1px solid #D5D5D5;
+    border-radius: 4px;
+    width:480px;
+    height: 163px;
+    text-indent: 10px;
+}
+.contact_us_form .contact_us_submit{
+    text-align: center;
+    /*font-family: STHeitiSC-Medium;*/
+    width: 280px;
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    background-color: #36bd9f;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}

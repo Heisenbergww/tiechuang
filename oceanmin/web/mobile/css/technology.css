@@ -1,0 +1,42 @@
+
+@media screen and (max-width: 374px){
+    .section{
+        padding-top: 5.6rem;
+    }
+    .the_p{
+        margin: 0 auto;
+    }
+    .the_p img{
+        width: 100%;
+    }
+    .the_p p{
+        font-size: 1.6rem;
+        padding: 8.5px 8.5px 34px 8.5px;
+    }
+    .the_p p strong{
+        font-size: 1.6rem;
+    }
+}
+@media screen and (min-width: 375px) and (max-width: 900px){
+    .section{
+        padding-top: 5.6rem;
+    }
+    .the_p{
+        width: 375px;
+        margin: 0 auto;
+    }
+    .the_p img{
+        width: 100%;
+    }
+    .the_p p{
+        font-size: 1.8rem;
+        padding: 10px 10px 40px 10px;
+    }
+    .the_p p strong{
+        font-size: 1.8rem;
+    }
+}
+
+
+
+/*# sourceMappingURL=technology.css.map */

@@ -1,0 +1,133 @@
+/*导航的下划线*/
+.menu ul li:first-child a{
+    border-bottom:2px solid #0767bd;
+}
+/*主体部分*/
+/*第一部分*/
+.container-fluid-ppt{
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    width:100% ;
+    min-width: 900px;
+
+}
+.ppt{
+    margin-top:10px;
+    margin-bottom: 60px;
+}
+/*第二部分*/
+.section2{
+    margin-bottom: 50px;
+    min-width: 1200px;
+}
+.section2 .col-lg-3 {
+    width: 25%;
+    padding: 0;
+}
+.row_part_square_img {
+    height: 290px;
+}
+.row_part_square_img img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.35s;
+}
+.row_part_square_words{
+    position: relative;
+    height: 290px;
+}
+.row_part_square_2:hover h2,
+.row_part_square_2:hover p{
+    color: #fff;
+}
+.row_part_square_2:hover span{
+    color: #fff;
+    border: 1px solid #fff;
+}
+.row_part_square_2:hover .row_part_square_words{
+    background-color: #00a0e9;
+}
+
+.row_part_square_words h2{
+    margin-left: 20px;
+    color: #2b2c33;
+    font-family:DINOT-Medium;
+    margin-top: 20px;
+    font-size: 30px;
+    margin-bottom: 15px;
+    transition: all 0.35s;
+}
+.row_part_square_words p{
+    margin-left: 20px;
+    color: #2b2c33;
+    font-size: 18px;
+    margin-bottom: 30px;
+    transition: all 0.3s;
+}
+.row_part_square_words span{
+    margin-left: 20px;
+    color: #4BEDC9 ;
+    font-size: 14px;
+    padding: 10px ;
+    border: 1px solid #66676e;
+    bottom: 60px;
+    transition: all 0.5s;
+}
+
+
+/*第三部分*/
+.section3{
+    padding-top:35px ;
+    min-width: 1200px;
+}
+.row_part_title h1{
+    font-size: 24px;
+    font-family:DINOT-Medium;
+    margin-bottom: 60px;
+    color: #2b2c33;
+    text-align: center;
+}
+.col_part2{
+    height: 390px;
+    width: 280px;
+    border: 1px solid #efefef;
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.col_part2:hover{
+    box-shadow: 5px 5px 30px #d8d8d8;
+}
+
+.col_part2_first{
+    margin-left: 0;
+}
+.col_part2_last{
+    margin-right: 0;
+}
+.col_part2 img{
+    width: 240px;
+    height: 240px;
+}
+.col_part2 p{
+    text-align: center;
+    color: #2b2c33;
+    margin-top:30px;
+    font-size:14px;
+    line-height:20px;
+}
+.row_part_title a{
+    text-align: center;
+    color: #2b2c33;
+    font-size: 14px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:370px;
+    height:40px;
+    padding:14px 140px;
+    margin-top:40px;
+    background:#EFEFEF;
+}
