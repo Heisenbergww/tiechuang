@@ -135,35 +135,35 @@ use yii\filters\PageCache;
         </div>
     </div>
     <script src="/js/main.js"></script>
-    <!--分析-->
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <!--&lt;!&ndash;分析&ndash;&gt;-->
+    <!--<script>-->
+        <!--(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){-->
+                    <!--(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),-->
+                <!--m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)-->
+        <!--})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');-->
 
-        ga('create', 'UA-84101707-1', 'auto');
-        ga('send', 'pageview');
+        <!--ga('create', 'UA-84101707-1', 'auto');-->
+        <!--ga('send', 'pageview');-->
 
-    </script>
-    <!--再营销-->
-    <script type="text/javascript">
-        /* <![CDATA[ */
-        var google_conversion_id = 874087272;
-        var google_custom_params = window.google_tag_params;
-        var google_remarketing_only = true;
-        /* ]]> */
-    </script>
-    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
-    </script>
+    <!--</script>-->
+    <!--&lt;!&ndash;再营销&ndash;&gt;-->
+    <!--<script type="text/javascript">-->
+        <!--/* <![CDATA[ */-->
+        <!--var google_conversion_id = 874087272;-->
+        <!--var google_custom_params = window.google_tag_params;-->
+        <!--var google_remarketing_only = true;-->
+        <!--/* ]]> */-->
+    <!--</script>-->
+    <!--<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">-->
+    <!--</script>-->
 
-    <!--客服-->
-    <script src=http://float2006.tq.cn/floatcard?adminid=9754605&sort=0 ></script>
-    <noscript>
-        <div style="display:inline;">
-            <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/874087272/?value=0&amp;guid=ON&amp;script=0"/>
-        </div>
-    </noscript>
+    <!--&lt;!&ndash;客服&ndash;&gt;-->
+    <!--<script src=http://float2006.tq.cn/floatcard?adminid=9754605&sort=0 ></script>-->
+    <!--<noscript>-->
+        <!--<div style="display:inline;">-->
+            <!--<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/874087272/?value=0&amp;guid=ON&amp;script=0"/>-->
+        <!--</div>-->
+    <!--</noscript>-->
 
     </body>
     </html>

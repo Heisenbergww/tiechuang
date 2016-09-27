@@ -47,10 +47,27 @@ $(".language").bind("click",function(){
     $(window).scroll(goToTopShow);
 
     //product页面
-    // 当向下滚动距离大于60px，将顶部固定成fixed
+     //产品展示页二级菜单展开
+     $(".business-name").click(function(){
+         $(this).next().toggle();
+         $(this).children("hr").toggle();
+     })
+     ////点击后加样式以及图片文字变颜色
+     //$(".business-content a").click(function(){
+     //    $(".business-content a").css("color","#2B2C33");
+     //    $(this).css("color","#66BE8C");
+     //    $(this).children("img").toggle();
+     //})
+
+    //            图片适应
+     $(window).resize(function(){
+         var a=$(".product_item_pic").width();
+         $(".product_item_pic img").css({"width":a,"height":a})
+     })
+
+    // layout页面当向下滚动距离大于60px，将顶部固定成fixed
     function goToFixTop(){
         var winPos = $(window).scrollTop();
-
         if (winPos>60){
             $(".product_goto_fa").addClass('product_goto_fixed');
             $(".product_goto").css("margin-bottom","0px");
@@ -95,69 +112,65 @@ $(".language").bind("click",function(){
         })
     }
 
-    //pdf下载
+    //pdf下载页面
     //  模态窗显示
     function theTanChuangShow(){
 
         var ee=$('.bg');
         $('.product_pdf_pic_fa').click(function() {
             var  dd=$(this).next();
-//                    dd.css("display", "block");
-dd.fadeIn('slow');
-//                    ee.css("display", "block");
-ee.fadeIn('fast');
-if (dd.css("display") == "block") {
-    dd.mouseleave(function () {
-//                            alert("再见，您的鼠标离开了该段落。");
-$('.bg').click(function () {
-    dd.css("display", "none");
-    ee.css("display", "none");
-});
-
-})
-    $('.tanchuang .close').click(function () {
-        dd.css("display", "none");
-        ee.css("display", "none");
-    });
-}
+            dd.fadeIn('slow');
+            ee.fadeIn('fast');
+        if (dd.css("display") == "block") {
+                dd.mouseleave(function () {
+                    $('.bg').click(function () {
+                        dd.css("display", "none");
+                        ee.css("display", "none");
+                    });
+                })
+            $('.tanchuang .close').click(function () {
+                dd.css("display", "none");
+                ee.css("display", "none");
+            });
+        }
 })
     }
-//  在页面中制作一个背景
-function makeDarkBg(){
-    $("body").append("<div class=bg></div>")
-}
-//给背景加上样式
-function decorationTheBg(){
-    $('.bg').css({
-        "width":"12000px",
-        "height":"12000px",
-        "left":"0",
-        "top":"0",
-        "background-color":"#333333",
-        "opacity":"0.8",
-        "position":"fixed",
-        "z-index":"4",
-        "display":"none",
-    })
-}
-makeDarkBg();
-decorationTheBg();
-theTanChuangShow();
-changeLanguage();
-   // 切换语言请求js
-   var csrfToken = $('meta[name="csrf-token"]').attr("content");
-   function changeLanguage() {
-       $('#en').click('click',function(){
-        $.post('index.php?r=public/language',{"lang":"en","_csrf":csrfToken},function(){
-            window.location.reload();
-        });
-    })
-       $('#cn').click('click',function(){
-         $.post('index.php?r=public/language',{"lang":"cn","_csrf":csrfToken},function(){
-            window.location.reload();
-        });
-     })
-   }
+    //  在页面中制作一个背景
+    function makeDarkBg(){
+        $("body").append("<div class=bg></div>")
+    }
+    //给背景加上样式
+    function decorationTheBg(){
+        $('.bg').css({
+            "width":"12000px",
+            "height":"12000px",
+            "left":"0",
+            "top":"0",
+            "background-color":"#333333",
+            "opacity":"0.8",
+            "position":"fixed",
+            "z-index":"4",
+            "display":"none",
+        })
+    }
+    makeDarkBg();
+    decorationTheBg();
+    theTanChuangShow();
+    changeLanguage();
+       // 切换语言请求js
+       var csrfToken = $('meta[name="csrf-token"]').attr("content");
+       function changeLanguage() {
+           $('#en').click('click',function(){
+            $.post('index.php?r=public/language',{"lang":"en","_csrf":csrfToken},function(){
+                window.location.reload();
+            });
+        })
+           $('#cn').click('click',function(){
+             $.post('index.php?r=public/language',{"lang":"cn","_csrf":csrfToken},function(){
+                window.location.reload();
+            });
+         })
+       }
 
 
     // //产品详情页展示切换

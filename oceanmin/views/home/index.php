@@ -25,9 +25,9 @@ use yii\filters\PageCache;
 <!-- 图片拼接服务器 -->
 <?php $host="http://www.gtmbike.com/";?>
 
-<section class="container-fluid-ppt clearfix">
+<section class="container-fluid-ppt clearfix" >
     <div class="row clearfix">
-        <div class="owl-carousel owl-theme ppt">
+        <div class="owl-carousel owl-theme ppt " id="owl-carousel_first">
             <?php foreach($model as $im):?>
             <div class="item">
                 <a href=""><img height="" src="<?php echo $host.$im['cover']?>" alt=""></a>
@@ -99,29 +99,40 @@ use yii\filters\PageCache;
         </div>
     </div>
     <div class="row">
-       <?php foreach($product as $pro):?>
-        <a href="<?php echo yii\helpers\Url::to(['product/detail', 'productid' => $pro['productid']]) ?>"><div class="col-lg-3 col_part2">
-            <img src="<?php echo $host.$pro['cover']?>" alt="">
-            <p><?php echo $pro['title']?></p>
-        </div></a>
-     <?php endforeach;?>
+        <div class="owl-carousel owl-theme ppt" id="owl-carousel_second">
+
+            <div class="item">
+                <a href=""><img height="" src="web/" alt=""></a>
+                <p>yiersansi</p>
+            </div>
+            <div class="item">
+                <a href=""><img height="" src="" alt=""></a>
+                <p>yiersansi</p>
+            </div>
+
+        </div>
     </div>
-    <!--load more-->
-    <!--<div class="row">-->
-        <!--<div class="col-lg-12 row_part_title">-->
-            <!--<a href="">LOAD MORE</a>-->
-        <!--</div>-->
-    <!--</div>-->
 </section>
 
 
 
 <script>
     $(document).ready(function(){
-        //轮播
-        $('.owl-carousel').owlCarousel({
+        //轮播1
+        $('#owl-carousel_first').owlCarousel({
             items: 1,
             loop: true,
+            lazyLoad: true,
+            autoHeight:true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true
+        })
+        //轮播2
+        $('#owl-carousel_second').owlCarousel({
+            items: 4,
+            loop: true,
+            margin:10,
             autoHeight:true,
             autoplay: true,
             autoplayTimeout: 3000,
