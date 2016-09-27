@@ -1,6 +1,6 @@
 <title>产品展示</title>
 <link rel="stylesheet" href="/css/product-introduce.css">
-<script src="js/jquery-3.1.0.min.js"></script>
+<script src="/js/jquery-3.1.0.min.js"></script>
 <!--分页-->
 <link rel="stylesheet" href="/css/pagination.css">
 <script src="/js/jquery.pagination.min.js"></script>
@@ -28,7 +28,7 @@
                 </div>
                 <div class="col-lg-12 business-one">
                     <div class="business-name" >
-                        <h3>2 Tier Wire Shelving Rack <span><img src="img/Path%203.png" alt=""></span></h3>
+                        <h3>2 Tier Wire Shelving Rack <span><img src="/img/Path%203.png" alt=""></span></h3>
                         <hr>
                     </div>
                     <div class="business-content">
@@ -40,7 +40,7 @@
                 </div>
                 <div class="col-lg-12 business-one">
                     <div class="business-name" >
-                        <h3>焦炭业务 <span><img src="img/Path%203.png" alt=""></span></h3>
+                        <h3>焦炭业务 <span><img src="/img/Path%203.png" alt=""></span></h3>
                         <hr>
                     </div>
                     <div class="business-content">
@@ -53,7 +53,7 @@
                 </div>
                 <div class="col-lg-12 business-one">
                     <div class="business-name" >
-                        <h3>矿产业务<span><img src="img/Path%203.png" alt=""></span></h3>
+                        <h3>矿产业务<span><img src="/img/Path%203.png" alt=""></span></h3>
                         <hr>
                     </div>
                     <div class="business-content">
@@ -72,7 +72,7 @@
                         <p><span>TEL：</span>+86 22 59652829</p>
                         <p><span>Fax：</span>+86 22 59652829</p>
                         <p><span>Mobile：</span>+86 18602267830</p>
-                        <img src="img/二维码.png" alt="">
+                        <img src="/img/二维码.png" alt="">
                     </div>
                 </div>
             </div>
@@ -82,7 +82,7 @@
                 <div class="col-lg-4 business-pic-son">
                     <a href="item.html">
                         <div class="product_item_pic">
-                            <img src="img/1.png" alt="">
+                            <img src="/img/1.png" alt="">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, delectus?</p>
                         </div>
                     </a>
@@ -90,7 +90,7 @@
                 <div class="col-lg-4 business-pic-son">
                     <a href="item.html">
                         <div class="product_item_pic">
-                            <img src="img/1.png" alt="">
+                            <img src="/img/1.png" alt="">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, delectus?</p>
                         </div>
                     </a>
@@ -98,7 +98,7 @@
                 <div class="col-lg-4 business-pic-son">
                     <a href="item.html">
                         <div class="product_item_pic">
-                            <img src="img/1.png" alt="">
+                            <img src="/img/1.png" alt="">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, delectus?</p>
                         </div>
                     </a>
@@ -106,7 +106,7 @@
                 <div class="col-lg-4 business-pic-son">
                     <a href="item.html">
                         <div class="product_item_pic">
-                            <img src="img/1.png" alt="">
+                            <img src="/img/1.png" alt="">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, delectus?</p>
                         </div>
                     </a>
@@ -114,7 +114,7 @@
                 <div class="col-lg-4 business-pic-son">
                     <a href="item.html">
                         <div class="product_item_pic">
-                            <img src="img/1.png" alt="">
+                            <img src="/img/1.png" alt="">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, delectus?</p>
                         </div>
                     </a>
@@ -122,7 +122,7 @@
                 <div class="col-lg-4 business-pic-son">
                     <a href="item.html">
                         <div class="product_item_pic">
-                            <img src="img/1.png" alt="">
+                            <img src="/img/1.png" alt="">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, delectus?</p>
                         </div>
                     </a>
