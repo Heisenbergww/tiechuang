@@ -81,10 +81,10 @@ $config = [
             'showScriptName' => false,
             'suffix' => '.html',
             'rules' => [
-                '<controller:\w+>/<id:\d+>'=>'<controller>/view',
-                '<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
-                '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
-                '<controller:\w+>/<action:\w+>.html'=>'<controller>/<action>',
+                // '<controller:\w+>/<id:\d+>'=>'<controller>/view',
+                // '<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
+                // '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+                // '<controller:\w+>/<action:\w+>.html'=>'<controller>/<action>',
             ],
         ],
 
