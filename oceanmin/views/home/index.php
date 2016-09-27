@@ -90,26 +90,61 @@ use yii\filters\PageCache;
         </a>
     </div>
 </section>
- 
 
 <section class="container-fluid clearfix section3">
     <div class="row">
         <div class="col-lg-12 row_part_title">
             <h1>SPECIAL GTMBike</h1>
-        </div>
-    </div>
-    <div class="row">
-        <div class="owl-carousel owl-theme ppt" id="owl-carousel_second">
-
-            <div class="item">
-                <a href=""><img height="" src="web/" alt=""></a>
-                <p>yiersansi</p>
+            <div class="owl-carousel owl-theme ppt" id="owl-carousel_second">
+                <div class="item">
+                    <a href="">
+                        <div class="you_may_buy">
+                            <img height="" src="/img/home_bike.png" alt="">
+                            <p>yiersansi</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <div class="you_may_buy">
+                            <img height="" src="/img/home_bike.png" alt="">
+                            <p>yiersansi</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <div class="you_may_buy">
+                            <img height="" src="/img/home_bike.png" alt="">
+                            <p>yiersansi</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <div class="you_may_buy">
+                            <img height="" src="/img/home_bike.png" alt="">
+                            <p>yiersansi</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <div class="you_may_buy">
+                            <img height="" src="/img/home_bike.png" alt="">
+                            <p>yiersansi</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <div class="you_may_buy">
+                            <img height="" src="/img/home_bike.png" alt="">
+                            <p>yiersansi</p>
+                        </div>
+                    </a>
+                </div>
             </div>
-            <div class="item">
-                <a href=""><img height="" src="" alt=""></a>
-                <p>yiersansi</p>
-            </div>
-
         </div>
     </div>
 </section>
@@ -130,8 +165,9 @@ use yii\filters\PageCache;
         })
         //轮播2
         $('#owl-carousel_second').owlCarousel({
-            items: 4,
+            items: 5,
             loop: true,
+            nav:true,
             margin:10,
             autoHeight:true,
             autoplay: true,
