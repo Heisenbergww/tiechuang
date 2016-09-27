@@ -4,6 +4,7 @@ namespace app\controllers;
 
 use yii\web\Controller;
 use Yii;
+use app\models\Social;
 
 class CommonController extends Controller
 {
@@ -21,10 +22,14 @@ class CommonController extends Controller
         }
         $tmp = self::isMobile();
         if ($tmp) {
-            return $this->redirect('./index.php?r=mobile/home/index');
+            return $this->redirect('./index.php/mobile/home/index.html');
         } else {
         	
         }
+        // footer的数据
+        $footer = Social::find()->where('id = :id', [':id' => '1'])->one();
+        $this->view->params['footer'] = $footer;
+
     }
 
 

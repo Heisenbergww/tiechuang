@@ -8,3 +8,4 @@
 	********web/mobile为手机端资源文件(css js img等)
 
 
+项目屏蔽了index.php文件，上线需解开

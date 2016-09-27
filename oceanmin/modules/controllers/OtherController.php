@@ -6,6 +6,7 @@ use yii\web\Controller;
 use Yii;
 use app\modules\controllers\CommonController;
 use app\models\Company;
+use app\models\Social;
 use yii\web\UploadedFile;
 
 class OtherController extends CommonController
@@ -42,5 +43,26 @@ class OtherController extends CommonController
         }
         return $this->render('add', ['model' => $model]);
     }
+
+    public function actionFooter()
+    {
+        $this->layout = "layout1";
+        $model = Social::find()->where('id = :id', [':id' => '1'])->one();
+        if (Yii::$app->request->isPost) {
+            $post = Yii::$app->request->post();
+            if ($model->load($post) && $model->save()) {
+                Yii::$app->session->setFlash('info', '修改成功');
+                return $this->goBack(['admin/other/footer']);
+            }
+        }
+        return $this->render('footer', ['model' => $model]);
+    }
+
+
+
+
+
+
+
 
 }
