@@ -120,123 +120,17 @@
     height:90px;
 }
 /*第二部分*/
-.item_more_info h3{
-    font-size: 18px;
-    padding-left: 10px;
-    font-family:DINOT-Medium;
-}
-.item_more_info a {
-    color: #9EA0A7;
-    margin-bottom: 25px;
-    margin-top: 15px;
-    padding-left: 10px;
-    display: block;
-}
-.item_more_info a i {
-    margin-right: 10px;
-}
-.item_more_info a:hover{
-    color:#DA281C;
-}
-.item_more_info img{
-    vertical-align: text-bottom;
-    margin-right: 5px;
-}
-.view_more_collapse h4{
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 40px;
-    color: #4a90e2;
-    cursor: pointer;
+.section2{
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 .product_descr{
     margin-bottom: 20px;
 }
-.item_more_info .table_fa table {
-    width: 980px;
-    border-collapse:collapse;
-    padding: 0;
-    margin: 0;
-    border: 1px  solid #d5d5d5;
-}
-.item_more_info .table_fa{
-    overflow: hidden;
-}
-.item_more_info table tr th,
-.item_more_info table tr td{
-    padding: 8px 10px;
-    margin: 0;
-    font-weight: normal;
-    border: 1px  solid #d5d5d5;
-    width:140px;
-    font-size: 14px;
+.product_descr h2{
+    font-size: 24px;
+    color: #2B2C33;
+    letter-spacing: 0px;
+    margin-bottom: 30px;
 }
 
-/*section_middle*/
-.section_middle{
-
-}
-.tab_switch{
-    border-collapse: collapse;
-    width: 100%;
-}
-.tab_switch_td{
-    border: 1px solid #d8d8d8;
-    padding: 13px auto ;
-}
-.tab_switch_td p{
-    color: #2b2c33;
-    display: inline-block;
-    padding-top: 13px;
-    padding-bottom: 13px;
-}
-.tab_switch_td_1,
-.tab_switch_td_2{
-    text-align: center;
-    cursor: pointer;
-    width: 20%;
-    position: relative;
-}
-.tab_switch_td_1{
-    border-bottom:4px solid  #1963B8;
-}
-.tab_switch_td_1 p{
-    color:  #1963B8;
-}
-.tab_switch_td_1 .triangle_blue{
-    display: inline-block;
-}
-.triangle_blue{
-    border-top: 4px solid transparent;
-    border-right: 4px solid transparent;
-    border-bottom: 4px solid #1963B8;
-    border-left: 4px solid transparent;
-    bottom: 0;
-    left: 50%;
-    display: none;
-    margin-left:-4px;
-    position: absolute;
-}
-.tab_switch_td_3{
-    cursor: pointer;
-    text-align: right;
-}
-.tab_switch_td_3 p{
-    margin-right: 30px;
-}
-.tab_switch_td_3 p a{
-    color: #1963ba;
-}
-
-/*第三部分*/
-.section3{
-    text-align: center;
-}
-/*第四部分*/
-.section4{
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-.for_table_2{
-    display: none;
-}

@@ -44,52 +44,15 @@
         </div>
     </div>
 </section>
-<section class="container-fluid clearfix section_middle">
-    <table class="tab_switch">
-        <tr class="tab_switch_tr">
-            <td class="tab_switch_td tab_switch_td_1">
-                <p>Specifications</p>
-                <span class="triangle_blue"></span>
-            </td>
-            <td class="tab_switch_td tab_switch_td_2">
-                <p>Instructions</p>
-                <span class="triangle_blue"></span>
-            </td>
-            <td class="tab_switch_td tab_switch_td_3">
-                <p>Contact Us:<a href="mailto:GTM@beforeship.com">E-Mail:GTM@beforeship.com </a></p>
-            </td>
-        </tr>
-    </table>
-</section>
-<section class="container-fluid clearfix section2">
-</section>
-<!-- <section class="section3 clearfix">
-    <img src="/img/special.png" alt="" class="special_big">
-</section> -->
-<section class="section4 for_table_1 clearfix container-fluid">
+<section class="section2  clearfix container-fluid">
     <div class="row item_Instructions clearfix">
         <div class=" col-lg-12 product_descr">
+            <h2>Specifications</h2>
             <?php echo $product['descr']?>
         </div>
     </div>
 </section>
-<section class="section4 for_table_2 clearfix container-fluid">
-    <div class="row item_more_info clearfix">
-        <h3>Download Product Specification</h3>
-        <a target="_blank" href="<?php echo $host.$product['pdf']?>" class="download_btn"><i class="fa fa-download" aria-hidden="true"></i>Download the PDF</a>
-        <div class="col-lg-12 clearfix table_fa ">
-            <!--之前的table删除了-->
-        </div>
-    </div>
-    <div class="view_more_collapse">
-        <h4>view more</h4>
-    </div>
-    <div class="row">
-        <div class=" col-lg-12 product_descr">
-           <img src="<?php echo $product['instructions']?>"> 
-        </div>
-    </div>
-</section>
+
 
 
 <script >
