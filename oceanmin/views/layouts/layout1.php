@@ -92,11 +92,11 @@ use yii\filters\PageCache;
                     <h3><?php echo Yii::t('app', 'FOLLOW US');?></h3>
                     <div class="social">
                         <ul>
-                            <li class="facebook"><a target="_blank" href="https://www.facebook.com/GTM.Bike/"></a></li>
-                            <li class="twitter"><a target="_blank" href="https://twitter.com/BikeGTM "></a></li>
-                            <li class="youtube"><a target="_blank" href="https://www.youtube.com/channel/UCizTI6EIilR7kh0_ipxZmmA"></a></li>
-                            <li class="in"><a target="_blank" href="https://cn.linkedin.com/in/gtmbike"></a></li>
-                            <li class="instagram"><a target="_blank" href="http://www.instagram.com/gtmbike/"></a></li>
+                            <li class="facebook"><a target="_blank" href="<?php echo $this->params['footer']['facebook'];?>"></a></li>
+                            <li class="twitter"><a target="_blank" href="<?php echo $this->params['footer']['twitter'];?>"></a></li>
+                            <li class="youtube"><a target="_blank" href="<?php echo $this->params['footer']['youtube'];?>"></a></li>
+                            <li class="in"><a target="_blank" href="<?php echo $this->params['footer']['linkedin'];?>"></a></li>
+                            <li class="instagram"><a target="_blank" href="<?php echo $this->params['footer']['instagram'];?>"></a></li>
                         </ul>
                     </div>
                     <hr>

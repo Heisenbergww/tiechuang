@@ -160,6 +160,7 @@ use yii\filters\PageCache;
                 </a>
                 <ul class="submenu">
                 <li><a href="<?php echo yii\helpers\Url::to(['other/edit'])?>">编辑公司详情</a></li>
+                <li><a href="<?php echo yii\helpers\Url::to(['other/footer'])?>">底部账号编辑</a></li>
                 </ul>
             </li>                     
 
