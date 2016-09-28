@@ -17,7 +17,7 @@
     </div>
 </section>
 <section class="container-fluid clearfix section1">
-    <img src="/img/pdf_bigpic.png" alt="">
+    <img src="/img/product_info.jpg" alt="">
 </section>
 <section class="container-fluid clearfix section2">
     <div class="row business">

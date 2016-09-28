@@ -20,7 +20,7 @@ $(".language").bind("click",function(){
      $(".menu_support").mouseenter(function(){
         $(".to_support").show();
          var w1=$(".to_support li").width()/2;
-        $(".second_menu").css("left",l1-w1+49);
+        $(".second_menu").css("left",l1-w1);
     });
     $(".menu_support").mouseleave(function(){
         $(".to_support").hide(); 
@@ -45,6 +45,9 @@ $(".language").bind("click",function(){
     }
     goToTopShow();
     $(window).scroll(goToTopShow);
+
+     //首页商品展示轮播
+
 
     //product页面
      //产品展示页二级菜单展开
