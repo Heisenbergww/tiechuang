@@ -91,9 +91,9 @@ use yii\filters\PageCache;
                 <div class="swiper-wrapper">
                     <?php foreach($product as $pro):?>
                     <div class="swiper-slide">
-                        <a href="">
+                        <a href="<?php echo yii\helpers\Url::to(['product/detail', 'productid' => $pro['productid']]) ?>">
                             <div class="you_may_buy">
-                                <img height="<?php echo yii\helpers\Url::to(['product/detail', 'productid' => $pro['productid']]) ?>" src="/<?php echo $pro['cover']?>" alt="">
+                                <img height="100" src="/<?php echo $pro['cover']?>" alt="">
                                 <p><?php echo $pro['title']?></p>
                             </div>
                         </a>
