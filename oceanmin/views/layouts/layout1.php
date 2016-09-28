@@ -7,8 +7,8 @@ use yii\filters\PageCache;
 <head>
     <meta charset="UTF-8">
     <meta name="csrf-token" content="<?= Yii::$app->request->csrfToken ?>"/>
-    <meta name="Keywords" Content="ercolego"/>
-    <meta name="description" Content="ercolego"/>
+    <meta name="Keywords" Content="Ercolewireshelving,wireshelvinng,shelf,rack,racking,ercole"/>
+    <meta name="description" Content="Ercole is a brand of wire shelving"/>
     <title>Ercolego</title>
     <link type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="/css/normal.css">
