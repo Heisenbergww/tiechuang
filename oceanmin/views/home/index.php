@@ -22,15 +22,13 @@ use yii\filters\PageCache;
     /*html5*/
     article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block}
 </style>
-<!-- 图片拼接服务器 -->
-<?php $host="http://www.gtmbike.com/";?>
 
 <section class="container-fluid-ppt clearfix" >
     <div class="row clearfix">
         <div class="owl-carousel owl-theme ppt " id="owl-carousel_first">
             <?php foreach($model as $im):?>
             <div class="item">
-                <a href=""><img height="" src="<?php echo $host.$im['cover']?>" alt=""></a>
+                <a href=""><img height="" src="<?php echo $im['cover']?>" alt=""></a>
             </div>
            <?php endforeach;?>
         </div>
@@ -96,54 +94,16 @@ use yii\filters\PageCache;
         <div class="col-lg-12 row_part_title">
             <h1>SPECIAL GTMBike</h1>
             <div class="owl-carousel owl-theme ppt" id="owl-carousel_second">
+                <?php foreach($product as $pro):?>
                 <div class="item">
                     <a href="">
                         <div class="you_may_buy">
-                            <img height="" src="/img/home_bike.png" alt="">
-                            <p>yiersansi</p>
+                            <img height="" src="<?php echo $pro['cover']?>" alt="">
+                            <p><?php echo $pro['title']?></p>
                         </div>
                     </a>
                 </div>
-                <div class="item">
-                    <a href="">
-                        <div class="you_may_buy">
-                            <img height="" src="/img/home_bike.png" alt="">
-                            <p>yiersansi</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="">
-                        <div class="you_may_buy">
-                            <img height="" src="/img/home_bike.png" alt="">
-                            <p>yiersansi</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="">
-                        <div class="you_may_buy">
-                            <img height="" src="/img/home_bike.png" alt="">
-                            <p>yiersansi</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="">
-                        <div class="you_may_buy">
-                            <img height="" src="/img/home_bike.png" alt="">
-                            <p>yiersansi</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="">
-                        <div class="you_may_buy">
-                            <img height="" src="/img/home_bike.png" alt="">
-                            <p>yiersansi</p>
-                        </div>
-                    </a>
-                </div>
+                <?php endforeach;?>
             </div>
         </div>
     </div>
