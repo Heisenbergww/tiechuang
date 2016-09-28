@@ -17,20 +17,21 @@ use yii\filters\PageCache;
     </section>
     <?php if($this->beginCache('cache_faq_img')){?> 
     <section class="container-fluid clearfix section1">
-        <img src="/img/faq.png" alt="">
+        <img src="/img/faq.jpg" alt="">
     </section>
     <?php $this->endCache();}?> 
 <section class="section2  container_q_and_a">
     <div class="q_and_a">
         <div class="row the_q clearfix">
             <div class="col-lg-1">
-                <div class="the_q_left"><span>Q</span></div>
-
+                <div class="the_q_left">
+                    <span>Q</span>
+                </div>
             </div>
             <div class="col-lg-11">
                 <div class="the_q_right">
                     <span class="triangle_q"></span>
-                    <p><?php echo Yii::t('app', 'Do you sell bikes factory direct? Where do you shipping from？');?>
+                    <p>What are you hours of operation?
                     </p>
                 </div>
             </div>
@@ -42,7 +43,7 @@ use yii\filters\PageCache;
             <div class="col-lg-11">
                 <div class="the_a_right">
                     <span class="triangle_a"></span>
-                    <p>Yes.Our bikes are made in China’s factory, but We have set up warehouse in Americas, Europe, Asia.
+                    <p>Customer service is available Monday – Friday, 9AM to 5:30PM. Messages and emails can be left during non-working hours and you will be contacted the next business day. 
                     </p>
                 </div>
             </div>
@@ -56,7 +57,7 @@ use yii\filters\PageCache;
             <div class="col-lg-11">
                 <div class="the_q_right">
                     <span class="triangle_q"></span>
-                    <p>Who can answer my questions about the products, including size, order status, shipping, etc.?
+                    <p>Are you the manufacturers, Where do you shipping from？
                     </p>
                 </div>
             </div>
@@ -68,7 +69,7 @@ use yii\filters\PageCache;
             <div class="col-lg-11">
                 <div class="the_a_right">
                     <span class="triangle_a"></span>
-                    <p>If you have any further questions, feel free to contact us at GTM@beforeship.com. Please allow for a 24-hour response time especially with questions sent over the weekend. Thank you for your understanding.
+                    <p>Yes. Our products are made in China’s factory, but We have set up warehouse in Americas, Europe, Asia.
                     </p>
                 </div>
             </div>
@@ -108,7 +109,7 @@ use yii\filters\PageCache;
             <div class="col-lg-11">
                 <div class="the_q_right">
                     <span class="triangle_q"></span>
-                    <p>If I send you a message, how long you reply to me?
+                    <p>I come from Africa, I want to wholesale your products, what should I do?
                     </p>
                 </div>
             </div>
@@ -120,7 +121,7 @@ use yii\filters\PageCache;
             <div class="col-lg-11">
                 <div class="the_a_right">
                     <span class="triangle_a"></span>
-                    <p>Our customer service personnel are experienced product specialists who can answer your questions seven days a week from 9AM to 4PM. Contact us now.
+                    <p>Please mail me to Ercole@beforeship.com, and tell me your request. Include products' quantity, SKU, send to the destination.
                     </p>
                 </div>
             </div>
@@ -134,7 +135,7 @@ use yii\filters\PageCache;
             <div class="col-lg-11">
                 <div class="the_q_right">
                     <span class="triangle_q"></span>
-                    <p>I come from Africa, I want to wholesale your bicycles, what should I do?
+                    <p>Who can answer my questions about the products, including size, order status, shipping, etc.?
                     </p>
                 </div>
             </div>
@@ -146,33 +147,7 @@ use yii\filters\PageCache;
             <div class="col-lg-11">
                 <div class="the_a_right">
                     <span class="triangle_a"></span>
-                    <p>Please mail me to GTM@beforeship.com, and tell me your request.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="q_and_a">
-        <div class="row the_q clearfix">
-            <div class="col-lg-1">
-                <div class="the_q_left"><span>Q</span></div>
-            </div>
-            <div class="col-lg-11">
-                <div class="the_q_right">
-                    <span class="triangle_q"></span>
-                    <p>If your website is not what I want that section of bike, what should I do?
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="row the_a clearfix">
-            <div class="col-lg-1">
-                <div class="the_a_left"><span>A</span></div>
-            </div>
-            <div class="col-lg-11">
-                <div class="the_a_right">
-                    <span class="triangle_a"></span>
-                    <p>Please mail me to GTM@beforeship.com, and tell me your request.
+                    <p>If you have any further questions, feel free to contact us at Ercole@beforeship.com. Please allow for a 24-hour response time especially with questions sent over the weekend. Thank you for your understanding.
                     </p>
                 </div>
             </div>

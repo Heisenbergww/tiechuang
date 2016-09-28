@@ -41,15 +41,9 @@ use yii\filters\PageCache;
                 <div class="language_child">
                     <ul>
                         <li id="en">
-
                             <p>English <span class="map"><img src="img/language.png" alt=""></span>
-
                             </p>
                         </li>
-                         <!--<li id="cn">-->
-                            <!--<p>chinese<span class="map"><img src="img/language.png" alt=""></span>-->
-                            <!--</p>-->
-                        <!--</li>-->
                     </ul>
                 </div>
 
@@ -67,8 +61,7 @@ use yii\filters\PageCache;
         </nav>
         <div class="second_menu to_support  menu_support">
             <ul>
-                <a href="<?php echo yii\helpers\Url::to(['support/index'])?>"><li>Download Manual</li></a>
-                <a href="<?php echo yii\helpers\Url::to(['support/faq'])?>"><li>FAQ</li></a>
+                <a href="<?php echo yii\helpers\Url::to(['support/faq'])?>"><li class="slol_faq">FAQ</li></a>
             </ul>
         </div>
         <div class="second_menu to_about_us menu_about_us ">
