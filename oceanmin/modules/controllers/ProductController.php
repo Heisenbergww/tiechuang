@@ -108,8 +108,6 @@ class ProductController extends Controller
         $productid = Yii::$app->request->get("productid");
         $model = Product::find()->where('productid = :id', [':id' => $productid])->one();
         $image = $model->cover;
-        $pdf = $model->pdf;
-        $instructions = $model->instructions;
         $model->pics = explode(",",$model->pics);
         if (Yii::$app->request->isPost) {
             $post = Yii::$app->request->post();
@@ -121,46 +119,6 @@ class ProductController extends Controller
                 $post['Product']['cover'] = 'uploads/company/' . $imageName;
             } else {
                 $post['Product']['cover'] = $image;
-            }
-            // pdf处理
-            $model->pdf = UploadedFile::getInstance($model, 'pdf');
-            if ($model->pdf) {
-                if (file_exists($pdf)) {
-                    if (unlink($pdf)) {
-                        $pdfName = mt_rand(10000, 99999).uniqid(). '.' . $model->pdf->extension;
-                        $model->pdf->saveAs('uploads/pdf/' . $pdfName);
-                        $post['Product']['pdf'] = 'uploads/pdf/' . $pdfName;
-                    }else{
-                        Yii::$app->session->setFlash('info', '删除图片失败');
-                    }
-                } else {
-                    $pdfName = mt_rand(10000, 99999).uniqid(). '.' . $model->pdf->extension;
-                    $model->pdf->saveAs('uploads/pdf/' . $pdfName);
-                    $post['Product']['pdf'] = 'uploads/pdf/' . $pdfName;
-                }
-               
-            } else {
-                $post['Product']['pdf'] = $pdf;
-            }
-            //instructions图片处理
-            $model->instructions = UploadedFile::getInstance($model, 'instructions');
-            if ($model->instructions) {
-                if (file_exists($instructions)) {
-                    if (unlink($instructions)) {
-                        $instructionsName = mt_rand(10000, 99999).uniqid(). '.' . $model->instructions->extension;
-                        $model->instructions->saveAs('uploads/pdf/' . $instructionsName);
-                        $post['Product']['instructions'] = 'uploads/pdf/' . $instructionsName;
-                    }else{
-                        Yii::$app->session->setFlash('info', '删除图片失败');
-                    }
-                } else {
-                    $instructionsName = mt_rand(10000, 99999).uniqid(). '.' . $model->instructions->extension;
-                    $model->instructions->saveAs('uploads/pdf/' . $instructionsName);
-                    $post['Product']['instructions'] = 'uploads/pdf/' . $instructionsName;
-                }
-
-            } else {
-                $post['Product']['instructions'] = $instructions;
             }
             // 多张图片处理
             $tmp = Product::find()->where('productid = :id', [':id' => $productid])->one();
