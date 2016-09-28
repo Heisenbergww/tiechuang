@@ -31,13 +31,14 @@
         </div>
     </div>
 </section>
-<section class="container-fluid clearfix section3 ">
-     
+
+<!--修改后删除-->
+<section class="container-fluid clearfix section3 " >
     <div class="row contact_us_form">
         <div class="col-lg-12">
             <h1>Leaving  Message</h1>
             <div>
-                 <?php 
+                 <?php
                     if( Yii::$app->getSession()->hasFlash('success') ) {
                         echo Html::script('alert("Submitted successfully!");', ['defer' => true]);
                     }
@@ -46,7 +47,7 @@
                      }
                     ?>
             </div>
-            
+
             <?php
                 $form = ActiveForm::begin([
                     'fieldConfig' => [
@@ -68,6 +69,24 @@
                 ?>
                 <input  class="contact_us_submit" type="submit" value="Submit">
             <?php ActiveForm::end();?>
+        </div>
+    </div>
+</section>
+
+
+<section class="container-fluid clearfix section3 " >
+    <div class="row contact_us_form">
+        <div class="col-lg-12">
+            <div class="contact_us_form_child">
+                <h1>Leaving  Message</h1>
+                <p>Please do not hesitate to let me know if you have any question or concern.</p>
+                <hr>
+                <textarea name="Message[detail]" type="text" placeholder="Messages" class="message_s"></textarea>
+                <input name="Message[name]" type="text" value="<?= Html::encode($model->name) ?>" placeholder="Name">
+                <input name="Message[email]"  type="text" value="<?= Html::encode($model->email) ?>" placeholder="Email">
+                <input name="Message[phone]"  type="text" value="<?= Html::encode($model->phone) ?>" placeholder="Phone Number">
+            </div>
+            <input  class="contact_us_submit" type="submit" value="Submit">             
         </div>
     </div>
 </section>

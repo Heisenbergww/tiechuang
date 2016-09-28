@@ -12,7 +12,7 @@
 /*第二部分*/
 .section2{
     padding-top: 114px;
-    padding-bottom: 136px;
+    padding-bottom: 60px;
 }
 .container_contact_us_map{
     padding-right: 10px;
@@ -42,46 +42,59 @@
 .contact_us_form h1{
     text-align: left;
     font-size: 24px;
-    padding-top: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 13px;
 }
 .contact_us_form{
-    width: 500px;
+    width: 900px;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
+}
+.contact_us_form_child{
+    background-color: #efefef;
+    padding: 20px 30px 37px 20px;
+}
+.contact_us_form_child hr{
+    height: 1px;
+    width: 880px;
+    margin-left: -20px;
+    background-color: #d8d8d8;
+    border: none;
 }
 .contact_us_form p{
     text-align: left;
-    /*font-family: STHeitiSC-Medium;*/
     font-size: 14px;
-    color: #818185;
+    color: #656565;
     letter-spacing: 0px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 18px;
 }
 .contact_us_form input{
     border: 1px solid #D5D5D5;
-    border-radius: 4px;
-    width: 480px;
-    height: 48px;
+    font-size: 14px;
+    width: 657px;
+    height: 50px;
     text-indent: 10px;
+    margin-top: 15px;
+    display: none;
 }
 .contact_us_form  textarea{
+    font-size: 14px;
+    margin-top: 15px;
     border: 1px solid #D5D5D5;
-    border-radius: 4px;
-    width:480px;
-    height: 163px;
+    width:850px;
+    height: 100px;
     text-indent: 10px;
 }
 .contact_us_form .contact_us_submit{
-    text-align: center;
-    /*font-family: STHeitiSC-Medium;*/
-    width: 280px;
+    margin-left:20px;
+    text-align: left;
+    border-radius: 6px;
+    width: 180px;
+    height: 50px;
     font-size: 18px;
     color: #FFFFFF;
     letter-spacing: 0;
     background-color: #36bd9f;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    margin-top: 20px;
     cursor: pointer;
+    display: block;
 }
