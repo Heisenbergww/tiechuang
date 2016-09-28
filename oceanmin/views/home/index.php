@@ -1,17 +1,16 @@
 <?php
 use yii\filters\PageCache;
 ?>
-<title>Home</title>
-<link rel="stylesheet" href="css/home.css">
-<script src="js/jquery-3.1.0.min.js"></script>
+<link rel="stylesheet" href="/css/home.css">
+<script src="/js/jquery-3.1.0.min.js"></script>
 
 <!--轮播‪-->
 <link rel="stylesheet" href="/owlcarousel/owl.carousel.min.css">
 <link rel="stylesheet" href="/owlcarousel/owl.theme.default.min.css">
 <script src="/owlcarousel/owl.carousel.min.js"></script>
 
-<link rel="stylesheet" href="css/swiper.css">
-<script src="js/swiper.jquery.min.js"></script>
+<link rel="stylesheet" href="/css/swiper.css">
+<script src="/js/swiper.jquery.min.js"></script>
 
 <style>
     /*html5*/
@@ -94,7 +93,7 @@ use yii\filters\PageCache;
                     <div class="swiper-slide">
                         <a href="">
                             <div class="you_may_buy">
-                                <img height="" src="<?php echo $pro['cover']?>" alt="">
+                                <img height="<?php echo yii\helpers\Url::to(['product/detail', 'productid' => $pro['productid']]) ?>" src="/<?php echo $pro['cover']?>" alt="">
                                 <p><?php echo $pro['title']?></p>
                             </div>
                         </a>
