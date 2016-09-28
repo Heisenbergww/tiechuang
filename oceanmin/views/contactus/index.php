@@ -32,48 +32,25 @@
     </div>
 </section>
 
-<!--修改后删除-->
-<section class="container-fluid clearfix section3 " >
-    <div class="row contact_us_form">
-        <div class="col-lg-12">
-            <h1>Leaving  Message</h1>
-            <div>
-                 <?php
-                    if( Yii::$app->getSession()->hasFlash('success') ) {
-                        echo Html::script('alert("Submitted successfully!");', ['defer' => true]);
-                    }
-                    if( Yii::$app->getSession()->hasFlash('error') ) {
-                    echo Html::script('alert("Submit fails, check the mailbox format and whether Missing!");', ['defer' => true]);
-                     }
-                    ?>
-            </div>
 
-            <?php
-                $form = ActiveForm::begin([
-                    'fieldConfig' => [
-                        'template' => '<div class="span12 field-box">{label}{input}</div>{error}',
-                    ],
-                    'options' => [
-                        'class' => 'new_user_form inline-input',
-                        'enctype' => 'multipart/form-data'
-                    ],
-                ]);?>
-                <p>Name</p><input name="Message[name]" type="text" value="<?= Html::encode($model->name) ?>">
-                <p>Email</p><input name="Message[email]"  type="text" value="<?= Html::encode($model->email) ?>">
-                <p>TEL</p><input name="Message[phone]"  type="text" value="<?= Html::encode($model->phone) ?>">
-                <p>Message</p><textarea name="Message[detail]" type="text" ><?= Html::encode($model->detail) ?></textarea>
-                 <?php
-                    if (Yii::$app->session->hasFlash('info')) {
-                        echo Yii::$app->session->getFlash('info');
-                    }
-                ?>
-                <input  class="contact_us_submit" type="submit" value="Submit">
-            <?php ActiveForm::end();?>
-        </div>
-    </div>
-</section>
-
-
+<?php
+    if( Yii::$app->getSession()->hasFlash('success') ) {
+    echo Html::script('alert("Submitted successfully!");', ['defer' => true]);
+    }
+    if( Yii::$app->getSession()->hasFlash('error') ) {
+    echo Html::script('alert("Submit fails, check the mailbox format and whether Missing!");', ['defer' => true]);
+    }
+?>
+ <?php
+$form = ActiveForm::begin([
+    'fieldConfig' => [
+        'template' => '<div class="span12 field-box">{label}{input}</div>{error}',
+    ],
+    'options' => [
+        'class' => 'new_user_form inline-input',
+        'enctype' => 'multipart/form-data'
+    ],
+]);?>
 <section class="container-fluid clearfix section3 " >
     <div class="row contact_us_form">
         <div class="col-lg-12">
@@ -90,6 +67,8 @@
         </div>
     </div>
 </section>
+ <?php ActiveForm::end();?>
+
 
 <!-- Google Code for &#32852;&#31995;&#25105;&#20204;&#39029;&#38754;&#36716;&#21270; Conversion Page -->
 <script type="text/javascript">
