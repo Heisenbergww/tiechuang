@@ -2,23 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9579bfd1-a994-40c5-a11c-73e1de24c3de" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oceanmin/web/img/product_info.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oceanmin/web/css/swiper.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oceanmin/web/js/swiper.jquery.min.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oceanmin/views/support/download_pdf.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oceanmin/web/img/company_info.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oceanmin/web/img/faq.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oceanmin/web/img/company_info.jpg" afterPath="$PROJECT_DIR$/oceanmin/web/img/company_info.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oceanmin/web/img/faq.jpg" afterPath="$PROJECT_DIR$/oceanmin/web/img/faq.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oceanmin/web/img/logo.png" afterPath="$PROJECT_DIR$/oceanmin/web/img/logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oceanmin/views/aboutus/index.php" afterPath="$PROJECT_DIR$/oceanmin/views/aboutus/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oceanmin/web/favicon.ico" afterPath="$PROJECT_DIR$/oceanmin/web/favicon.ico" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oceanmin/config/db.php" afterPath="$PROJECT_DIR$/oceanmin/config/db.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oceanmin/controllers/ProductController.php" afterPath="$PROJECT_DIR$/oceanmin/controllers/ProductController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oceanmin/models/Product.php" afterPath="$PROJECT_DIR$/oceanmin/models/Product.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oceanmin/modules/controllers/ArticleController.php" afterPath="$PROJECT_DIR$/oceanmin/modules/controllers/ArticleController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oceanmin/modules/controllers/ProductController.php" afterPath="$PROJECT_DIR$/oceanmin/modules/controllers/ProductController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oceanmin/modules/views/layouts/layout1.php" afterPath="$PROJECT_DIR$/oceanmin/modules/views/layouts/layout1.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oceanmin/modules/views/product/add.php" afterPath="$PROJECT_DIR$/oceanmin/modules/views/product/add.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oceanmin/views/aboutus/news.php" afterPath="$PROJECT_DIR$/oceanmin/views/aboutus/news.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oceanmin/views/contactus/index.php" afterPath="$PROJECT_DIR$/oceanmin/views/contactus/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oceanmin/views/home/index.php" afterPath="$PROJECT_DIR$/oceanmin/views/home/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oceanmin/views/layouts/layout1.php" afterPath="$PROJECT_DIR$/oceanmin/views/layouts/layout1.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oceanmin/views/product/detail.php" afterPath="$PROJECT_DIR$/oceanmin/views/product/detail.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oceanmin/views/product/index.php" afterPath="$PROJECT_DIR$/oceanmin/views/product/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oceanmin/views/support/faq.php" afterPath="$PROJECT_DIR$/oceanmin/views/support/faq.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oceanmin/web/css/home.css" afterPath="$PROJECT_DIR$/oceanmin/web/css/home.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oceanmin/web/css/main.css" afterPath="$PROJECT_DIR$/oceanmin/web/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oceanmin/web/js/main.js" afterPath="$PROJECT_DIR$/oceanmin/web/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oceanmin/web/mobile/css/news.css" afterPath="$PROJECT_DIR$/oceanmin/web/mobile/css/news.css" />
     </list>
     <ignored path="WebShelf.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,10 +39,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="layout1.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="layout1.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/oceanmin/views/layouts/layout1.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.4375">
+            <state vertical-scroll-proportion="3.0927272">
               <caret line="63" column="95" selection-start-line="63" selection-start-column="87" selection-end-line="63" selection-end-column="95" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -64,28 +64,23 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/oceanmin/views/home/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.4375">
-              <caret line="154" column="18" selection-start-line="154" selection-start-column="18" selection-end-line="154" selection-end-column="18" />
+            <state vertical-scroll-proportion="-3.625">
+              <caret line="89" column="36" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="36" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-                <element signature="n#div#4;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-                <element signature="n#div#5;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-                <element signature="n#div#6;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="swiper.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="swiper.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/oceanmin/web/css/swiper.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.38505748">
-              <caret line="154" column="257" selection-start-line="154" selection-start-column="257" selection-end-line="154" selection-end-column="257" />
+            <state vertical-scroll-proportion="-12.1875">
+              <caret line="161" column="279" selection-start-line="161" selection-start-column="279" selection-end-line="161" selection-end-column="279" />
               <folding>
                 <element signature="e#3476#3734#2" expanded="true" />
+                <element signature="e#4654#4912#2" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -124,8 +119,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/oceanmin/views/product/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.96875">
-              <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+            <state vertical-scroll-proportion="7.59375">
+              <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -161,8 +156,8 @@
         <option value="$PROJECT_DIR$/oceanmin/web/css/main.css" />
         <option value="$PROJECT_DIR$/oceanmin/views/support/faq.php" />
         <option value="$PROJECT_DIR$/oceanmin/views/product/index.php" />
-        <option value="$PROJECT_DIR$/oceanmin/views/home/index.php" />
         <option value="$PROJECT_DIR$/oceanmin/web/css/swiper.css" />
+        <option value="$PROJECT_DIR$/oceanmin/views/home/index.php" />
       </list>
     </option>
   </component>
@@ -552,7 +547,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1370" height="744" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24774775" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -597,12 +592,6 @@
           <caret line="169" column="21" selection-start-line="169" selection-start-column="21" selection-end-line="169" selection-end-column="21" />
           <folding>
             <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-            <element signature="n#div#5;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-            <element signature="n#div#6;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -671,12 +660,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-            <element signature="n#div#5;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-            <element signature="n#div#6;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -751,12 +734,6 @@
           <caret line="104" column="51" selection-start-line="104" selection-start-column="51" selection-end-line="104" selection-end-column="51" />
           <folding>
             <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-            <element signature="n#div#5;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-            <element signature="n#div#6;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -913,16 +890,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/oceanmin/views/layouts/layout1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.4375">
-          <caret line="63" column="95" selection-start-line="63" selection-start-column="87" selection-end-line="63" selection-end-column="95" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/oceanmin/web/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -944,26 +911,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/oceanmin/web/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.9375">
-          <caret line="100" column="17" selection-start-line="100" selection-start-column="17" selection-end-line="100" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/oceanmin/views/support/faq.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.4375">
           <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oceanmin/views/product/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.96875">
-          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
           <folding />
         </state>
       </provider>
@@ -989,28 +940,49 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/oceanmin/views/home/index.php">
+    <entry file="file://$PROJECT_DIR$/oceanmin/web/css/swiper.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.4375">
-          <caret line="154" column="18" selection-start-line="154" selection-start-column="18" selection-end-line="154" selection-end-column="18" />
+        <state vertical-scroll-proportion="-12.1875">
+          <caret line="161" column="279" selection-start-line="161" selection-start-column="279" selection-end-line="161" selection-end-column="279" />
           <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-            <element signature="n#div#5;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-            <element signature="n#div#6;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
+            <element signature="e#3476#3734#2" expanded="true" />
+            <element signature="e#4654#4912#2" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/oceanmin/web/css/swiper.css">
+    <entry file="file://$PROJECT_DIR$/oceanmin/web/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38505748">
-          <caret line="154" column="257" selection-start-line="154" selection-start-column="257" selection-end-line="154" selection-end-column="257" />
+        <state vertical-scroll-proportion="-9.9375">
+          <caret line="100" column="17" selection-start-line="100" selection-start-column="17" selection-end-line="100" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oceanmin/views/home/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.625">
+          <caret line="89" column="36" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="36" />
           <folding>
-            <element signature="e#3476#3734#2" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oceanmin/views/product/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="7.59375">
+          <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oceanmin/views/layouts/layout1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.0927272">
+          <caret line="63" column="95" selection-start-line="63" selection-start-column="87" selection-end-line="63" selection-end-column="95" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

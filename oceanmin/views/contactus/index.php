@@ -26,7 +26,7 @@
         </div>
         <div class="col-lg-6">
             <div class="map_pic">
-                <img src="<?php echo $company['cover']?>" alt="">
+                <img src="/<?php echo $company['cover']?>" alt="">
             </div>
         </div>
     </div>

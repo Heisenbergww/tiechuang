@@ -7,9 +7,9 @@ use yii\filters\PageCache;
 <head>
     <meta charset="UTF-8">
     <meta name="csrf-token" content="<?= Yii::$app->request->csrfToken ?>"/>
-    <meta name="Keywords" Content="gtmbike,GTMBike,bike,gtm,GTM,bikes,bicycles,mountain bikes,road bikes"/>
-    <meta name="description" Content="GTMBike is a premier brand of fold bikes, road bikes, mountain bikes."/>
-    <title>GTM Bike</title>
+    <meta name="Keywords" Content="ercolego"/>
+    <meta name="description" Content="ercolego"/>
+    <title>Ercolego</title>
     <link type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="/css/normal.css">
     <link rel="stylesheet" href="/css/main.css">

@@ -5,7 +5,7 @@ use yii\filters\PageCache;
 <!DOCTYPE html>
 <html>
 <head>
-    <title>GTMBike- 后台管理</title>
+    <title>Ercolego- 后台管理</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link type="image/x-icon" href="favicon.ico">
@@ -46,7 +46,7 @@ use yii\filters\PageCache;
                 <span class="icon-bar"></span>
             </button>
             
-            <a class="brand" href="" style="font-weight:700;font-family:Microsoft Yahei">GTMBike - 后台管理</a>
+            <a class="brand" href="" style="font-weight:700;font-family:Microsoft Yahei">Ercolego - 后台管理</a>
 
             <ul class="nav pull-right">                
                 <li class="dropdown">

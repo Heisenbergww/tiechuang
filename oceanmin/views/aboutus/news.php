@@ -1,4 +1,3 @@
-<link href="/assets/admin/css/bootstrap/bootstrap.css" rel="stylesheet" />
 <link rel="stylesheet" href="/css/news.css">
 <!--主体部分-->
 <section class="section1 clearfix big_bg_menu ">

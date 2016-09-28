@@ -136,20 +136,6 @@
                             <img width="150px" src="/<?php echo $model->cover;?>">
                             <?php endif;?>
                             <hr>
-                            <?php  echo $form->field($model, 'pdf')->fileInput(['class' => 'span9','accept'=>'application/pdf']);?>
-                            <?php if (!empty($model->pdf)):?>
-                            <div style="margin-bottom: 60px">
-                                <a target="_blank" href="/<?php echo $model->pdf;?>">PDF</a>
-                            </div>
-                            <?php endif;?>
-                            <?php  echo $form->field($model, 'instructions')->fileInput(['class' => 'span9','accept'=>'image/*']);?>
-                            <?php if (!empty($model->instructions)):?>
-                                <div style="margin-bottom: 60px">
-                                    <img width="150" src="/<?php echo $model->instructions;?>" alt="">
-                                </div>
-                            <?php endif;?>
-
-                            <hr>
                             <?php echo $form->field($model, 'pics[]')->fileInput(['class' => 'span9', 'accept'=>'image/*','multiple' => true,]);
                                 ?>
                             <?php

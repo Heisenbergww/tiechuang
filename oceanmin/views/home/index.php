@@ -99,54 +99,6 @@ use yii\filters\PageCache;
                             </div>
                         </a>
                     </div>
-                    <div class="swiper-slide">
-                        <a href="">
-                            <div class="you_may_buy">
-                                <img height="" src="<?php echo $pro['cover']?>" alt="">
-                                <p><?php echo $pro['title']?></p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="">
-                            <div class="you_may_buy">
-                                <img height="" src="<?php echo $pro['cover']?>" alt="">
-                                <p><?php echo $pro['title']?></p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="">
-                            <div class="you_may_buy">
-                                <img height="" src="<?php echo $pro['cover']?>" alt="">
-                                <p><?php echo $pro['title']?></p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="">
-                            <div class="you_may_buy">
-                                <img height="" src="<?php echo $pro['cover']?>" alt="">
-                                <p><?php echo $pro['title']?></p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="">
-                            <div class="you_may_buy">
-                                <img height="" src="<?php echo $pro['cover']?>" alt="">
-                                <p><?php echo $pro['title']?></p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="">
-                            <div class="you_may_buy">
-                                <img height="" src="<?php echo $pro['cover']?>" alt="">
-                                <p><?php echo $pro['title']?></p>
-                            </div>
-                        </a>
-                    </div>
                     <?php endforeach;?>
                 </div>
                 <!-- 如果需要导航按钮 -->

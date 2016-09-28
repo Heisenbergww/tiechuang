@@ -9,3 +9,6 @@
 
 
 项目屏蔽了index.php文件，上线需解开
+
+
+后台地址  http://www.xxxxx.com/admin/public/login.html
