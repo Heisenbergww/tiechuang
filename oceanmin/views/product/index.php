@@ -45,11 +45,11 @@
                 <div class="col-lg-12 business-contact" >
                     <div class="business-contact_ctrl">
                         <h5>Contact Us</h5>
-                        <p><span>Company Name：</span>BILL & FOX LIMITED</p>
-                        <p><span>Email：</span>GTM@beforeship.com</p>
-                        <p><span>TEL：</span>+86 22 59652829</p>
-                        <p><span>Fax：</span>+86 22 59652829</p>
-                        <p><span>Mobile：</span>+86 18602267830</p>
+                        <p><span>Company Name：</span><?php echo $company['companyname']?></p>
+                        <p><span>Email：</span><?php echo $company['companyemail']?></p>
+                        <p><span>TEL：</span><?php echo $company['companytel']?>9</p>
+                        <p><span>Fax：</span><?php echo $company['companyfax']?></p>
+                        <p><span>Mobile：</span><?php echo $company['companymobile']?></p>
                         <img src="/img/二维码.png" alt="">
                     </div>
                 </div>

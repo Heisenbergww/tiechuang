@@ -6,6 +6,7 @@ use yii\web\Controller;
 use yii\data\Pagination;
 use app\models\Category;
 use app\models\Product;
+use app\models\Company;
 use Yii;
 use app\controllers\CommonController;
 
@@ -21,7 +22,9 @@ class ProductController extends CommonController
 		}else{
 			$products = Product::find()->asArray()->all();
 		}
-		return $this->render('index',['menu'=>$menu,'products'=>$products]);
+		$company = Company::find()->asArray()->one();
+		//var_dump($company);
+		return $this->render('index',['menu'=>$menu,'products'=>$products,'company'=>$company]);
 	}
 
 	public function actionDetail()
