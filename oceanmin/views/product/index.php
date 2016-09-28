@@ -24,7 +24,9 @@
         <div class="col-lg-3 business-left ">
             <div class="row ">
                 <div class="col-lg-12 business-left-title">
+                    <a href="<?php echo yii\helpers\Url::to(['product/index']) ?>">
                     <h3>All Products</h3>
+                    </a>
                 </div>
                 <?php foreach($menu as $m):?>
                 <div class="col-lg-12 business-one">

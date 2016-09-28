@@ -96,7 +96,7 @@ use yii\filters\PageCache;
             <div class="owl-carousel owl-theme ppt" id="owl-carousel_second">
                 <?php foreach($product as $pro):?>
                 <div class="item">
-                    <a href="">
+                    <a href="<?php echo yii\helpers\Url::to(['product/detail', 'productid' => $pro['productid']]) ?>">
                         <div class="you_may_buy">
                             <img height="" src="<?php echo $pro['cover']?>" alt="">
                             <p><?php echo $pro['title']?></p>

@@ -13,7 +13,7 @@ class ProductController extends Controller
     // 富文本编辑器设置
     public function actions()
     {
-        return ['upload' => ['class' => 'kucha\ueditor\UEditorAction', 'config' => ["imageUrlPrefix" => $_SERVER['HTTP_HOST'], //图片访问路径前缀
+        return ['upload' => ['class' => 'kucha\ueditor\UEditorAction', 'config' => ["imageUrlPrefix" => 'http://'.$_SERVER['HTTP_HOST'], //图片访问路径前缀
             "imagePathFormat" => "/uploads/products/{yyyy}{mm}{dd}/{time}{rand:6}"
             //上传保存路径
         ],]];
