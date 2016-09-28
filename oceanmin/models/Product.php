@@ -27,7 +27,7 @@ class Product extends ActiveRecord
             ['features', 'required', 'message' => '商品特点不能为空'],
             ['description', 'required', 'message' => '商品简介不能为空'],
             [['pics','sku','createtime','is_tui'],'safe'],
-            [['cover','pdf','instructions'], 'required'],
+            [['cover'], 'required'],
         ];
     }
 
@@ -40,8 +40,6 @@ class Product extends ActiveRecord
             'sku'  => 'sku',
             'features'  => '商品特点',
             'description'  => '商品简介',
-            'pdf'  => 'pdf',
-            'instructions'  => 'instructions',
             'is_tui'  => '是否推荐',
             'cover'  => '商品封面',
             'pics'   => '商品图片',

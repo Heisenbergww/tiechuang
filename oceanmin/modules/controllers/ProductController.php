@@ -57,19 +57,7 @@ class ProductController extends Controller
             $products->cover->saveAs('uploads/products/' . $imageName);
             $post['Product']['cover'] = 'uploads/products/' . $imageName;
             // 存一张图片结束
-            // 存pdf开始
-            $products->pdf = UploadedFile::getInstance($products, 'pdf');
-            $pdfName = mt_rand(10000, 99999) . uniqid() . '.' . $products->pdf->extension;
-            $products->pdf->saveAs('uploads/pdf/' . $pdfName);
-            $post['Product']['pdf'] = 'uploads/pdf/' . $pdfName;
-            // 存pdf结束
-            // 存instructions开始
-            $products->instructions = UploadedFile::getInstance($products, 'instructions');
-            $instructionsName = mt_rand(10000, 99999) . uniqid() . '.' . $products->instructions->extension;
-            $products->instructions->saveAs('uploads/pdf/' . $instructionsName);
-            $post['Product']['instructions'] = 'uploads/pdf/' . $instructionsName;
-            // 存instructions结束
-            //var_dump($post);die;
+
             $post['Product']['createtime'] = time();
             $post['Product']['pics'] = $picImage;
             if ($products->add($post)) {
