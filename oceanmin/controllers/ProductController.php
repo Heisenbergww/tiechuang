@@ -14,13 +14,14 @@ class ProductController extends CommonController
 	public function actionIndex()
 	{
 		$this->layout = 'layout1';
-		$cate = Category::find()->where(['parentid'=>'0'])->asArray()->all();
-		$products = Category::find()->where(['parentid'=>'0'])->asArray()->all();
-		for ($i=0; $i < count($products); $i++) { 
-			$product = Product::find()->where(['cateid'=>$cate[$i]['cateid']])->asArray()->all();
-			$products[$i]['product'] = $product;
+		$menu = Category::getMenu();
+		$cateid = Yii::$app->request->get('cateid');
+		if ($cateid) {
+			$products = Product::find()->where(['cateid'=>$cateid])->asArray()->all();
+		}else{
+			$products = Product::find()->asArray()->all();
 		}
-		return $this->render('index',['cate'=>$cate,'products'=>$products]);
+		return $this->render('index',['menu'=>$menu,'products'=>$products]);
 	}
 
 	public function actionDetail()

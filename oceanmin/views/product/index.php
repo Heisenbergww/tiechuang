@@ -26,44 +26,20 @@
                 <div class="col-lg-12 business-left-title">
                     <h3>All Products</h3>
                 </div>
+                <?php foreach($menu as $m):?>
                 <div class="col-lg-12 business-one">
                     <div class="business-name" >
-                        <h3>2 Tier Wire Shelving Rack <span><img src="/img/Path%203.png" alt=""></span></h3>
+                        <h3><?php echo $m['title']?><span><img src="/img/Path%203.png" alt=""></span></h3>
                         <hr>
                     </div>
                     <div class="business-content">
-                        <a href=""><span><img src="img/triangle_green.png" alt="" class="triangle_green"></span><p>lorem</p></a>
-                        <a href=""><p>lorem</p></a>
-                        <a href=""><p>lorem</p></a>
-                        <a href=""><p>lorem</p></a>
+                        <?php foreach($m['children'] as $cate):?>
+                        <a href="<?php echo yii\helpers\Url::to(['product/index', 'cateid' => $cate['cateid']]) ?>"><p><?php echo $cate['title']?></p></a>
+                        <?php endforeach;?>
                     </div>
                 </div>
-                <div class="col-lg-12 business-one">
-                    <div class="business-name" >
-                        <h3>焦炭业务 <span><img src="/img/Path%203.png" alt=""></span></h3>
-                        <hr>
-                    </div>
-                    <div class="business-content">
-                        <p><a href="">焦炭业务1</a></p>
-                        <p><a href="">焦炭业务2</a></p>
-                        <p><a href="">焦炭业务3</a></p>
-                        <p><a href="">焦炭业务4</a></p>
-                        <p><a href="">焦炭业务5</a></p>
-                    </div>
-                </div>
-                <div class="col-lg-12 business-one">
-                    <div class="business-name" >
-                        <h3>矿产业务<span><img src="/img/Path%203.png" alt=""></span></h3>
-                        <hr>
-                    </div>
-                    <div class="business-content">
-                        <p><a href="">矿产业务1</a></p>
-                        <p><a href="">矿产业务2</a></p>
-                        <p><a href="">矿产业务3</a></p>
-                        <p><a href="">矿产业务4</a></p>
-                        <p><a href="">矿产业务5</a></p>
-                    </div>
-                </div>
+               <?php endforeach;?>
+               
                 <div class="col-lg-12 business-contact" >
                     <div class="business-contact_ctrl">
                         <h5>Contact Us</h5>
@@ -79,54 +55,16 @@
         </div>
         <div class="col-lg-9 business-right">
             <div class="row business-pic clearfix">
+                <?php foreach($products as $pro):?>
                 <div class="col-lg-4 business-pic-son">
-                    <a href="item.html">
+                    <a href="<?php echo yii\helpers\Url::to(['product/detail', 'productid' => $pro['productid']]) ?>">
                         <div class="product_item_pic">
-                            <img src="/img/1.png" alt="">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, delectus?</p>
+                            <img src="/<?php echo $pro['cover']?>" alt="">
+                            <p><?php echo $pro['title']?></p>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 business-pic-son">
-                    <a href="item.html">
-                        <div class="product_item_pic">
-                            <img src="/img/1.png" alt="">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, delectus?</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 business-pic-son">
-                    <a href="item.html">
-                        <div class="product_item_pic">
-                            <img src="/img/1.png" alt="">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, delectus?</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 business-pic-son">
-                    <a href="item.html">
-                        <div class="product_item_pic">
-                            <img src="/img/1.png" alt="">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, delectus?</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 business-pic-son">
-                    <a href="item.html">
-                        <div class="product_item_pic">
-                            <img src="/img/1.png" alt="">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, delectus?</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 business-pic-son">
-                    <a href="item.html">
-                        <div class="product_item_pic">
-                            <img src="/img/1.png" alt="">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, delectus?</p>
-                        </div>
-                    </a>
-                </div>
+                <?php endforeach;?>
             </div>
 
 
