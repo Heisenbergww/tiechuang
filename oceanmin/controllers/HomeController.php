@@ -15,7 +15,7 @@ class HomeController extends CommonController
 		return [
 			[
 				'class'=>'yii\filters\HttpCache',
-				'lastModified'=>function(){
+				'lastModified'=>function($action, $params){
 					$count1 = (new \yii\db\Query())->from('ocean_carousel')->count();
 					$count2 = (new \yii\db\Query())->from('ocean_product')->count();
 					// 产品数量和轮播图数量发生变化这不会用缓存
