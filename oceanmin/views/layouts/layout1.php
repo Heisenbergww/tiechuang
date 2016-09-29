@@ -77,7 +77,6 @@ use yii\filters\PageCache;
 <?php $this->endCache();}?>
 
 <?php echo $content;?>
-<?php if($this->beginCache('cache_layout_footer_qiantai')){?>
     <footer class="clearfix">
         <div class="container-fluid info-bottom clearfix footer">
             <div class="row">
@@ -160,4 +159,3 @@ use yii\filters\PageCache;
 
     </body>
     </html>
-    <?php $this->endCache();}?>
