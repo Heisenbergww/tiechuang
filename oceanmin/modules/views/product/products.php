@@ -24,7 +24,7 @@
                             <th class="span2 sortable">
                                 <span class="line"></span>sku
                             </th>
-                             <th class="span1 sortable">
+                             <th class="span2 sortable">
                                 <span class="line"></span>是否推荐
                             </th>
                             <th class="span2 sortable">

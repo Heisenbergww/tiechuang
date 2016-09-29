@@ -49,9 +49,9 @@
                             <td><?php echo $manager->adminid;?></td>
                             <td><?php echo $manager->adminuser;?></td>
                             <td><?php echo $manager->adminemail;?></td>
-                            <td><?php echo date('Y-m-d H:i;s',$manager->logintime);?></td>
+                            <td><?php echo date('Y-m-d H:i:s',$manager->logintime);?></td>
                             <td><?php echo long2ip($manager->loginip);?></td>
-                            <td><?php echo date('Y-m-d H:i;s',$manager->createtime);?></td>
+                            <td><?php echo date('Y-m-d H:i:s',$manager->createtime);?></td>
                             <td class="align-right">
                             <?php if($manager->adminuser!='admin'){?>
                                 <a href="<?php echo yii\helpers\Url::to(['manage/del','adminid'=>$manager->adminid]);?>">删除</a></td>

@@ -6,7 +6,7 @@ use yii\helpers\Html;
 <html class="login-bg">
     
     <head>
-        <title>GTMBike - 后台管理</title>
+        <title>Ercolego - 后台管理</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- bootstrap -->
         <link href="/assets/admin/css/bootstrap/bootstrap.css" rel="stylesheet" />
@@ -36,7 +36,7 @@ use yii\helpers\Html;
             ]);?>
                 <div class="span4 box">
                     <div class="content-wrap">
-                        <h6>GTMBike - 找回密码</h6>
+                        <h6>Ercolego - 找回密码</h6>
                         <?php if(Yii::$app->session->hasFlash('info')){
                             echo Yii::$app->session->getFlash('info');
                             };?>
