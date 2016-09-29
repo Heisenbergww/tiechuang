@@ -12,6 +12,22 @@ use app\controllers\CommonController;
 
 class ProductController extends CommonController
 {
+	public function behaviors()
+	{
+		return [
+		[
+		'class'=>'yii\filters\HttpCache',
+		'only' => ['index'],
+		'lastModified'=>function(){
+			$count1 = (new \yii\db\Query())->from('ocean_product')->count();
+			// 产品数量和轮播图数量发生变化这不会用缓存
+			$count = $count1 + 1;
+			return $count;
+		}
+		]
+		];
+	}
+	
 	public function actionIndex()
 	{
 		$this->layout = 'layout1';

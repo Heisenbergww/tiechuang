@@ -1,7 +1,3 @@
-<?php 
-use yii\filters\PageCache;
-?>
-<?php if($this->beginCache('cache_layout_header_qiantai')){?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -74,7 +70,6 @@ use yii\filters\PageCache;
         </div>
         
     </header>
-<?php $this->endCache();}?>
 
 <?php echo $content;?>
     <footer class="clearfix">
