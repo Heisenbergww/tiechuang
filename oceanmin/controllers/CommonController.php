@@ -10,6 +10,9 @@ class CommonController extends Controller
 {
     public function init()
     {
+        // footer的数据
+        $footer = Social::find()->where('id = :id', [':id' => '1'])->one();
+        $this->view->params['footer'] = $footer;
         if (!empty($_COOKIE['lang'])) {
             $lang = $_COOKIE['lang'];
         } else {
@@ -22,14 +25,10 @@ class CommonController extends Controller
         }
         $tmp = self::isMobile();
         if ($tmp) {
-            return $this->redirect('./index.php/mobile/home/index.html');
+            return $this->redirect('/mobile/home/index.html');
         } else {
         	
         }
-        // footer的数据
-        $footer = Social::find()->where('id = :id', [':id' => '1'])->one();
-        $this->view->params['footer'] = $footer;
-
     }
 
 

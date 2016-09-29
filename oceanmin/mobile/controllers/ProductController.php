@@ -7,9 +7,9 @@ use yii\data\Pagination;
 use app\models\Category;
 use app\models\Product;
 use Yii;
-use app\controllers\CommonController;
+use app\mobile\controllers\CommonController;
 
-class ProductController extends Controller
+class ProductController extends CommonController
 {
 	public function actionIndex()
 	{

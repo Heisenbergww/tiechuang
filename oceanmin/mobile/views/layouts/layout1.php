@@ -5,8 +5,7 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <meta name="Keywords" Content="gtmbike,GTMBike,gtm,GTM,bike,bikes,bicycles,mountain bikes,road bikes,fold bikes"/>
     <meta name="description" Content="GTMBike is a premier brand of fold bikes, road bikes, mountain bikes."/>
-    <title>GTM Bike</title>
-    <title>home</title>
+    <title>Ercolego</title>
     <link rel="stylesheet" href="/mobile/css/main.css">
     <link rel="stylesheet" href="/mobile/css/font-awesome.min.css">
     <script src="/mobile/js/jquery-3.1.0.min.js"></script>
@@ -48,27 +47,27 @@
             <h3>FOLLOW US</h3>
             <div class="social">
                 <div class="social_icon ">
-                    <a target="_blank" href="https://www.facebook.com/GTM.Bike/">
+                    <a target="_blank" href="<?php echo $this->params['footer']['facebook'];?>">
                         <img src="/mobile/img/fb_.png" alt="">
                     </a>
                 </div>
                 <div class="social_icon ">
-                    <a target="_blank" href="https://twitter.com/BikeGTM ">
+                    <a target="_blank" href="<?php echo $this->params['footer']['twitter'];?>">
                         <img src="/mobile/img/tw_.png" alt="">
                     </a>
                 </div>
                 <div class="social_icon ">
-                    <a target="_blank" href="https://cn.linkedin.com/in/gtmbike">
+                    <a target="_blank" href="<?php echo $this->params['footer']['linkedin'];?>">
                         <img src="/mobile/img/li_.png" alt="">
                     </a>
                 </div>
                 <div class="social_icon ">
-                    <a target="_blank" href="https://www.youtube.com/channel/UCizTI6EIilR7kh0_ipxZmmA">
+                    <a target="_blank" href="<?php echo $this->params['footer']['youtube'];?>">
                         <img src="/mobile/img/ytb_.png" alt="">
                     </a>
                 </div>
                 <div class="social_icon ">
-                    <a target="_blank" href="http://www.instagram.com/gtmbike/">
+                    <a target="_blank" href="<?php echo $this->params['footer']['instagram'];?>">
                         <img src="/mobile/img/ins_.png" alt="">
                     </a>
                 </div>

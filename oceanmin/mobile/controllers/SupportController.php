@@ -6,9 +6,9 @@ use yii\web\Controller;
 use app\models\Category;
 use app\models\Product;
 use Yii;
-use app\controllers\CommonController;
+use app\mobile\controllers\CommonController;
 
-class SupportController extends Controller
+class SupportController extends CommonController
 {
 	public function actionIndex()
 	{
