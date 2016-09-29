@@ -5,7 +5,7 @@ use Yii;
 use yii\web\Controller;
 use app\mobile\controllers\CommonController;
 
-class FashionController extends Controller
+class FashionController extends CommonController
 {
 	public function behaviors()
 	{

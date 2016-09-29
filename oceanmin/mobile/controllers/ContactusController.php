@@ -9,7 +9,7 @@ use app\models\Message;
 use app\models\Company;
 use app\mobile\controllers\CommonController;
 
-class ContactusController extends Controller
+class ContactusController extends CommonController
 {
 	public function actionIndex()
 	{

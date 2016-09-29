@@ -9,7 +9,7 @@ use app\models\Product;
 use Yii;
 use app\mobile\controllers\CommonController;
 
-class ProductController extends Controller
+class ProductController extends CommonController
 {
 	public function actionIndex()
 	{

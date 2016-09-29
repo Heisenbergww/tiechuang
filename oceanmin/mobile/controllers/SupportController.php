@@ -8,7 +8,7 @@ use app\models\Product;
 use Yii;
 use app\mobile\controllers\CommonController;
 
-class SupportController extends Controller
+class SupportController extends CommonController
 {
 	public function actionIndex()
 	{

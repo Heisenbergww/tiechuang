@@ -8,7 +8,7 @@ use app\models\Article;
 use Yii;
 use app\mobile\controllers\CommonController;
 
-class AboutusController extends Controller
+class AboutusController extends CommonController
 {
 	public function actionIndex()
 	{
