@@ -35,6 +35,7 @@ class OtherController extends CommonController
             } else {
                 $post['Company']['cover'] = $image;
             }
+            $post['Company']['createtime'] = time();
             // 存一张图片结束
             if ($model->load($post) && $model->save()) {
                 Yii::$app->session->setFlash('info', '修改成功');

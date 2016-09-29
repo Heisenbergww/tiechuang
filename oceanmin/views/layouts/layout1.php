@@ -37,7 +37,7 @@
                 <div class="language_child">
                     <ul>
                         <li id="en">
-                            <p>English <span class="map"><img src="img/language.png" alt=""></span>
+                            <p>English <span class="map"><img src="/img/language.png" alt=""></span>
                             </p>
                         </li>
                     </ul>
