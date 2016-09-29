@@ -19,10 +19,8 @@ class HomeController extends CommonController
 					$count1 = (new \yii\db\Query())->from('ocean_carousel')->count();
 					$count2 = (new \yii\db\Query())->from('ocean_product')->count();
 					// 产品数量和轮播图数量发生变化这不会用缓存
-					$count = $count1 + $count2;
-					 if ($count) {
-					 	return $count;
-					 }
+					$count = $count1 + $count2 + 1;
+					return $count;
 				}
 			]
 		];
