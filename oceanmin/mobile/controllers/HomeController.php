@@ -8,7 +8,7 @@ use app\models\Home;
 use app\mobile\controllers\CommonController;
 use app\models\Product;
 
-class HomeController extends CommonController
+class HomeController extends Controller
 {
 	public function behaviors()
 	{

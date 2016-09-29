@@ -25,7 +25,7 @@ class CommonController extends Controller
         }
         $tmp = self::isMobile();
         if ($tmp) {
-            return $this->redirect('/mobile/home/index.html');
+           // return $this->redirect('/mobile/home/index.html');
         } else {
         	
         }
