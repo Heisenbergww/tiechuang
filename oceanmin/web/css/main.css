@@ -652,3 +652,42 @@ footer{
   -moz-border-radius-topright: 4px;
   -moz-border-radius-bottomright: 4px;
 }
+
+//overrrides
+.pagination ul > li:last-child > a,
+.pagination ul > li:last-child > span,
+.pagination ul > li:first-child > a,
+.pagination ul > li:first-child > span{
+    color: #bcc6d3;
+}
+.pagination ul > li:last-child > a:hover,
+.pagination ul > li:last-child > span:hover,
+.pagination ul > li:first-child > a:hover,
+.pagination ul > li:first-child > span:hover{
+    color: #4f4f4f;
+}
+.pagination ul > li > a, .pagination ul > li > span{
+    border-color: #d0dde9;
+    color: #4f4f4f;
+    box-shadow: 0px 1px 0px 0px #efefef;
+    transition: background-color .1s linear;
+    -moz-transition: background-color .1s linear; /* Firefox 4 */
+    -webkit-transition: background-color .1s linear; /* Safari and Chrome */
+    -o-transition: background-color .1s linear;  /* Opera */
+}
+.pagination ul > li > a.active{
+    color: #3b9ff3;
+}
+.pagination ul > li > a:hover,
+.pagination ul > li > a:focus,
+.pagination ul > .active > a,
+.pagination ul > .active > span {
+    background-color: #f5f5f5;
+}
+
+
+
+
+
+
+
