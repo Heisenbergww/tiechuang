@@ -1,6 +1,6 @@
 /*导航的下划线*/
 .menu ul li:first-child a{
-    border-bottom:2px solid #0767bd;
+    border-bottom:2px solid #009240;
 }
 /*主体部分*/
 /*第一部分*/
@@ -93,11 +93,16 @@
     padding: 10px 10px 20px;
     border: 1px solid #efefef;
 }
+.you_may_buy:hover {
+    box-shadow: 5px 5px 30px #d8d8d8;
+}
 .you_may_buy img{
-
+    width:100%;
+    height:auto;
 }
 .you_may_buy p{
-    padding: 20px 0;
+    height:56px;
+    padding: 20px 0 0 0;
     font-size: 14px;
     color: #2D2D33;
     letter-spacing: -0.34px;
