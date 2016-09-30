@@ -34,13 +34,18 @@ class ProductController extends CommonController
 		$menu = Category::getMenu();
 		$cateid = Yii::$app->request->get('cateid');
 		if ($cateid) {
-			$products = Product::find()->where(['cateid'=>$cateid])->asArray()->all();
+			$model = Product::find();
+			$count = $model->where(['cateid'=>$cateid])->count();
+			$pager = new Pagination(['totalCount' => $count, 'pageSize' => '9']);
+			$products = $model->where(['cateid'=>$cateid])->offset($pager->offset)->limit($pager->limit)->all();
 		}else{
-			$products = Product::find()->asArray()->all();
+			$model = Product::find();
+			$count = $model->count();
+	        $pager = new Pagination(['totalCount' => $count, 'pageSize' => '9']);
+			$products = $model->offset($pager->offset)->limit($pager->limit)->all();
 		}
 		$company = Company::find()->asArray()->one();
-		//var_dump($company);
-		return $this->render('index',['menu'=>$menu,'products'=>$products,'company'=>$company]);
+		return $this->render('index',['menu'=>$menu,'products'=>$products,'company'=>$company,'pager'=>$pager]);
 	}
 
 	public function actionDetail()
