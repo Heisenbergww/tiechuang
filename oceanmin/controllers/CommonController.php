@@ -11,6 +11,17 @@ class CommonController extends Controller
     public function init()
     {
         // footer的数据
+        $flag = false;
+        $ua = $_SERVER['HTTP_USER_AGENT'];
+        if($ua == ''){
+            $flag = true;
+        }
+        if($flag){
+            header('HTTP/1.1 404 Not Found');
+            header("status: 404 Not Found");
+            echo '您的请求未通过我们的验证！';
+            exit();
+        }
         $footer = Social::find()->where('id = :id', [':id' => '1'])->one();
         $this->view->params['footer'] = $footer;
         if (!empty($_COOKIE['lang'])) {
