@@ -41,15 +41,15 @@ $config = [
              'useFileTransport' => false,           
             'transport' => [
                 'class' => 'Swift_SmtpTransport',
-                'host' => 'smtp.163.com',
-                'username' => '13927432315@163.com',
-                'password' => '163.com',
-                'port' => '25',
-                'encryption' => 'tls',
+                'host' => 'smtp.qq.com',
+                'username' => '269110068@qq.com',
+                'password' => 'drylqplxuedjbifd',
+                'port' => '465',
+                'encryption' => 'ssl',
             ],
             'messageConfig'=>[ 
                 'charset'=>'UTF-8', 
-                'from'=>['i-aa-i@163.com'=>'mall'] 
+                'from'=>['269110068@qq.com'=>'mall'] 
             ], 
         ],
         'i18n' => [ 
