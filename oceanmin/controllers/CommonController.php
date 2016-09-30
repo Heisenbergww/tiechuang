@@ -22,6 +22,10 @@ class CommonController extends Controller
             echo '您的请求未通过我们的验证！';
             exit();
         }
+        if ($_SERVER['HTTP_HOST']!='www.ercolego.com') {
+             echo '您的请求未通过我们的验证！';
+            exit();
+        }
         $footer = Social::find()->where('id = :id', [':id' => '1'])->one();
         $this->view->params['footer'] = $footer;
         if (!empty($_COOKIE['lang'])) {
