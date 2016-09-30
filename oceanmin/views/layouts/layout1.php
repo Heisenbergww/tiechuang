@@ -92,7 +92,7 @@
                             <li class=""><a href="/" class=""><?php echo Yii::t('app', 'Home');?></a></li>
                             <!--<li class=""><a href="<?php echo yii\helpers\Url::to(['fashion/index'])?>" class=""><?php echo Yii::t('app', 'FASHION NOW');?></a></li>-->
                             <li><a href="<?php echo yii\helpers\Url::to(['product/index'])?>"><?php echo Yii::t('app', 'Product');?></a></li>
-                            <li class=""><a href="<?php echo yii\helpers\Url::to(['support/index'])?>"><?php echo Yii::t('app', 'Support');?></a></li>
+                            <li class=""><a href="<?php echo yii\helpers\Url::to(['support/faq'])?>"><?php echo Yii::t('app', 'Support');?></a></li>
                             <li class=""><a href="<?php echo yii\helpers\Url::to(['aboutus/index'])?>"><?php echo Yii::t('app', 'About Us');?></a></li>
                             <li><a href="<?php echo yii\helpers\Url::to(['contactus/index'])?>"><?php echo Yii::t('app', 'Contact Us');?></a></li>
                         </ul>

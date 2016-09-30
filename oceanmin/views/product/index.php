@@ -22,7 +22,7 @@
 <section class="container-fluid clearfix section2">
     <div class="row business">
         <div class="col-lg-3 business-left ">
-            <div class="row ">
+            <div class="row product_menu">
                 <div class="col-lg-12 business-left-title">
                     <a href="<?php echo yii\helpers\Url::to(['product/index']) ?>">
                     <h3>All Products</h3>
@@ -36,7 +36,15 @@
                     </div>
                     <div class="business-content">
                         <?php foreach($m['children'] as $cate):?>
-                        <a href="<?php echo yii\helpers\Url::to(['product/index', 'cateid' => $cate['cateid']]) ?>"><p><?php echo $cate['title']?></p></a>
+                        <a href="<?php echo yii\helpers\Url::to(['product/index', 'cateid' => $cate['cateid']]) ?>">
+                            <p>
+                                <!--<span>-->
+                                    <!---->
+                                <!--</span>-->
+                                <img   src="/img/triangle_green.png" alt="" class="triangle_green">
+                                <?php echo $cate['title']?>
+                            </p>
+                        </a>
                         <?php endforeach;?>
                     </div>
                 </div>
@@ -61,7 +69,7 @@
                 <div class="col-lg-4 business-pic-son">
                     <a href="<?php echo yii\helpers\Url::to(['product/detail', 'productid' => $pro['productid']]) ?>">
                         <div class="product_item_pic">
-                            <img src="/<?php echo $pro['cover']?>" alt="">
+                            <img src="/<?php echo $pro['cover']?>" alt="" >
                             <p><?php echo $pro['title']?></p>
                         </div>
                     </a>
@@ -82,7 +90,25 @@
         </div>
 </section>
 
-
+<script>
+    $(window).ready(function(){
+        var theUrl=window.location.href;
+        console.log(theUrl);
+        var ipos = theUrl.indexOf("/product");
+        str1=theUrl.substring(ipos,theUrl.length);
+        console.log(str1);
+        $(".product_menu a").each(function(){
+            if($(this).attr("href")==str1){
+                console.log($(this).attr("href"));
+                $(this).children("h3").css({"background-color":"#66BE8C","color":"#fff"});
+                $(this).children("p").children("img").css("visibility","visible");
+                $(this).parent("div").prev("div").children("h3").css({"background-color":"#66BE8C","color":"#fff"});
+                $(this).children("p").css("color","#009240");
+                $(this).parent("div").css("display","block");
+            }
+        });
+    })
+</script>
 
 
 

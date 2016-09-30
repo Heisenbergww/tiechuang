@@ -11,3 +11,4 @@ return [
     'schemaCacheDuration' => 3600,
     'schemaCache' => 'cache',
 	];
+

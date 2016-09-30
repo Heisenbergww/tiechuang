@@ -40,19 +40,19 @@ use yii\filters\PageCache;
             <?php $this->endCache();}?>
             <div class="col-lg-3 row_part_square_words">
                 <h2>SPECIAL TECHNOLOGY</h2>
-                <p>There’s some words that introduce the special technology</p>
+                <p>International advanced technology, Industrial standard </p>
                 <span>VIEW MORE</span>
             </div>
         </a>
-        <a href="<?php echo yii\helpers\Url::to(['product/index'])?>" class="row_part_square_2">
+        <a href="<?php echo yii\helpers\Url::to(['support/faq'])?>" class="row_part_square_2">
             <?php if($this->beginCache('cache_home_img2')){?>
             <div class="col-lg-3 row_part_square_img">
-                <img src="/img/home_fashion_show.png" alt="" >
+                <img src="img/home_faq.png" alt="" >
             </div>
             <?php $this->endCache();}?>
             <div class="col-lg-3 row_part_square_words">
                 <h2>F A Q</h2>
-                <p>Join us & Become a GTM player</p>
+                <p>We will help you answer questions that may be encountered</p>
                 <span>VIEW MORE</span>
             </div>
         </a>
@@ -71,7 +71,7 @@ use yii\filters\PageCache;
         <a href="<?php echo yii\helpers\Url::to(['aboutus/news'])?>" class="row_part_square_2">
             <div class="col-lg-3 row_part_square_words">
                 <h2>NEWS</h2>
-                <p>There’s some words that introduce the FAQ</p>
+                <p>Here,you will see the latest news about Ercolego</p>
                 <span href="">VIEW MORE</span>
             </div>
             <?php if($this->beginCache('cache_home_img4')){?>
@@ -86,14 +86,14 @@ use yii\filters\PageCache;
 <section class="container-fluid clearfix section3">
     <div class="row">
         <div class="col-lg-12 row_part_title">
-            <h1>SPECIAL GTMBike</h1>
+            <h1>Products Show</h1>
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <?php foreach($product as $pro):?>
                     <div class="swiper-slide">
                         <a href="<?php echo yii\helpers\Url::to(['product/detail', 'productid' => $pro['productid']]) ?>">
                             <div class="you_may_buy">
-                                <img height="100" src="/<?php echo $pro['cover']?>" alt="">
+                                <img  src="/<?php echo $pro['cover']?>" alt="">
                                 <p><?php echo $pro['title']?></p>
                             </div>
                         </a>

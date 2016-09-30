@@ -1,6 +1,6 @@
 /*导航的下划线*/
 .menu ul li:nth-child(2) a{
-    border-bottom:2px solid #0767bd;
+    border-bottom:2px solid #009240;
 }
 /*主体部分*/
 /*第0部分*/
@@ -51,14 +51,16 @@
 
 }
 .business-left-title h3{
-    padding: 14px  20px 10px 14px;
+    color: #2B2C33 ;
+    padding: 14px  10px 10px 14px;
     background: #FAFAFC;
     border-radius: 8px;
     cursor: pointer;
     margin-bottom:10px;
 }
 .business-name h3{
-    padding: 14px  20px 10px 14px;
+    color: #2B2C33;
+    padding: 14px  10px 10px 14px;
     background: #FAFAFC;
     border-radius: 8px;
     cursor: pointer;
@@ -91,26 +93,26 @@
     padding: 14px 5px 14px 0;
     text-indent: 20px;    
 }
-.business-content a span{
-    position: relative;
-}
+/*.business-content a span{*/
+    /*position: relative;*/
+/*}*/
 .triangle_green{
-    position: absolute;
+    /*position: absolute;*/
     top:17.5px;
-    display: none;
+    visibility: hidden;
 }
 .business-content a{
     color: #2B2C33;
 }
 .business-content a:hover{
-    color: #66BE8C;
+    color: #009240;
 }
 .business-content a:active{
-    color: #66BE8C;
+    color: #009240;
 }
 /*商业联系*/
 .business-contact{
-    border: 1px solid #66BE8C;
+    border: 1px solid #009240;
     padding: 20px 10px 30px;
     margin-top: 147px;
 }
@@ -123,7 +125,7 @@
     padding: 9px 0;
 }
 .business-contact p span{
-    color: #66676E;
+    color: #66676e;
 }
 .business-contact p:last-of-type{
     margin-bottom:20px;
@@ -136,6 +138,9 @@
     border: 1px solid #D8D8D8;
     padding: 10px 10px 20px;
 }
+.product_item_pic:hover{
+    box-shadow: 5px 5px 30px #d8d8d8;
+}
 .business-right img{
     width: 100%;
     height: auto;
@@ -145,6 +150,7 @@
     margin-bottom:40px;
 }
 .business-pic-son p{
+    height: 36px;
     font-size: 14px;
     color: #2D2D33;
     letter-spacing: -0.34px;
