@@ -36,7 +36,7 @@
                 <h5>Features:</h5>
               <?php echo $product['features']?>
                 <div class="item_info_call_me">
-                    <a href="mailto:GTM@beforeship.com">Contact Us</a>
+                    <a href="mailto:Ercole@beforeship.com">Contact Us</a>
                     <p>If you have any questions please contact me, we are sure any of your questions will get our prompt attention and reply.</p>
                 </div>
             </div>
