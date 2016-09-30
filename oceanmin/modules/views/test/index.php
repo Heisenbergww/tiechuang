@@ -6,7 +6,7 @@ use yii\helpers\Html;
 <html class="login-bg">
     
     <head>
-        <title>oceanmin - 后台管理</title>
+        <title>Ercolego - 后台管理</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- bootstrap -->
         <link href="/assets/admin/css/bootstrap/bootstrap.css" rel="stylesheet" />

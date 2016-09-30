@@ -26,6 +26,7 @@ class Product extends ActiveRecord
             ['cateid', 'required', 'message' => '分类不能为空'],
             ['features', 'required', 'message' => '商品特点不能为空'],
             ['description', 'required', 'message' => '商品简介不能为空'],
+            ['is_tui', 'required', 'message' => '商品简介不能为空'],
             [['pics','sku','createtime','is_tui'],'safe'],
             [['cover'], 'required'],
         ];

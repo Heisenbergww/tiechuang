@@ -35,7 +35,7 @@ use yii\filters\PageCache;
         <a href="<?php echo yii\helpers\Url::to(['aboutus/technology'])?> " class="row_part_square_2">
             <?php if($this->beginCache('cache_home_img1')){?>
             <div class="col-lg-3 row_part_square_img">
-                <img src="img/home_special_technology.png" alt="" >
+                <img src="/img/home_special_technology.png" alt="" >
             </div>
             <?php $this->endCache();}?>
             <div class="col-lg-3 row_part_square_words">
@@ -64,7 +64,7 @@ use yii\filters\PageCache;
             </div>
             <?php if($this->beginCache('cache_home_img3')){?>
             <div class="col-lg-3 row_part_square_img">
-                <img src="img/home_branch.jpg" alt="" >
+                <img src="/img/home_branch.jpg" alt="" >
             </div>
             <?php $this->endCache();}?>
         </a>

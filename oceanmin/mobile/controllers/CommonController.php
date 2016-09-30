@@ -3,25 +3,15 @@
 namespace app\mobile\controllers;
 
 use yii\web\Controller;
-
+use app\models\Social;
 use Yii;
 
 class CommonController extends Controller
 {
 	public function init()
 	{
-		if (!empty($_COOKIE['lang'])) {
-			$lang = $_COOKIE['lang'];
-		}else{
-			$lang = 'en';
-		}
-		
-		if ($lang=='cn') {
-			Yii::$app->language = 'cn';
-		}else{
-			Yii::$app->language = 'en';
-		}
-		
+		$footer = Social::find()->where('id = :id', [':id' => '1'])->one();
+		$this->view->params['footer'] = $footer;
 	}
 
 }

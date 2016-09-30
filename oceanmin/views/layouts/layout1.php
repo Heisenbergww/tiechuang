@@ -1,7 +1,3 @@
-<?php 
-use yii\filters\PageCache;
-?>
-<?php if($this->beginCache('cache_layout_header_qiantai')){?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,7 +37,7 @@ use yii\filters\PageCache;
                 <div class="language_child">
                     <ul>
                         <li id="en">
-                            <p>English <span class="map"><img src="img/language.png" alt=""></span>
+                            <p>English <span class="map"><img src="/img/language.png" alt=""></span>
                             </p>
                         </li>
                     </ul>
@@ -74,10 +70,8 @@ use yii\filters\PageCache;
         </div>
         
     </header>
-<?php $this->endCache();}?>
 
 <?php echo $content;?>
-<?php if($this->beginCache('cache_layout_footer_qiantai')){?>
     <footer class="clearfix">
         <div class="container-fluid info-bottom clearfix footer">
             <div class="row">
@@ -160,4 +154,3 @@ use yii\filters\PageCache;
 
     </body>
     </html>
-    <?php $this->endCache();}?>

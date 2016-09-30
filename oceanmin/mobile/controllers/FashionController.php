@@ -3,9 +3,9 @@ namespace app\mobile\controllers;
 
 use Yii;
 use yii\web\Controller;
-use app\controllers\CommonController;
+use app\mobile\controllers\CommonController;
 
-class FashionController extends Controller
+class FashionController extends CommonController
 {
 	public function behaviors()
 	{
