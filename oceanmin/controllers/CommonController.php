@@ -23,14 +23,35 @@ class CommonController extends Controller
         } else {
             Yii::$app->language = 'en';
         }
+
+        $url = \Yii::$app->request->getAbsoluteUrl();
+        $count_server = strlen('http://' . $_SERVER['HTTP_HOST'] . '/');
         $tmp = self::isMobile();
         if ($tmp) {
-            return $this->redirect('../mobile/home/index.html');
+            if ($url == 'http://' . $_SERVER['HTTP_HOST'] . '/') {
+                $url = self::insertToStr($url, $count_server, "mobile/home/index.html");
+            } else {
+                $url = self::insertToStr($url, $count_server, "mobile/");
+            }
+            return $this->redirect($url);
         } else {
-        	
+
         }
     }
 
+    private function insertToStr($str, $i, $substr)
+    {
+        $startstr = "";
+        for ($j = 0; $j < $i; $j++) {
+            $startstr .= $str[$j];
+        }
+        $laststr = "";
+        for ($j = $i; $j < strlen($str); $j++) {
+            $laststr .= $str[$j];
+        }
+        $str = $startstr . $substr . $laststr;
+        return $str;
+    }
 
     private function isMobile()
     {
