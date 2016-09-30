@@ -23,7 +23,7 @@ class CommonController extends Controller
             exit();
         }
         if ($_SERVER['HTTP_HOST']!='www.ercolego.com') {
-             echo 'Satisfied to fight, your Daye Junfeng';
+             echo 'Adopted piecemeal, I write better code';
             exit();
         }
         $footer = Social::find()->where('id = :id', [':id' => '1'])->one();
