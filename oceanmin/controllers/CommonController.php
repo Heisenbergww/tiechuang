@@ -23,7 +23,7 @@ class CommonController extends Controller
             exit();
         }
         if ($_SERVER['HTTP_HOST']!='www.ercolego.com') {
-             echo '您的请求未通过我们的验证！';
+             echo 'dashabi';
             exit();
         }
         $footer = Social::find()->where('id = :id', [':id' => '1'])->one();
