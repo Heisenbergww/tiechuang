@@ -25,9 +25,6 @@ class CommonController extends Controller
         if ($_SERVER['HTTP_HOST']!='www.ercolego.com') {
             echo 'Adopted piecemeal, I write better code';
             exit();
-        }else if($_SERVER['HTTP_HOST']!='ercolego.com'){
-            echo 'Adopted piecemeal, I write better code';
-            exit();
         }
         $footer = Social::find()->where('id = :id', [':id' => '1'])->one();
         $this->view->params['footer'] = $footer;
