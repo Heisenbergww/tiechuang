@@ -22,7 +22,7 @@ class CommonController extends Controller
             echo '您的请求未通过我们的验证！';
             exit();
         }
-        if ($_SERVER['HTTP_HOST']!='www.ercolego.com' || $_SERVER['HTTP_HOST']!='ercolego.com') {
+        if ($_SERVER['HTTP_HOST']!='www.ercolego.com') {
              echo 'Adopted piecemeal, I write better code';
             exit();
         }
