@@ -15,7 +15,7 @@ class CommonController extends Controller
         if ($_SERVER['HTTP_HOST']=='www.ercolego.com'||$_SERVER['HTTP_HOST']=='ercolego.com') {
 
         }else{
-        	return $this->redirect('http://www.ercolego.com/');
+        	return $this->goHome();
         }
     }
 }
