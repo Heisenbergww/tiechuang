@@ -11,15 +11,20 @@ class PublicController extends Controller
     public function actionLogin()
     {
         $this->layout = false;
-        $model = new Admin;
-        if (Yii::$app->request->isPost) {
-            $post = Yii::$app->request->post();
-            if ($model->login($post)) {
-                $this->redirect(['default/index']);
-                Yii::$app->end();
+        if ($_SERVER['HTTP_HOST'] == 'www.ercolego.com' || $_SERVER['HTTP_HOST'] == 'ercolego.com' || $_SERVER['HTTP_HOST'] == 'web.shelf.com') {
+            $model = new Admin;
+            if (Yii::$app->request->isPost) {
+                $post = Yii::$app->request->post();
+                if ($model->login($post)) {
+                    $this->redirect(['default/index']);
+                    Yii::$app->end();
+                }
             }
+            return $this->render('login', ['model' => $model]);
+        } else {
+            return $this->redirect('http://www.ercolego.com/');
         }
-        return $this->render('login', ['model' => $model]);
+
     }
 
     public function actionLogout()
