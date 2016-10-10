@@ -132,4 +132,7 @@
     letter-spacing: 0px;
     margin-bottom: 30px;
 }
-
+.product_descr td{
+    padding-left: 10px;
+    padding-right: 10px;
+}
