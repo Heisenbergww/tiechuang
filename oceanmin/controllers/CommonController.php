@@ -22,9 +22,9 @@ class CommonController extends Controller
             echo '您的请求未通过我们的验证！';
             exit();
         }
+        $footer = Social::find()->where('id = :id', [':id' => '1'])->one();
+        $this->view->params['footer'] = $footer;
         if ($_SERVER['HTTP_HOST']=='www.ercolego.com'||$_SERVER['HTTP_HOST']=='ercolego.com') {
-            $footer = Social::find()->where('id = :id', [':id' => '1'])->one();
-            $this->view->params['footer'] = $footer;
             if (!empty($_COOKIE['lang'])) {
                 $lang = $_COOKIE['lang'];
             } else {
@@ -50,11 +50,9 @@ class CommonController extends Controller
 
             }
         }else{
-            $footer = Social::find()->where('id = :id', [':id' => '1'])->one();
-            $this->view->params['footer'] = $footer;
             return $this->redirect('http://www.ercolego.com/');
         }
-       
+        
     }
 
     private function insertToStr($str, $i, $substr)

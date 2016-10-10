@@ -18,7 +18,11 @@ class admin extends \yii\base\Module
     public function init()
     {
         parent::init();
-
+        if ($_SERVER['HTTP_HOST']=='www.ercolego.com'||$_SERVER['HTTP_HOST']=='ercolego.com') {
+            
+        }else{
+            return $this->redirect('http://www.ercolego.com/');
+        }
         // custom initialization code goes here
     }
 }
