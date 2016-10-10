@@ -5,7 +5,7 @@ use yii\web\Controller;
 use app\modules\models\Admin;
 use Yii;
 
-class PublicController extends CommonController
+class PublicController extends Controller
 {
 
     public function actionLogin()
