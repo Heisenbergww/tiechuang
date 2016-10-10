@@ -50,8 +50,9 @@ class CommonController extends Controller
 
             }
         }else{
-            echo '777';
-            exit();
+            $footer = Social::find()->where('id = :id', [':id' => '1'])->one();
+            $this->view->params['footer'] = $footer;
+            return $this->redirect('http://www.ercolego.com/');
         }
        
     }
