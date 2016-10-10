@@ -59,7 +59,7 @@ use yii\filters\PageCache;
         <a href="<?php echo yii\helpers\Url::to(['aboutus/branch'])?>" class="row_part_square_2">
             <div class="col-lg-3 row_part_square_words">
                 <h2>OUR BRANCH</h2>
-                <p>There’s some words that introduce the our branch</p>
+                <p>There’s some words that introduce our branch</p>
                 <span href="">VIEW MORE</span>
             </div>
             <?php if($this->beginCache('cache_home_img3')){?>
@@ -71,7 +71,7 @@ use yii\filters\PageCache;
         <a href="<?php echo yii\helpers\Url::to(['aboutus/news'])?>" class="row_part_square_2">
             <div class="col-lg-3 row_part_square_words">
                 <h2>NEWS</h2>
-                <p>Here,you will see the latest news about Ercolego</p>
+                <p>Here,you will see the latest news about Ercole</p>
                 <span href="">VIEW MORE</span>
             </div>
             <?php if($this->beginCache('cache_home_img4')){?>

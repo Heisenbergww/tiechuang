@@ -47,10 +47,15 @@
     padding-bottom: 50px;
 }
 /*左侧部分********************/
+.product_menu{
+    width: 96%;
+    min-width: 233px;
+}
 .business-one{
 
 }
 .business-left-title h3{
+    font-size:14px;
     color: #2B2C33 ;
     padding: 14px  10px 10px 14px;
     background: #FAFAFC;
@@ -59,6 +64,7 @@
     margin-bottom:10px;
 }
 .business-name h3{
+    font-size:14px;
     color: #2B2C33;
     padding: 14px  10px 10px 14px;
     background: #FAFAFC;
@@ -72,13 +78,16 @@
     color: #fff;
 }
 .business-name h3 img{
+    /*vertical-align:middle;*/
+    /*margin-left:25px;*/
     float: right;
-    padding-top: 10px;
+    margin-top: 6px;
+    margin-right: 2px;
 }
 .business-name hr{
     height: 1px;
     background: #efefef;
-    width: 260px;
+    width: 100%;
     border: none;
 
 }
@@ -89,7 +98,7 @@
     margin: 0 10px 10px 10px;
 }
 .business-content p{
-    font-size: 18px;
+    font-size: 14px;
     padding: 14px 5px 14px 0;
     text-indent: 20px;    
 }
@@ -114,7 +123,7 @@
 .business-contact{
     border: 1px solid #009240;
     padding: 20px 10px 30px;
-    margin-top: 147px;
+    margin-top: 100px;
 }
 .business-contact h5{
     font-size: 18px;
@@ -135,7 +144,7 @@
 
 /*右侧部分*********************************/
 .product_item_pic{
-    border: 1px solid #D8D8D8;
+    border: 1px solid #efefef;
     padding: 10px 10px 20px;
 }
 .product_item_pic:hover{

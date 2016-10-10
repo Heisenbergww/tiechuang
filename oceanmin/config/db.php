@@ -1,14 +1,11 @@
 <?php
 
+//115.159.193.148  pass.pass0
 return [
     'class' => 'yii\db\Connection',
-	'dsn' => 'mysql:host=127.0.0.1;dbname=shelf',
-	'username' => 'root',
-	'password' => 'bike.com',
-	'charset' => 'utf8',
-	'tablePrefix' => 'ocean_',
-	'enableSchemaCache' => true,
-    'schemaCacheDuration' => 3600,
-    'schemaCache' => 'cache',
-	];
-
+      'dsn' => 'mysql:host=127.0.0.1;dbname=oceanmin',
+      'username' => 'root',
+      'password' => 'bike.com',
+      'charset' => 'utf8',
+      'tablePrefix' => 'ocean_',
+      ];

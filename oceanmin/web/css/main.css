@@ -342,7 +342,7 @@ footer{
     position: fixed;
     bottom: 80px;
     right: 40px;
-    
+    z-index: 99;
 }
 .go_top_bt{
     width: 40px;
@@ -578,8 +578,11 @@ footer{
 
 /*分页样式*/
 .pagination {
-  margin: 20px 0;
+  margin: 20px 5px 20px 0;
 }
+    .pagination a{
+        color: #009240;
+    }
 
 .pagination ul {
   display: inline-block;
@@ -651,4 +654,7 @@ footer{
           border-bottom-right-radius: 4px;
   -moz-border-radius-topright: 4px;
   -moz-border-radius-bottomright: 4px;
+}
+.pull-right{
+    float:right;
 }

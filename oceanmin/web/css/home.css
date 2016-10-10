@@ -85,13 +85,14 @@
 .row_part_title h1{
     font-size: 24px;
     font-family:DINOT-Medium;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     color: #2b2c33;
     text-align: center;
 }
 .you_may_buy{
     padding: 10px 10px 20px;
     border: 1px solid #efefef;
+    margin: 20px 0;
 }
 .you_may_buy:hover {
     box-shadow: 5px 5px 30px #d8d8d8;

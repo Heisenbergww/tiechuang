@@ -38,9 +38,6 @@
                         <?php foreach($m['children'] as $cate):?>
                         <a href="<?php echo yii\helpers\Url::to(['product/index', 'cateid' => $cate['cateid']]) ?>">
                             <p>
-                                <!--<span>-->
-                                    <!---->
-                                <!--</span>-->
                                 <img   src="/img/triangle_green.png" alt="" class="triangle_green">
                                 <?php echo $cate['title']?>
                             </p>
@@ -75,28 +72,25 @@
                     </a>
                 </div>
                 <?php endforeach;?>
-            </div>
-        </div>
-
-
-
-    </div>
-     <div class="pagination pull-right">
-            <?php echo yii\widgets\LinkPager::widget([
-                'pagination' => $pager,
-                'prevPageLabel' => '&#8249;',
-                'nextPageLabel' => '&#8250;',
-            ]); ?>
-        </div>
+                <div class="pagination pull-right">
+                    <?php echo yii\widgets\LinkPager::widget([
+                        'pagination' => $pager,
+                        'prevPageLabel' => '&#8249;',
+                        'nextPageLabel' => '&#8250;',
+                    ]); ?>
+                </div>                
+            </div           
+        </div>       
+    </div>    
 </section>
 
 <script>
     $(window).ready(function(){
         var theUrl=window.location.href;
-        console.log(theUrl);
+        // console.log(theUrl);
         var ipos = theUrl.indexOf("/product");
         str1=theUrl.substring(ipos,theUrl.length);
-        console.log(str1);
+        // console.log(str1);
         $(".product_menu a").each(function(){
             if($(this).attr("href")==str1){
                 console.log($(this).attr("href"));
@@ -106,6 +100,17 @@
                 $(this).children("p").css("color","#009240");
                 $(this).parent("div").css("display","block");
             }
+        });
+        //分页
+        $('.M-box3').pagination({            
+            totalData:1,
+            showData:4,
+            jump:true,
+            coping:true,
+            homePage:'1',
+            endPage:'End',
+            prevContent:'Prev',
+            nextContent:'Next'
         });
     })
 </script>

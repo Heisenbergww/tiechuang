@@ -1,4 +1,9 @@
-
+.middle_line{
+    margin: 20px;
+    background-color: #d8d8d8;
+    height: 1px;
+    border: none;
+}
 @media screen and (max-width: 374px){
     .section{
         padding-top: 5.6rem;

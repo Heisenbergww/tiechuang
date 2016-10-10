@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-    <meta name="Keywords" Content="gtmbike,GTMBike,gtm,GTM,bike,bikes,bicycles,mountain bikes,road bikes,fold bikes"/>
-    <meta name="description" Content="GTMBike is a premier brand of fold bikes, road bikes, mountain bikes."/>
+    <meta name="Keywords" Content="Ercolewireshelving,wireshelvinng,shelf,rack,racking,ercole"/>
+    <meta name="description" Content="Ercole is a brand of wire shelving"/>
     <title>Ercolego</title>
     <link rel="stylesheet" href="/mobile/css/main.css">
     <link rel="stylesheet" href="/mobile/css/font-awesome.min.css">
@@ -28,6 +28,7 @@
 
     <!-- 底部 -->
     <section class="footer_menu clearfix">
+        <a href="mailto:Ercole@beforeship.com"><p class="footer_menu_fa contact_us_fa">Contact Us</p></a>
         <p class="footer_menu_fa about_fa">About Us <span><img src="/mobile/img/add.png" alt=""></span></p>
         <ul class="footer_menu_child for_about">
             <li><a href="<?php echo yii\helpers\Url::to(['aboutus/index'])?>">Company Information</a></li>
