@@ -22,37 +22,36 @@ class CommonController extends Controller
             echo '您的请求未通过我们的验证！';
             exit();
         }
+        if ($_SERVER['HTTP_HOST']!='www.ercolego.com') {
+            echo 'Adopted piecemeal, I write better code';
+            exit();
+        }
         $footer = Social::find()->where('id = :id', [':id' => '1'])->one();
         $this->view->params['footer'] = $footer;
-        if ($_SERVER['HTTP_HOST']=='www.ercolego.com'||$_SERVER['HTTP_HOST']=='ercolego.com'||$_SERVER['HTTP_HOST']=='web.shelf.com'||$_SERVER['HTTP_HOST']=='shelf.com'||$_SERVER['HTTP_HOST']=='192.168.199.60') {
-            if (!empty($_COOKIE['lang'])) {
-                $lang = $_COOKIE['lang'];
-            } else {
-                $lang = 'en';
-            }
-            if ($lang == 'cn') {
-                Yii::$app->language = 'cn';
-            } else {
-                Yii::$app->language = 'en';
-            }
-
-            $url = \Yii::$app->request->getAbsoluteUrl();
-            $count_server = strlen('http://' . $_SERVER['HTTP_HOST'] . '/');
-            $tmp = self::isMobile();
-            if ($tmp) {
-                if ($url == 'http://' . $_SERVER['HTTP_HOST'] . '/') {
-                    $url = self::insertToStr($url, $count_server, "mobile/home/index.html");
-                } else {
-                    $url = self::insertToStr($url, $count_server, "mobile/");
-                }
-                return $this->redirect($url);
-            } else {
-
-            }
-        }else{
-            return $this->redirect('http://www.ercolego.com/');
+        if (!empty($_COOKIE['lang'])) {
+            $lang = $_COOKIE['lang'];
+        } else {
+            $lang = 'en';
         }
-        
+        if ($lang == 'cn') {
+            Yii::$app->language = 'cn';
+        } else {
+            Yii::$app->language = 'en';
+        }
+
+        $url = \Yii::$app->request->getAbsoluteUrl();
+        $count_server = strlen('http://' . $_SERVER['HTTP_HOST'] . '/');
+        $tmp = self::isMobile();
+        if ($tmp) {
+            if ($url == 'http://' . $_SERVER['HTTP_HOST'] . '/') {
+                $url = self::insertToStr($url, $count_server, "mobile/home/index.html");
+            } else {
+                $url = self::insertToStr($url, $count_server, "mobile/");
+            }
+            return $this->redirect($url);
+        } else {
+
+        }
     }
 
     private function insertToStr($str, $i, $substr)

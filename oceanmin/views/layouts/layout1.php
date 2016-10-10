@@ -1,3 +1,4 @@
+<?php header("Access-Control-Allow-Origin: http://www.ercolego.com/"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -91,11 +91,9 @@
             <i class="fa fa-bars fa-4x side_menu_content_bar " aria-hidden="true"></i>
             <div>
                 <p><a href="<?php echo yii\helpers\Url::to(['home/index'])?>">HOME</a></p>
-                <p><a href="<?php echo yii\helpers\Url::to(['fashion/index'])?>">FASHION NOW</a></p>
                 <p><a href="<?php echo yii\helpers\Url::to(['product/index'])?>">PRODUCT</a></p>
                 <p class="side_support_fa">SUPPROT<span><img src="/mobile/img/add.png" alt=""></span></p>
                 <ul class="side_menu_child side_for_support">
-                    <li><a href="<?php echo yii\helpers\Url::to(['support/index'])?>">Download Manual</a></li>
                     <li><a href="<?php echo yii\helpers\Url::to(['support/faq'])?>">FAQ</a></li>
                 </ul>
                 <p class="side_about_fa">ABOUT US<span><img src="/mobile/img/add.png" alt=""></span></p>

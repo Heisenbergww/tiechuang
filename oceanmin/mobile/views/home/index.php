@@ -83,6 +83,16 @@
                     </div>
                 </a>
             </div>
+            <div class="swiper-slide">
+                <a href="<?php echo yii\helpers\Url::to(['product/detail', 'productid' => $pro['productid']]) ?>">
+                    <div class="recommend">
+                        <div class="recommend_pic">
+                            <img   src="/<?php echo $pro['cover']?>" alt="">
+                        </div>
+                        <p class="recommend_word"><?php echo $pro['title']?></p>
+                    </div>
+                </a>
+            </div>
             <?php endforeach;?>
         </div>
         <!-- 如果需要导航按钮 -->
@@ -130,7 +140,11 @@
         pagination : '.swiper-pagination',
         paginationType : 'fraction',
         paginationClickable: true,
+        prevButton:'.swiper-button-prev',
+        nextButton:'.swiper-button-next',
         slidesPerView: 2,
-        slidesPerColumn: 2
+        slidesPerColumn: 2,
+        autoplay: 3000,
+        autoplayDisableOnInteraction:false
     })
 </script>
