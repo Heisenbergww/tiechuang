@@ -54,6 +54,12 @@ class ProductController extends CommonController
 		$productid = Yii::$app->request->get("productid");
 		$product = Product::find()->where('productid = :id', [':id' => $productid])->asArray()->one();
 		$product['pics'] = explode(",",$product['pics']);
+		$cateid = $product['cateid'];
+		$category_name = Category::find()->where('cateid = :id', [':id' => $cateid])->asArray()->one();
+		$product['cate_name'] = $category_name['title'];
+		$product['cate_id'] = $category_name['cateid'];
+		$category_parent_name = Category::find()->where('cateid = :id', [':id' => $category_name['parentid']])->asArray()->one();
+		$product['cate_parent_name'] = $category_parent_name['title'];
 		return $this->render("detail", ['product' => $product]);
 	}
 
