@@ -56,7 +56,7 @@
                         <p><span>TEL：</span><?php echo $company['companytel']?>9</p>
                         <p><span>Fax：</span><?php echo $company['companyfax']?></p>
                         <p><span>Mobile：</span><?php echo $company['companymobile']?></p>
-                        <img src="/img/二维码.png" alt="">
+                        <img src="/img/qrcode.png" alt="">
                     </div>
                 </div>
             </div>
