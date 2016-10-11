@@ -6,6 +6,7 @@ use yii\web\Controller;
 use yii\data\Pagination;
 use app\models\Category;
 use app\models\Product;
+use app\models\Company;
 use Yii;
 use app\mobile\controllers\CommonController;
 
@@ -14,13 +15,22 @@ class ProductController extends CommonController
 	public function actionIndex()
 	{
 		$this->layout = 'layout1';
-		$cate = Category::find()->where(['parentid'=>'0'])->asArray()->all();
-		$products = Category::find()->where(['parentid'=>'0'])->asArray()->all();
-		for ($i=0; $i < count($products); $i++) { 
-			$product = Product::find()->where(['cateid'=>$cate[$i]['cateid']])->asArray()->all();
-			$products[$i]['product'] = $product;
+		$menu = Category::getMenu();
+		$cateid = Yii::$app->request->get('cateid');
+		if ($cateid) {
+			$model = Product::find();
+			$count = $model->where(['cateid'=>$cateid])->count();
+			$pager = new Pagination(['totalCount' => $count, 'pageSize' => '9']);
+			$products = $model->where(['cateid'=>$cateid])->offset($pager->offset)->limit($pager->limit)->all();
+		}else{
+			$model = Product::find();
+			$count = $model->count();
+	        $pager = new Pagination(['totalCount' => $count, 'pageSize' => '9']);
+			$products = $model->offset($pager->offset)->limit($pager->limit)->all();
 		}
-		return $this->render('index',['cate'=>$cate,'products'=>$products]);
+		$company = Company::find()->asArray()->one();
+		//var_dump($products);die;
+		return $this->render('index',['menu'=>$menu,'products'=>$products,'company'=>$company,'pager'=>$pager]);
 	}
 
 	public function actionDetail()

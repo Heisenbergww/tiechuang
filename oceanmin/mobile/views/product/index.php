@@ -6,35 +6,40 @@
 <section class="product_menu_top">
     <div class="">
         <div class="product_menu_top_fa the_all_product">
-            <a href="" class="product_menu_top_fa_title"><h3 >All Products<span><img src="/mobile/img/Path%203.png" alt=""></span></h3></a>
+            <a href="<?php echo yii\helpers\Url::to(['/mobile/product/index']) ?>" class="product_menu_top_fa_title"><h3 >All Products<span><img src="/mobile/img/Path%203.png" alt=""></span></h3></a>
             <hr>
         </div>
+
+        <?php foreach($menu as $m):?>
         <div class="product_menu_top_fa the_category_product">
-            <h3 class="product_menu_top_fa_title">2 Tier Wire Shelving Rack<span><img src="/mobile/img/Path%203.png" alt=""></span></h3>
-            <a href="" class="product_menu_top_fa_content">
-                <p>steel</p>
-                <p>chrome</p>
+            <h3 class="product_menu_top_fa_title"><?php echo $m['title']?><span><img src="/mobile/img/Path%203.png" alt=""></span></h3>
+            <?php foreach($m['children'] as $cate):?>
+            <a href="<?php echo yii\helpers\Url::to(['mobile/product/index', 'cateid' => $cate['cateid']]) ?>" class="product_menu_top_fa_content">
+                <p><?php echo $cate['title']?></p>
             </a>
+            <?php endforeach;?>
             <hr>
         </div>
+        <?php endforeach;?>
+
     </div>
 </section>
 
 <?php foreach($products as $pro):?>
 <section class="section1 clearfix container">
     <!--<h1><?php echo $pro['title']?></h1>-->
-    <?php foreach($pro["product"] as $pp):?>
-    <a href="<?php echo yii\helpers\Url::to(['product/detail', 'productid' => $pp['productid']]) ?>">
+    
+    <a href="<?php echo yii\helpers\Url::to(['product/detail', 'productid' => $pro['productid']]) ?>">
         <div class="category_product">
             <div class="product">
                 <div class="product_pic">
-                    <img   src="<?php echo $host.$pp["cover"]?>" alt="">
+                    <img src="<?php echo $host.$pro["cover"]?>" alt="">
                 </div>
-                <p class="product_word"><?php echo $pp["title"]?></p>
+                <p class="product_word"><?php echo $pro['title']?></p>
             </div>
         </div>
     </a>
-    <?php endforeach;?>
+    
 </section>
 <?php endforeach;?>
 

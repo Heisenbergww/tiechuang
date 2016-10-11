@@ -17,7 +17,7 @@
     </div>
 </section>
 <section class="section2 clearfix ">
-    <img src="<?php echo $company['cover']?>" alt="">
+    <img src="/<?php echo $company['cover']?>" alt="">
 </section>
 <section class="section3 clearfix container">
  <?php 
