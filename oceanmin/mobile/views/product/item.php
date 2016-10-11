@@ -29,10 +29,6 @@
         <div class="the_feature">
            <?php echo $product['features']?>
         </div>
-        <h3>Description:</h3>
-        <div class="the_description">
-            <?php echo $product['description']?>
-        </div>
     </div>
     <div class="detail_description">
         <?php echo $product['descr']?>

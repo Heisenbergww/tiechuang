@@ -1,7 +1,6 @@
 <link rel="stylesheet" href="/css/item.css">
 <!--字体文件图标-->
 <link rel="stylesheet" href="/css/font-awesome.min.css">
-<script src="/js/jquery-3.1.0.min.js"></script>
 <!-- 图片拼接服务器 -->
 <?php $host="http://www.ercolego.com/";?>
 
@@ -11,7 +10,10 @@
             <ol class="breadcrumb">
                 <li><a href="<?php echo yii\helpers\Url::to(['home/index'])?>" class="">HOME/</a></li>
                 <li class=""><a href="<?php echo yii\helpers\Url::to(['product/index'])?>" class="">Product/</a></li>
-                <li class="">Product-info</li>
+                <li class="">
+                    <a href="<?php echo yii\helpers\Url::to(['product/index', 'cateid' => $product['cate_id']]) ?>" class=""><?php echo $product['cate_parent_name'];?>-<?php echo $product['cate_name'];?>/</a>
+                </li>
+                <li>PRODUCT&nbsp;INFO</li>
             </ol>
         </nav>
     </div>

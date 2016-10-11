@@ -5,8 +5,7 @@
     use yii\filters\PageCache;
 ?>
 <link rel="stylesheet" href="/mobile/css/contact_us.css">
-<!-- 图片拼接服务器 -->
-<?php $host="http://www.gtmbike.com/";?>
+
 <!--主体部分-------------------------------------------------------------->
 <section class="section"></section>
 <section class="section1 clearfix container">
@@ -18,7 +17,7 @@
     </div>
 </section>
 <section class="section2 clearfix ">
-    <img src="<?php echo $host.$company['cover']?>" alt="">
+    <img src="/<?php echo $company['cover']?>" alt="">
 </section>
 <section class="section3 clearfix container">
  <?php 
