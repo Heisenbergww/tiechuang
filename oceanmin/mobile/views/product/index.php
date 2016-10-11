@@ -9,7 +9,6 @@
             <a href="<?php echo yii\helpers\Url::to(['product/index']) ?>" class="product_menu_top_fa_title"><h3 >All Products<span><img src="/mobile/img/Path%203.png" alt=""></span></h3></a>
             <hr>
         </div>
-
         <?php foreach($menu as $m):?>
         <div class="product_menu_top_fa the_category_product">
             <h3 class="product_menu_top_fa_title"><?php echo $m['title']?><span><img src="/mobile/img/Path%203.png" alt=""></span></h3>
@@ -21,14 +20,11 @@
             <hr>
         </div>
         <?php endforeach;?>
-
     </div>
 </section>
 
 <?php foreach($products as $pro):?>
 <section class="section1 clearfix container">
-    <!--<h1><?php echo $pro['title']?></h1>-->
-    
     <a href="<?php echo yii\helpers\Url::to(['product/detail', 'productid' => $pro['productid']]) ?>">
         <div class="category_product">
             <div class="product">
@@ -39,9 +35,16 @@
             </div>
         </div>
     </a>
-    
 </section>
 <?php endforeach;?>
+
+<div class="pagination pull-right">
+    <?php echo yii\widgets\LinkPager::widget([
+        'pagination' => $pager,
+        'prevPageLabel' => '&#8249;',
+        'nextPageLabel' => '&#8250;',
+    ]); ?>
+</div>        
 
 <script>
     $(document).ready(function(){
