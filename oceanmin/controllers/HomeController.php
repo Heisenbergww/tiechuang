@@ -30,7 +30,7 @@ class HomeController extends CommonController
     {
         $this->layout = 'layout1';
         $model = Home::find()->orderby('orderid asc')->all();
-        $product = Product::find()->where(['is_tui'=>'1'])->asArray()->limit(4)->all();
+        $product = Product::find()->where(['is_tui'=>'1'])->asArray()->all();
         return $this->render('index',['model'=>$model,'product'=>$product]);
     }
 

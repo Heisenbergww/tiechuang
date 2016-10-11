@@ -1,7 +1,3 @@
-<?php
-use yii\filters\PageCache;
-?>
-<?php if($this->beginCache('cache_company_info')){?>
 <link rel="stylesheet" href="/css/company_info.css">
 
     <!--主体部分-->
@@ -30,4 +26,3 @@ use yii\filters\PageCache;
             </div>
         </div>
     </section>
-<?php $this->endCache();}?>

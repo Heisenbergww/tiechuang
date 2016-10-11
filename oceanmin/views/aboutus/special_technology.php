@@ -1,7 +1,3 @@
-<?php
-use yii\filters\PageCache;
-?>
-<?php if($this->beginCache('cache_special_tec')){?>
 <link rel="stylesheet" href="/css/special_technology.css">
 <!--主体部分-->
 <section class="section1 clearfix big_bg_menu ">
@@ -36,5 +32,4 @@ use yii\filters\PageCache;
             </p>
     </div>
 </section>
-<?php $this->endCache();}?>
 
