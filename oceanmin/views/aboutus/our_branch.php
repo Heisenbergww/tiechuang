@@ -1,7 +1,3 @@
-<?php
-use yii\filters\PageCache;
-?>
-<?php if($this->beginCache('cache_branch')){?>
 <link rel="stylesheet" href="/css/our_branch.css">
 <!--主体部分-->
 <section class="section1 clearfix big_bg_menu ">
@@ -144,4 +140,3 @@ use yii\filters\PageCache;
         </div>
     </div>
 </section>
-<?php $this->endCache();}?>
