@@ -17,24 +17,24 @@ use yii\filters\PageCache;
 </section>
 <section class="section2 clearfix container-fluid Special_Technology_content">
     <div class="row">
+            <h2>International advanced technology, Industrial standard</h2>
+            <h3>What is 'Chrome'</h3>
             <p>
-                <strong>Aluminum alloy technology</strong>---Looking for a better riding experience</br></br>
-                We put a simple frame technology? With the efforts we put as much as we know the reason you ride. Carefully designed geometry structure; aluminum alloy frame has conforms to locate the optimal size of man-machine crowd; The vehicle line is smooth, solid, glamour.
+                Chrome is slang for Chromium, one of the 92 naturally occurring chemical elements. Chrome is a metal, but it is not useful as a solid, pure substance. Things are never made of solid chrome. Rather, when you hear that something is chrome, what is really meant is that there is a thin layer of chrome, a plating of chrome, on the object (the bulk of the object usually being steel, but sometimes aluminum, brass, copper, plastic, or stainless steel).
             </p>
             <img src="/img/special_te.jpg" alt="">
             <p>
-                <strong> Aerodynamic technology</strong>---Faster from more accurate design</br></br>
-                The minimum surface area of the front portion of the bicycle is crucial. It has laid the foundation for the entire bike expressive 3:1 the tail blunt windward surface, correct riding posture will make you feel more light Province.
+                Chrome plating is more reflective (brighter), bluer (less pale, grayish, or yellowish), and more specular (the reflection is deeper, less distorted, more like a mirror) than other finishes. Put one end of a tape measure against a bright finish, and see how many inches of numbers you can clearly read in the reflection -- you can see skywriting clearly reflected in top quality chrome plating. And there's a hard to define "glint" to chrome plating that almost nothing else has.
+            </p>
+            <h3>Industrial standard</h3>
+            <p>
+                Following the international rules, with varieties of professional equipments and advanced management, we acquired the ISO9001:2008 management system in order to keep our products’ competitive ability.
             </p>
             <img src="/img/special_te2.jpg" alt="">
             <p>
-                <strong>Integration technology</strong>---Highly integrated</br></br>
-                Line pipe, brake, nutritional supplements, quick release -- these can increase wind resistance. These all integrated into the frame, even if it is the nuances, the wind can’t slow down the pace of progress.
+                Our electroplating products are with the environmental electroplating of the European "ROHS" standard, in order to the security, durability, and environmental protection indeed.
             </p>
-            <img src="/img/special_te3.jpg" alt="">
-        </div>
     </div>
-
 </section>
 <?php $this->endCache();}?>
 

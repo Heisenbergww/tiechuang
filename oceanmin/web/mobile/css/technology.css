@@ -1,8 +1,35 @@
-.middle_line{
-    margin: 20px;
-    background-color: #d8d8d8;
-    height: 1px;
-    border: none;
+/*第二部分*/
+.Special_Technology_content h2{
+    text-align: center;
+    font-size: 24px;
+    font-weight:bold;
+    color: #2b2c33;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.Special_Technology_content h3{
+    font-size: 18px;
+    color: #2b2c33;
+    margin-bottom: 20px;
+}
+.Special_Technology_content h3:nth-of-type(2){
+    font-size: 18px;
+    color: #2b2c33;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.Special_Technology_content p{
+    font-size: 18px;
+    color: #2b2c33;
+}
+.Special_Technology_content p:first-of-type{
+    margin-top: 20px;
+}
+.Special_Technology_content img{
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 @media screen and (max-width: 374px){
     .section{

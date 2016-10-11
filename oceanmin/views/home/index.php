@@ -16,13 +16,15 @@ use yii\filters\PageCache;
     /*html5*/
     article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block}
 </style>
+<!-- 图片拼接服务器 -->
+<?php $host="http://www.ercolego.com/";?>
 
 <section class="container-fluid-ppt clearfix" >
     <div class="row clearfix">
         <div class="owl-carousel owl-theme ppt " id="owl-carousel_first">
             <?php foreach($model as $im):?>
             <div class="item">
-                <a href=""><img height="" src="<?php echo $im['cover']?>" alt=""></a>
+                <img height="" src="<?php echo $host.$im['cover']?>" alt="">
             </div>
            <?php endforeach;?>
         </div>
@@ -47,7 +49,7 @@ use yii\filters\PageCache;
         <a href="<?php echo yii\helpers\Url::to(['support/faq'])?>" class="row_part_square_2">
             <?php if($this->beginCache('cache_home_img2')){?>
             <div class="col-lg-3 row_part_square_img">
-                <img src="img/home_faq.png" alt="" >
+                <img src="/img/home_faq.png" alt="" >
             </div>
             <?php $this->endCache();}?>
             <div class="col-lg-3 row_part_square_words">
@@ -93,7 +95,7 @@ use yii\filters\PageCache;
                     <div class="swiper-slide">
                         <a href="<?php echo yii\helpers\Url::to(['product/detail', 'productid' => $pro['productid']]) ?>">
                             <div class="you_may_buy">
-                                <img  src="/<?php echo $pro['cover']?>" alt="">
+                                <img  src="<?php echo $host.$pro['cover']?>" alt="">
                                 <p><?php echo $pro['title']?></p>
                             </div>
                         </a>
@@ -119,20 +121,19 @@ use yii\filters\PageCache;
             lazyLoad: true,
             autoHeight:true,
             autoplay: true,
-            autoplayTimeout: 3000,
-            autoplayHoverPause: true
+            autoplayTimeout: 3000
         })
         //轮播2
 
         var mySwiper = new Swiper ('.swiper-container', {
             slidesPerView : 5,
-            loop : true,
             paginationClickable: true,
             nextButton: '.swiper-button-next',
             prevButton: '.swiper-button-prev',
             spaceBetween: 30,
             autoplay: 3000,
-            autoplayDisableOnInteraction:false
+            autoplayDisableOnInteraction:false,
+            autoplayStopOnLast:false
 
         })
 

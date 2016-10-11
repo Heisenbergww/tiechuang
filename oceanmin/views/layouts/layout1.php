@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/css/main.css">
     <script src="/js/jquery-3.1.0.min.js"></script>
     <!--<script src="/js/jquery.lazyload.min.js"></script>-->
+
 </head>
 <body style="overflow-x:hidden">
     <header class="navbar_fa">
@@ -115,43 +116,37 @@
             </div>
         </a>
         <div class="qrcode">
-            <img src="/img/Facebook_QRcode.png" alt="">
+            <img src="/img/qrcode.png" alt="">
             <div class="qrcode_son">
-                <img src="/img/Facebook_QRcode.png" alt="">
+                <img src="/img/qrcode.png" alt="">
             </div>
-
         </div>
     </div>
     <script src="/js/main.js"></script>
-    <!--&lt;!&ndash;分析&ndash;&gt;-->
-    <!--<script>-->
-        <!--(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){-->
-                    <!--(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),-->
-                <!--m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)-->
-        <!--})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');-->
+    <!--分析代码-->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-        <!--ga('create', 'UA-84101707-1', 'auto');-->
-        <!--ga('send', 'pageview');-->
-
-    <!--</script>-->
-    <!--&lt;!&ndash;再营销&ndash;&gt;-->
-    <!--<script type="text/javascript">-->
-        <!--/* <![CDATA[ */-->
-        <!--var google_conversion_id = 874087272;-->
-        <!--var google_custom_params = window.google_tag_params;-->
-        <!--var google_remarketing_only = true;-->
-        <!--/* ]]> */-->
-    <!--</script>-->
-    <!--<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">-->
-    <!--</script>-->
-
-    <!--&lt;!&ndash;客服&ndash;&gt;-->
-    <!--<script src=http://float2006.tq.cn/floatcard?adminid=9754605&sort=0 ></script>-->
-    <!--<noscript>-->
-        <!--<div style="display:inline;">-->
-            <!--<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/874087272/?value=0&amp;guid=ON&amp;script=0"/>-->
-        <!--</div>-->
-    <!--</noscript>-->
-
+        ga('create', 'UA-85188267-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!--再营销代码-->
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var google_conversion_id = 871546367;
+        var google_custom_params = window.google_tag_params;
+        var google_remarketing_only = true;
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+    </script>
+    <noscript>
+        <div style="display:inline;">
+            <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/871546367/?value=1&amp;guid=ON&amp;script=0"/>
+        </div>
+    </noscript>
     </body>
     </html>

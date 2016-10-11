@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="/mobile/css/product.css">
 <link rel="stylesheet" href="/mobile/css/font-awesome.min.css">
 <!-- 图片拼接服务器 -->
-<?php $host="http://www.gtmbike.com/";?>
+<?php $host="http://www.ercolego.com/";?>
 <!--主体部分-->
 <section class="product_menu_top">
     <div class="">

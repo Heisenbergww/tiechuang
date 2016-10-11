@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="/mobile/css/item.css">
 <link rel="stylesheet" href="/mobile/css/swiper-3.3.1.min.css">
 <!-- 图片拼接服务器 -->
-<?php $host="http://www.gtmbike.com/";?>
+<?php $host="http://www.ercolego.com/";?>
 <!--主体部分-------------------------------------------------------------->
 <section class="section"></section>
 <section class="secion1 clearfix">
