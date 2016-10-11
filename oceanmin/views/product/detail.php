@@ -10,10 +10,10 @@
             <ol class="breadcrumb">
                 <li><a href="<?php echo yii\helpers\Url::to(['home/index'])?>" class="">HOME/</a></li>
                 <li class=""><a href="<?php echo yii\helpers\Url::to(['product/index'])?>" class="">Product/</a></li>
-                <li class=""><?php echo $product['cate_parent_name'];?>/</li>
                 <li class="">
-                    <a href="<?php echo yii\helpers\Url::to(['product/index', 'cateid' => $product['cate_id']]) ?>" class=""><?php echo $product['cate_name'];?></a>
+                    <a href="<?php echo yii\helpers\Url::to(['product/index', 'cateid' => $product['cate_id']]) ?>" class=""><?php echo $product['cate_parent_name'];?>-<?php echo $product['cate_name'];?>/</a>
                 </li>
+                <li>PRODUCT&nbsp;INFO</li>
             </ol>
         </nav>
     </div>
