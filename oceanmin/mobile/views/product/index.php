@@ -6,7 +6,7 @@
 <section class="product_menu_top">
     <div class="">
         <div class="product_menu_top_fa the_all_product">
-            <a href="<?php echo yii\helpers\Url::to(['/mobile/product/index']) ?>" class="product_menu_top_fa_title"><h3 >All Products<span><img src="/mobile/img/Path%203.png" alt=""></span></h3></a>
+            <a href="<?php echo yii\helpers\Url::to(['product/index']) ?>" class="product_menu_top_fa_title"><h3 >All Products<span><img src="/mobile/img/Path%203.png" alt=""></span></h3></a>
             <hr>
         </div>
 
@@ -14,7 +14,7 @@
         <div class="product_menu_top_fa the_category_product">
             <h3 class="product_menu_top_fa_title"><?php echo $m['title']?><span><img src="/mobile/img/Path%203.png" alt=""></span></h3>
             <?php foreach($m['children'] as $cate):?>
-            <a href="<?php echo yii\helpers\Url::to(['mobile/product/index', 'cateid' => $cate['cateid']]) ?>" class="product_menu_top_fa_content">
+            <a href="<?php echo yii\helpers\Url::to(['product/index', 'cateid' => $cate['cateid']]) ?>" class="product_menu_top_fa_content">
                 <p><?php echo $cate['title']?></p>
             </a>
             <?php endforeach;?>
