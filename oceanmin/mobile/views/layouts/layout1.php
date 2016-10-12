@@ -38,7 +38,6 @@
         </ul>
         <p class="footer_menu_fa support_fa">Support<span><img src="/mobile/img/add.png" alt=""></span></p>
         <ul class="footer_menu_child for_support">
-            <li><a href="<?php echo yii\helpers\Url::to(['support/index'])?>">Download Manual</a></li>
             <li><a href="<?php echo yii\helpers\Url::to(['support/faq'])?>">FAQ</a></li>
         </ul>
     </section>
@@ -119,20 +118,26 @@
                 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-84101707-1', 'auto');
+        ga('create', 'UA-85188267-1', 'auto');
         ga('send', 'pageview');
 
     </script>
     <!--再营销-->
     <script type="text/javascript">
         /* <![CDATA[ */
-        var google_conversion_id = 874087272;
+        var google_conversion_id = 871546367;
         var google_custom_params = window.google_tag_params;
         var google_remarketing_only = true;
         /* ]]> */
     </script>
     <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
     </script>
+    <noscript>
+        <div style="display:inline;">
+            <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/871546367/?value=1&amp;guid=ON&amp;script=0"/>
+        </div>
+    </noscript>
+
 
 </body>
 </html>

@@ -1,5 +1,44 @@
-.product_menu_top{
+.product_menu_low{
     padding-top:5.6rem;
+}
+.product_menu_low h3{
+    position: fixed;
+    width: 100%;
+    font-weight: normal;
+    font-size:14px;
+    text-indent: 0;
+    color: #2B2C33;
+    background-color: rgb(240, 240, 240);
+    padding: 10px 0 10px 20px;
+}
+.product_menu_low h3 span img{
+    float: right;
+    margin-right: 20px;
+    margin-top: 6px;
+}
+
+
+.product_menu_top{
+
+}
+.product_menu_top_fixed{
+    top:5.6rem;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(44,43,51,0.71);
+    display: none;
+    position: fixed;
+    z-index: 3;
+}
+.product_menu_top_up_level{
+    background-color: #fff;
+}
+.product_menu_top_down_level{
+    width: 100%;
+    height: 100%;
+}
+.the_all_product a h3{
+    /*display: none;*/
 }
 .product_menu_top_fa h3{
     font-weight: normal;
@@ -37,6 +76,7 @@
 /*第一部分*/
 .section1{
     text-align: center;
+    margin-top: 50px;
 }
 .section1 h1{
     font-size: 1.8rem;

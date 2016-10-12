@@ -3,10 +3,18 @@
 <!-- 图片拼接服务器 -->
 <?php $host="http://www.ercolego.com/";?>
 <!--主体部分-->
-<section class="product_menu_top">
-    <div class="">
+
+<section class="product_menu_low">
+    <h3>All Products<span><img src="/mobile/img/Path%203.png" alt=""></span></h3>
+</section>
+
+<!--弹出层菜单-->
+<section class="product_menu_top product_menu_top_fixed">
+    <div class="product_menu_top_up_level">
         <div class="product_menu_top_fa the_all_product">
-            <a href="<?php echo yii\helpers\Url::to(['product/index']) ?>" class="product_menu_top_fa_title"><h3 >All Products<span><img src="/mobile/img/Path%203.png" alt=""></span></h3></a>
+            <a href="<?php echo yii\helpers\Url::to(['product/index']) ?>" class="product_menu_top_fa_title">
+                <h3 >All Products</h3>
+            </a>
             <hr>
         </div>
         <?php foreach($menu as $m):?>
@@ -21,10 +29,12 @@
         </div>
         <?php endforeach;?>
     </div>
+    <div class="product_menu_top_down_level"></div>
 </section>
 
-<?php foreach($products as $pro):?>
+
 <section class="section1 clearfix container">
+<?php foreach($products as $pro):?>
     <a href="<?php echo yii\helpers\Url::to(['product/detail', 'productid' => $pro['productid']]) ?>">
         <div class="category_product">
             <div class="product">
@@ -35,10 +45,11 @@
             </div>
         </div>
     </a>
-</section>
 <?php endforeach;?>
+</section>
 
-<div class="pagination pull-right">
+
+<div class="pagination " style="">
     <?php echo yii\widgets\LinkPager::widget([
         'pagination' => $pager,
         'prevPageLabel' => '&#8249;',
@@ -48,11 +59,18 @@
 
 <script>
     $(document).ready(function(){
+//        点击展开顶部二级菜单
         var productCategoryFa=$(".product_menu_top_fa_title");
         productCategoryFa.click(function(){
-            console.log(1);
             $(this).nextAll().toggle();
-            console.log(2);
+            $(this).nextAll("hr").css({"display":"block"});
+        })
+//        点击展开顶部菜单
+        $(".product_menu_low").click(function(){
+            $(".product_menu_top").show();
+         })
+        $(".product_menu_top_down_level").click(function(){
+            $(".product_menu_top").hide();
         })
     })
 </script>

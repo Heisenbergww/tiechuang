@@ -2,7 +2,7 @@
     padding-top: 5.6rem;
 }
 .section0{
-    background-image: url("../img/company_info.jpg");
+    background-image: url("../img/company_info.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 375px 175px;
@@ -28,5 +28,6 @@
         padding: 0 10px;
     }
 }
+
 
 /*# sourceMappingURL=company_information.css.map */
