@@ -20,7 +20,7 @@
             <a href="" name="top_top">
             </a>
             <div class="logo fl">
-                <a href="/" name="logo"><img src="/img/logo.png" alt="" ></a>
+                <a href="/" name="logo"><img src="/img/logo1.png" alt="" ></a>
             </div>
             <div class="logo-right fr">
                 <div class="language fr">

@@ -10,10 +10,14 @@
 <section class="section"></section>
 <section class="section1 clearfix container">
     <div class="company_contact_info">
-        <p><span>Company Name:</span><?php echo $company['companyname']?></p>
-        <p><span>Address:</span><?php echo $company['companyaddress']?></p>
-        <p><span>TEL:</span><?php echo $company['companytel']?></p>
-        <p><span>Email:</span><a href="mailto:<?php echo $company['companyemail']?>"><?php echo $company['companyemail']?></a></p>
+        <p><span>Company Name：</span><?php echo $company['companyname']?></p>
+        <p><span>Email：</span><a href="mailto:<?php echo $company['companyemail']?>"><?php echo $company['companyemail']?></a></p>
+        <p><span>TEL：</span><a href="tel:<?php echo $company['companytel']?>"><?php echo $company['companytel']?></a></p>
+        <p><span>Fax：</span><?php echo $company['companyfax']?></p>
+        <p><span>Mobile：</span><a href="tel:<?php echo $company['companymobile']?>"><?php echo $company['companymobile']?></a></p>
+        <p><span>Website：</span><a href="<?php echo $company['website']?>"><?php echo $company['website']?></a></p>
+        <p><span>Address:  </span><?php echo $company['companyaddress']?></p>
+        <p><span>Manufacture Address：</span><?php echo $company['manufactureaddress']?></p>
     </div>
 </section>
 <section class="section2 clearfix ">

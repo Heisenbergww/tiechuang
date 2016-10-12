@@ -17,7 +17,7 @@
             <i class="fa fa-bars fa-4x top_menu_bar" aria-hidden="true"></i>
             <div class="logo">
                 <a href="">
-                    <img src="/mobile/img/logo.png" alt="">
+                    <img src="/mobile/img/logo1.png" alt="">
                 </a>
             </div>
         </nav>

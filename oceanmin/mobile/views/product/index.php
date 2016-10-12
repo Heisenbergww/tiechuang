@@ -34,7 +34,7 @@
 
 
 <section class="section1 clearfix container">
-<?php foreach($products as $pro):?>
+    <?php foreach($products as $pro):?>
     <a href="<?php echo yii\helpers\Url::to(['product/detail', 'productid' => $pro['productid']]) ?>">
         <div class="category_product">
             <div class="product">
@@ -45,17 +45,17 @@
             </div>
         </div>
     </a>
-<?php endforeach;?>
+    <?php endforeach;?>
 </section>
 
 
-<div class="pagination " style="">
+<div class="pagination " style="" id="pagination_product">
     <?php echo yii\widgets\LinkPager::widget([
         'pagination' => $pager,
-        'prevPageLabel' => '&#8249;',
-        'nextPageLabel' => '&#8250;',
+    'prevPageLabel' => '&#8249;',
+    'nextPageLabel' => '&#8250;',
     ]); ?>
-</div>        
+</div>
 
 <script>
     $(document).ready(function(){
@@ -68,13 +68,9 @@
 //        点击展开顶部菜单
         $(".product_menu_low").click(function(){
             $(".product_menu_top").show();
-         })
+        })
         $(".product_menu_top_down_level").click(function(){
             $(".product_menu_top").hide();
         })
     })
 </script>
-
-
-
-

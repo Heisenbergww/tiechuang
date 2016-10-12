@@ -24,7 +24,7 @@ class CommonController extends Controller
         }
         $footer = Social::find()->where('id = :id', [':id' => '1'])->one();
         $this->view->params['footer'] = $footer;
-        if ($_SERVER['HTTP_HOST']=='www.ercolego.com'||$_SERVER['HTTP_HOST']=='ercolego.com'||$_SERVER['HTTP_HOST']=='web.shelf.com'||$_SERVER['HTTP_HOST']=='shelf.com'||$_SERVER['HTTP_HOST']=='192.168.199.60') {
+        //if ($_SERVER['HTTP_HOST']=='www.ercolego.com'||$_SERVER['HTTP_HOST']=='ercolego.com'||$_SERVER['HTTP_HOST']=='web.shelf.com'||$_SERVER['HTTP_HOST']=='shelf.com'||$_SERVER['HTTP_HOST']=='192.168.199.60') {
             if (!empty($_COOKIE['lang'])) {
                 $lang = $_COOKIE['lang'];
             } else {
@@ -49,9 +49,9 @@ class CommonController extends Controller
             } else {
 
             }
-        }else{
-            return $this->redirect('http://www.ercolego.com/');
-        }
+        //}else{
+        //    return $this->redirect('http://www.ercolego.com/');
+        //}
         
     }
 

@@ -50,7 +50,7 @@
         text-align: center;
     }
     .top_menu .logo img{
-        width: 105px;
+        width: 77px;
         height: 40px;
     }
     .top_menu i{
@@ -227,9 +227,9 @@
 .pagination {
   margin: 20px 5px 20px 0;
 }
-    .pagination a{
-        color: #009240;
-    }
+ .pagination a{
+  color: #009240;
+ }
 
 .pagination ul {
     display: block;
