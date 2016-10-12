@@ -3,7 +3,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="baidu-site-verification" content="UAUcoMhakB" />
     <meta name="csrf-token" content="<?= Yii::$app->request->csrfToken ?>"/>
     <meta name="Keywords" Content="Ercolewireshelving,wireshelvinng,shelf,rack,racking,ercole"/>
     <meta name="description" Content="Ercole is a brand of wire shelving"/>
