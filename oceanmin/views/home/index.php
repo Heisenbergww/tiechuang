@@ -16,15 +16,14 @@ use yii\filters\PageCache;
     /*html5*/
     article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block}
 </style>
-<!-- 图片拼接服务器 -->
-<?php $host="http://www.ercolego.com/";?>
+
 
 <section class="container-fluid-ppt clearfix" >
     <div class="row clearfix">
         <div class="owl-carousel owl-theme ppt " id="owl-carousel_first">
             <?php foreach($model as $im):?>
             <div class="item">
-                <img height="" src="<?php echo $host.$im['cover']?>" alt="">
+                <img height="" src="<?php echo $im['cover']?>" alt="">
             </div>
            <?php endforeach;?>
         </div>
@@ -95,7 +94,7 @@ use yii\filters\PageCache;
                     <div class="swiper-slide">
                         <a href="<?php echo yii\helpers\Url::to(['product/detail', 'productid' => $pro['productid']]) ?>">
                             <div class="you_may_buy">
-                                <img  src="<?php echo $host.$pro['cover']?>" alt="">
+                                <img  src="<?php echo $pro['cover']?>" alt="">
                                 <p><?php echo $pro['title']?></p>
                             </div>
                         </a>

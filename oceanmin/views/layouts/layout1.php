@@ -1,12 +1,12 @@
-<?php header("Access-Control-Allow-Origin: http://www.ercolego.com/"); ?>
+<?php //header("Access-Control-Allow-Origin: http://www.ercolego.com/"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="csrf-token" content="<?= Yii::$app->request->csrfToken ?>"/>
-    <meta name="Keywords" Content="Ercolewireshelving,wireshelvinng,shelf,rack,racking,ercole"/>
-    <meta name="description" Content="Ercole is a brand of wire shelving"/>
-    <title>Ercolego</title>
+    <meta name="Keywords" Content=""/>
+    <meta name="description" Content=""/>
+    <title>Waagee</title>
     <link type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="/css/normal.css">
     <link rel="stylesheet" href="/css/main.css">

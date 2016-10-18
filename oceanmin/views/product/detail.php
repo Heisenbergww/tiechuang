@@ -2,7 +2,7 @@
 <!--字体文件图标-->
 <link rel="stylesheet" href="/css/font-awesome.min.css">
 <!-- 图片拼接服务器 -->
-<?php $host="http://www.ercolego.com/";?>
+<?php $host="http://www.waagee.com/";?>
 
 <section class="section0 clearfix  ">
     <div class="container-fluid">
@@ -73,15 +73,12 @@
             }
             i=i-1;
             a[i]=b;
-//                console.log(i);
-//                console.log(a[0],a[1],a[2],a[3],a[4],a[5],a[6]);
             var z=0;
             $("div").remove(".fivepic");
             while(z< a.length){
                 $(".fivepics_smallpic").append(a[z]);
                  z++;
             }
-//                $(".fivepics_smallpic_zero").after(a[0],a[1],a[2],a[3],a[4],a[5],a[6]);
             p=$(".fivepics_smallpic").children("div .fivepic ");
             beBig();
         })
@@ -97,15 +94,12 @@
                 y--;
             }
             a[0]=b;
-//                console.log(i);
-//                console.log(a[0],a[1],a[2],a[3],a[4],a[5],a[6]);
             var z=0;
             $("div").remove(".fivepic");
             while(z< a.length){
                 $(".fivepics_smallpic").append(a[z]);
                 z++;
             }
-//                $(".fivepics_smallpic_zero").after(a[0],a[1],a[2],a[3],a[4],a[5],a[6]);
             p=$(".fivepics_smallpic").children("div .fivepic ");
             beBig();
         })
@@ -114,12 +108,12 @@
             $(".fivepic img").click(function(){
                 var bigPicSrc=/s(?=\d)/g;
                 c=$(this).attr("src");
-                //console.log(c);
                 d= c.replace(bigPicSrc,'b');
-                //console.log(d);
                 $(".big-pic img").attr("src",c);
             })
         }
     })
 
 </script>
+
+

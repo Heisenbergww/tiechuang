@@ -4,10 +4,9 @@
 <!--分页-->
 <link rel="stylesheet" href="/css/pagination.css">
 <script src="/js/jquery.pagination.min.js"></script>
-<!-- 图片拼接服务器 -->
-<?php $host="http://www.ercolego.com/";?>
 
-<section class="section0 clearfix  ">
+
+<section class="section0 clearfix">
     <div class="container-fluid">
         <nav id="breadcrumb">
             <ol class="breadcrumb">
@@ -67,7 +66,7 @@
                 <div class="col-lg-4 business-pic-son">
                     <a href="<?php echo yii\helpers\Url::to(['product/detail', 'productid' => $pro['productid']]) ?>">
                         <div class="product_item_pic">
-                            <img src="<?php echo $host.$pro['cover']?>" alt="" >
+                            <img src="<?php echo $pro['cover']?>" alt="" >
                             <p><?php echo $pro['title']?></p>
                         </div>
                     </a>
