@@ -1,8 +1,7 @@
 <link rel="stylesheet" href="/css/item.css">
 <!--字体文件图标-->
 <link rel="stylesheet" href="/css/font-awesome.min.css">
-<!-- 图片拼接服务器 -->
-<?php $host="http://www.waagee.com/";?>
+
 
 <section class="section0 clearfix  ">
     <div class="container-fluid">
@@ -22,13 +21,13 @@
     <div class="row clearfix">
         <div class="col-lg-6 pic-thing">
             <div class=" big-pic row">
-                <img src="<?php echo $host.$product['cover']?>" alt="">
+                <img src="/<?php echo $product['cover']?>" alt="">
             </div>
             <div class="fivepics row">
                 <div class=" btn-pre"><span><img src="/img/left.png" alt=""></span></div>
                 <div class="fivepics_smallpic">
                     <?php foreach($product['pics'] as $key=>$v):?>
-                    <div class="fivepic" id="fivepic-<?php echo $key;?>"><img src="<?php echo $host.$v;?>" alt=""></div>
+                    <div class="fivepic" id="fivepic-<?php echo $key;?>"><img src="/<?php echo $v;?>" alt=""></div>
                     <?php endforeach;?>
                 </div>
                 <div class=" btn-next"><span><img src="/img/right.png" alt=""></span></div>

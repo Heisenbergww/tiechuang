@@ -66,7 +66,7 @@
                 <div class="col-lg-4 business-pic-son">
                     <a href="<?php echo yii\helpers\Url::to(['product/detail', 'productid' => $pro['productid']]) ?>">
                         <div class="product_item_pic">
-                            <img src="<?php echo $pro['cover']?>" alt="" >
+                            <img src="/<?php echo $pro['cover']?>" alt="" >
                             <p><?php echo $pro['title']?></p>
                         </div>
                     </a>
