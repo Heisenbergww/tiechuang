@@ -174,9 +174,9 @@ $(".language").bind("click",function(){
          })
        }
         //联系我们展示表格
-     $(".message_s").click(function(){
-         $(".contact_us_form input").fadeIn(1000,"swing");
-     })
+     // $(".message_s").click(function(){
+     //     $(".contact_us_form input").fadeIn(1000,"swing");
+     // })
 
 
     // //产品详情页展示切换

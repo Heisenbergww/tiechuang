@@ -58,7 +58,7 @@
     font-size:14px;
     color: #2B2C33 ;
     padding: 14px  10px 10px 14px;
-    background: #FAFAFC;
+    /*background: #FAFAFC;*/
     border-radius: 8px;
     cursor: pointer;
     margin-bottom:10px;
@@ -67,15 +67,15 @@
     font-size:14px;
     color: #2B2C33;
     padding: 14px  10px 10px 14px;
-    background: #FAFAFC;
+    /*background: #FAFAFC;*/
     border-radius: 8px;
     cursor: pointer;
 }
 
 .business-left-title h3:hover,
 .business-name h3:hover{
-    background-color: #66BE8C;
-    color: #fff;
+    /*background-color: #66BE8C;*/
+    color: #69B889;
 }
 .business-name h3 img{
     /*vertical-align:middle;*/
@@ -84,6 +84,7 @@
     margin-top: 6px;
     margin-right: 2px;
 }
+.business-left-title hr,
 .business-name hr{
     height: 1px;
     background: #efefef;
@@ -121,7 +122,7 @@
 }
 /*商业联系*/
 .business-contact{
-    border: 1px solid #009240;
+    border: 1px solid #d8d8d8;
     padding: 20px 10px 30px;
     margin-top: 40px;
 }

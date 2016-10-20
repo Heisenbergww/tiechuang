@@ -27,6 +27,7 @@
                     <a href="<?php echo yii\helpers\Url::to(['product/index']) ?>">
                         <h3>All Products</h3>
                     </a>
+                    <hr>
                 </div>
                 <?php foreach($category as $c):?>
                 <div class="col-lg-12 business-one">
@@ -95,7 +96,7 @@
         str1=theUrl.substring(ipos,theUrl.length);        
         $(".product_menu a").each(function(){
             if($(this).attr("href")==str1){                
-                $(this).children("h3").css({"background-color":"#66BE8C","color":"#fff"});
+                $(this).children("h3").css({"color":"#69B889"});
                 $(this).children("p").children("img").css("visibility","visible");
                 $(this).parent("div").prev("div").children("h3").css({"background-color":"#66BE8C","color":"#fff"});
                 $(this).children("p").css("color","#009240");

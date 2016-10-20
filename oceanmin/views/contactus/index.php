@@ -59,7 +59,7 @@ $form = ActiveForm::begin([
                 <p>Please do not hesitate to let me know if you have any question or concern.</p>
                 <hr>
                 <textarea name="Message[detail]" type="text" placeholder="Messages" class="message_s"></textarea>
-                <input name="Message[name]" type="text" value="<?= Html::encode($model->name) ?>" placeholder="Name">
+                <input name="Message[name]" type="text" value="<?= Html::encode($model->name) ?>" placeholder="Name" class="input_left">
                 <input name="Message[email]"  type="text" value="<?= Html::encode($model->email) ?>" placeholder="Email">
                 <input name="Message[phone]"  type="text" value="<?= Html::encode($model->phone) ?>" placeholder="Phone Number">
             </div>
