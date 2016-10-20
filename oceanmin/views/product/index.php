@@ -25,25 +25,29 @@
             <div class="row product_menu">
                 <div class="col-lg-12 business-left-title">
                     <a href="<?php echo yii\helpers\Url::to(['product/index']) ?>">
-                    <h3>All Products</h3>
+                        <h3>All Products</h3>
                     </a>
                 </div>
-                <?php foreach($menu as $m):?>
+                <?php foreach($category as $c):?>
                 <div class="col-lg-12 business-one">
                     <div class="business-name" >
-                        <h3><?php echo $m['title']?><span><img src="/img/Path%203.png" alt=""></span></h3>
+                        <a href="<?php echo yii\helpers\Url::to(['product/index','cateid' => $c['cateid']]) ?>">
+                            <h3><?php echo $c['title']?>
+<!--                                <span><img src="/img/Path%203.png" alt=""></span>-->
+                            </h3>
+                        </a>
                         <hr>
                     </div>
-                    <div class="business-content">
-                        <?php foreach($m['children'] as $cate):?>
-                        <a href="<?php echo yii\helpers\Url::to(['product/index', 'cateid' => $cate['cateid']]) ?>">
-                            <p>
-                                <img   src="/img/triangle_green.png" alt="" class="triangle_green">
-                                <?php echo $cate['title']?>
-                            </p>
-                        </a>
-                        <?php endforeach;?>
-                    </div>
+<!--                    <div class="business-content">-->
+<!--                        --><?php //foreach($m['children'] as $cate):?>
+<!--                        <a href="--><?php //echo yii\helpers\Url::to(['product/index', 'cateid' => $cate['cateid']]) ?><!--">-->
+<!--                            <p>-->
+<!--                                <img   src="/img/triangle_green.png" alt="" class="triangle_green">-->
+<!--                                --><?php //echo $cate['title']?>
+<!--                            </p>-->
+<!--                        </a>-->
+<!--                        --><?php //endforeach;?>
+<!--                    </div>-->
                 </div>
                <?php endforeach;?>
                
@@ -72,28 +76,25 @@
                     </a>
                 </div>
                 <?php endforeach;?>
-                <div class="pagination pull-right">
-                    <?php echo yii\widgets\LinkPager::widget([
-                        'pagination' => $pager,
-                        'prevPageLabel' => '&#8249;',
-                        'nextPageLabel' => '&#8250;',
-                    ]); ?>
-                </div>                
-            </div           
+            </div>
+            <div class="pagination pull-right">
+                <?php echo yii\widgets\LinkPager::widget([
+                    'pagination' => $pager,
+                    'prevPageLabel' => '&#8249;',
+                    'nextPageLabel' => '&#8250;',
+                ]); ?>
+            </div>
         </div>       
     </div>    
 </section>
 
 <script>
     $(window).ready(function(){
-        var theUrl=window.location.href;
-        // console.log(theUrl);
+        var theUrl=window.location.href;        
         var ipos = theUrl.indexOf("/product");
-        str1=theUrl.substring(ipos,theUrl.length);
-        // console.log(str1);
+        str1=theUrl.substring(ipos,theUrl.length);        
         $(".product_menu a").each(function(){
-            if($(this).attr("href")==str1){
-                console.log($(this).attr("href"));
+            if($(this).attr("href")==str1){                
                 $(this).children("h3").css({"background-color":"#66BE8C","color":"#fff"});
                 $(this).children("p").children("img").css("visibility","visible");
                 $(this).parent("div").prev("div").children("h3").css({"background-color":"#66BE8C","color":"#fff"});

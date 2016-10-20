@@ -3,7 +3,8 @@
  */
  $(document).ready(function(){
 
-//语言定位
+    //layout页面////////////////////////////////////////////////////////
+    //语言定位
 $(".language").bind("click",function(){
     $(".language_child").css({
         top:$(".language").offset().top+$(".language").height()+9,
@@ -46,15 +47,15 @@ $(".language").bind("click",function(){
     goToTopShow();
     $(window).scroll(goToTopShow);
 
-     //首页商品展示轮播
+     //首页商品展示轮播////////////////////////////////////////////////////////
 
 
-    //product页面
+    //product页面////////////////////////////////////////////////////////////
      //产品展示页二级菜单展开
-     $(".business-name").click(function(){
-         $(this).next().toggle();
-         $(this).children("hr").toggle();
-     })
+     // $(".business-name").click(function(){
+     //     $(this).next().toggle();
+     //     $(this).children("hr").toggle();
+     // })
      ////点击后加样式以及图片文字变颜色
      //$(".business-content a").click(function(){
      //    $(".business-content a").css("color","#2B2C33");
@@ -62,13 +63,13 @@ $(".language").bind("click",function(){
      //    $(this).children("img").toggle();
      //})
 
-    //            图片适应
+    // 图片适应
      $(window).resize(function(){
          var a=$(".product_item_pic").width();
          $(".product_item_pic img").css({"width":a,"height":a})
      })
 
-    // layout页面当向下滚动距离大于60px，将顶部固定成fixed
+    // 当向下滚动距离大于60px，将顶部固定成fixed
     function goToFixTop(){
         var winPos = $(window).scrollTop();
         if (winPos>60){
@@ -84,7 +85,7 @@ $(".language").bind("click",function(){
     }
     $(window).scroll(goToFixTop);
 
-    //item页面
+    //item页面////////////////////////////////////////////////////////
     //view more
     var table_fa_h=$(".item_more_info> .table_fa").height();
     if(table_fa_h<200){
@@ -96,12 +97,10 @@ $(".language").bind("click",function(){
     function viewMoreShow() {
         $(".item_more_info> .table_fa").css("height", "auto");
         $(".view_more_collapse>h4").text("collapse");
-        console.log(1);
     }
     function viewMoreHide() {
         $(".item_more_info> .table_fa").css("height",table_fa_h+"px" );
         $(".view_more_collapse>h4").text("view more");
-        console.log(2);
     }
     theFirstClick();
     function theFirstClick(){

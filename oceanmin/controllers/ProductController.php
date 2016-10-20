@@ -31,7 +31,7 @@ class ProductController extends CommonController
 	public function actionIndex()
 	{
 		$this->layout = 'layout1';
-		$menu = Category::getMenu();
+		$category = Category::find()->all();
 		$cateid = Yii::$app->request->get('cateid');
 		if ($cateid) {
 			$model = Product::find();
@@ -45,7 +45,7 @@ class ProductController extends CommonController
 			$products = $model->offset($pager->offset)->limit($pager->limit)->all();
 		}
 		$company = Company::find()->asArray()->one();
-		return $this->render('index',['menu'=>$menu,'products'=>$products,'company'=>$company,'pager'=>$pager]);
+		return $this->render('index',['category'=>$category,'products'=>$products,'company'=>$company,'pager'=>$pager]);
 	}
 
 	public function actionDetail()
