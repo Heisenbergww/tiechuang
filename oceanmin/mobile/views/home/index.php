@@ -5,8 +5,7 @@
 <script src="/mobile/owlcarousel/owl.carousel.min.js"></script>
 <link rel="stylesheet" href="/mobile/css/swiper-3.3.1.min.css">
 
-<!-- 图片拼接服务器 -->
-<?php $host="http://www.ercolego.com/";?>
+
 
 <!--主体部分-------------------------------------------------------------->
 <!--轮播-->
@@ -14,7 +13,7 @@
     <div class="owl-carousel owl-theme ppt">
         <?php foreach($model as $im):?>
         <div class="item">
-            <a href=""><img src="<?php echo $host.$im['cover']?>" alt=""></a>
+            <a href=""><img src="<?php echo $im['cover']?>" alt=""></a>
         </div>
         <?php endforeach;?>
     </div>
@@ -80,7 +79,7 @@
                 <a href="<?php echo yii\helpers\Url::to(['product/detail', 'productid' => $pro['productid']]) ?>">
                     <div class="recommend">
                         <div class="recommend_pic">
-                            <img   src="<?php echo $host.$pro['cover']?>" alt="">
+                            <img   src="<?php echo $pro['cover']?>" alt="">
                         </div>
                         <p class="recommend_word"><?php echo $pro['title']?></p>
                     </div>

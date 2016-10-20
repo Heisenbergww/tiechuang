@@ -72,7 +72,7 @@ use yii\filters\PageCache;
         <a href="<?php echo yii\helpers\Url::to(['aboutus/news'])?>" class="row_part_square_2">
             <div class="col-lg-3 row_part_square_words">
                 <h2>NEWS</h2>
-                <p>Here,you will see the latest news about Ercole</p>
+                <p>Here,you will see the latest news about Waagee</p>
                 <span href="">VIEW MORE</span>
             </div>
             <?php if($this->beginCache('cache_home_img4')){?>

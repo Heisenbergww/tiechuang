@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-    <meta name="Keywords" Content="Ercolewireshelving,wireshelvinng,shelf,rack,racking,ercole"/>
-    <meta name="description" Content="Ercole is a brand of wire shelving"/>
-    <title>Ercolego</title>
+    <meta name="Keywords" Content=""/>
+    <meta name="description" Content=""/>
+    <title>Waagee</title>
     <link rel="stylesheet" href="/mobile/css/main.css">
     <link rel="stylesheet" href="/mobile/css/font-awesome.min.css">
     <script src="/mobile/js/jquery-3.1.0.min.js"></script>
@@ -17,7 +17,7 @@
             <i class="fa fa-bars fa-4x top_menu_bar" aria-hidden="true"></i>
             <div class="logo">
                 <a href="">
-                    <img src="/mobile/img/logo1.png" alt="">
+                    <img src="/mobile/img/logo.png" alt="">
                 </a>
             </div>
         </nav>
@@ -28,7 +28,7 @@
 
     <!-- 底部 -->
     <section class="footer_menu clearfix">
-        <a href="mailto:Ercole@beforeship.com"><p class="footer_menu_fa contact_us_fa">Contact Us</p></a>
+        <a href="mailto:Waagee@beforeship.com"><p class="footer_menu_fa contact_us_fa">Contact Us</p></a>
         <p class="footer_menu_fa about_fa">About Us <span><img src="/mobile/img/add.png" alt=""></span></p>
         <ul class="footer_menu_child for_about">
             <li><a href="<?php echo yii\helpers\Url::to(['aboutus/index'])?>">Company Information</a></li>
@@ -111,32 +111,6 @@
 
 <script src="/mobile/js/main.js"></script>
 
-    <!--分析-->
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-85188267-1', 'auto');
-        ga('send', 'pageview');
-
-    </script>
-    <!--再营销-->
-    <script type="text/javascript">
-        /* <![CDATA[ */
-        var google_conversion_id = 871546367;
-        var google_custom_params = window.google_tag_params;
-        var google_remarketing_only = true;
-        /* ]]> */
-    </script>
-    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
-    </script>
-    <noscript>
-        <div style="display:inline;">
-            <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/871546367/?value=1&amp;guid=ON&amp;script=0"/>
-        </div>
-    </noscript>
 
 
 </body>

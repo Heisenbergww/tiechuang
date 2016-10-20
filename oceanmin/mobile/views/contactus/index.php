@@ -53,23 +53,4 @@ echo Html::script('alert("Submit fails, check the mailbox format and whether Mis
     </div>
 </section>
 
-<!--转化代码-->
-<!-- Google Code for Ercole &#32852;&#31995;&#25105;&#20204;&#36716;&#21270; Conversion Page -->
-<script type="text/javascript">
-    /* <![CDATA[ */
-    var google_conversion_id = 871546367;
-    var google_conversion_language = "en";
-    var google_conversion_format = "3";
-    var google_conversion_color = "ffffff";
-    var google_conversion_label = "X8VVCOGj3GoQ__vKnwM";
-    var google_remarketing_only = false;
-    /* ]]> */
-</script>
-<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
-</script>
-<noscript>
-    <div style="display:inline;">
-        <img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/871546367/?label=X8VVCOGj3GoQ__vKnwM&amp;guid=ON&amp;script=0"/>
-    </div>
-</noscript>
 

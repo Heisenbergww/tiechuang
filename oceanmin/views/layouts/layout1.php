@@ -1,4 +1,4 @@
-<?php //header("Access-Control-Allow-Origin: http://www.ercolego.com/"); ?>
+<?php header("Access-Control-Allow-Origin: http://www.waagee.com/"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/css/normal.css">
     <link rel="stylesheet" href="/css/main.css">
     <script src="/js/jquery-3.1.0.min.js"></script>
-    <!--<script src="/js/jquery.lazyload.min.js"></script>-->
+
 
 </head>
 <body style="overflow-x:hidden">
@@ -20,7 +20,7 @@
             <a href="" name="top_top">
             </a>
             <div class="logo fl">
-                <a href="/" name="logo"><img src="/img/logo1.png" alt="" ></a>
+                <a href="/" name="logo"><img src="/img/logo.png" alt="" ></a>
             </div>
             <div class="logo-right fr">
                 <div class="language fr">

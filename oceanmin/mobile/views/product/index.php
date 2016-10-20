@@ -1,7 +1,6 @@
 <link rel="stylesheet" href="/mobile/css/product.css">
 <link rel="stylesheet" href="/mobile/css/font-awesome.min.css">
-<!-- 图片拼接服务器 -->
-<?php $host="http://www.ercolego.com/";?>
+
 <!--主体部分-->
 
 <section class="product_menu_low">
@@ -39,7 +38,7 @@
         <div class="category_product">
             <div class="product">
                 <div class="product_pic">
-                    <img src="<?php echo $host.$pro["cover"]?>" alt="">
+                    <img src="<?php echo $pro["cover"]?>" alt="">
                 </div>
                 <p class="product_word"><?php echo $pro['title']?></p>
             </div>
