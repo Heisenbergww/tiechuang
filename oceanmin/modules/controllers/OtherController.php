@@ -58,12 +58,12 @@ class OtherController extends CommonController
         }
         return $this->render('footer', ['model' => $model]);
     }
-
-
-
-
-
-
+    
+    public function actionImage()
+    {
+        $this->layout=false;
+        return $this->render('image');
+    }
 
 
 }

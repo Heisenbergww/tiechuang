@@ -161,6 +161,7 @@ use yii\filters\PageCache;
                 <ul class="submenu">
                 <li><a href="<?php echo yii\helpers\Url::to(['other/edit'])?>">编辑公司详情</a></li>
                 <li><a href="<?php echo yii\helpers\Url::to(['other/footer'])?>">底部账号编辑</a></li>
+                <li><a href="<?php echo yii\helpers\Url::to(['other/image'])?>">压缩图片</a></li>
                 </ul>
             </li>                     
 
