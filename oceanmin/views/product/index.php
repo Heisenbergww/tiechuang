@@ -1,4 +1,4 @@
-<title>产品展示</title>
+<title>product</title>
 <link rel="stylesheet" href="/css/product-introduce.css">
 <script src="/js/jquery-3.1.0.min.js"></script>
 <!--分页-->

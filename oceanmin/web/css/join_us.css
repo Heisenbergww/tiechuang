@@ -1,0 +1,4 @@
+/*导航的下划线*/
+.menu ul li:nth-child(6) a{
+    border-bottom:2px solid #009240;
+}
