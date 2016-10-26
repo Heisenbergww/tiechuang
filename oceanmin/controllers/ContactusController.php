@@ -36,7 +36,7 @@ class ContactusController extends CommonController
 			$post['Message']['createtime'] = time();
 			if ($model->add($post)) {
 				Yii::$app->session->setFlash('success','添加成功');
-				return $this->goback(['contactus/index']);
+				return $this->goBack(['contactus/index']);
 			}else{
 				Yii::$app->session->setFlash('error','添加失败');
 			}

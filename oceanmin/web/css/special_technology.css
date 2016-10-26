@@ -73,7 +73,8 @@
      margin-top: 20px;
  }
 .Special_Technology_content img{
-   width: 100%;
+    width: 90%;
+    margin-left: 5%;
     height: auto;
     margin-top: 40px;
     margin-bottom: 40px;

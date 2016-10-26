@@ -138,7 +138,8 @@ use yii\filters\PageCache;
                     <i class="icon-chevron-down"></i>
                 </a>
                 <ul class="submenu">
-                <li><a href="<?php echo yii\helpers\Url::to(['message/list'])?>">留言列表</a></li>
+                <li><a href="<?php echo yii\helpers\Url::to(['message/listm'])?>">contact us留言列表</a></li>
+                <li><a href="<?php echo yii\helpers\Url::to(['message/listj'])?>">join us留言列表</a></li>    
                 </ul>
             </li>
              <li>

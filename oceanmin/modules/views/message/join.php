@@ -9,7 +9,7 @@
     <div class="container-fluid">
         <div id="pad-wrapper" class="users-list">
             <div class="row-fluid header">
-                <h3>contact us留言板列表</h3>
+                <h3>join us留言板列表</h3>
             </div>
 
             <!-- Products table -->
@@ -27,7 +27,13 @@
                                 <span class="line"></span>手机号
                             </th>
                             <th class="span2 sortable">
+                                <span class="line"></span>国家
+                            </th>
+                            <th class="span2 sortable">
                                 <span class="line"></span>邮箱
+                            </th>
+                            <th class="span2 sortable">
+                                <span class="line"></span>偏好
                             </th>
                             <th class="span6 sortable">
                                 <span class="line"></span>详细内容
@@ -51,13 +57,19 @@
                            <?= Html::encode($mes['name']) ?>
                         </td>
                         <td>
-                            <?= Html::encode($mes['phone']) ?>
+                            <?= Html::encode($mes['tel']) ?>
+                        </td>
+                        <td>
+                            <?= Html::encode($mes['country']) ?>
                         </td>
                         <td>
                             <?= Html::encode($mes['email']) ?>
                         </td>
                         <td>
-                            <?= Html::encode($mes['detail']) ?>
+                            <?= Html::encode($mes['interest']) ?>
+                        </td>
+                        <td>
+                            <?= Html::encode($mes['comment']) ?>
                         </td>
                         <td>
                            <?php echo date('Y-m-d H:i:s',$mes['createtime']);?>
