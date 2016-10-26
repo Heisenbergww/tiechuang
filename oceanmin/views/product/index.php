@@ -2,8 +2,8 @@
 <link rel="stylesheet" href="/css/product-introduce.css">
 <script src="/js/jquery-3.1.0.min.js"></script>
 <!--分页-->
-<link rel="stylesheet" href="/css/pagination.css">
-<script src="/js/jquery.pagination.min.js"></script>
+<!--<link rel="stylesheet" href="/css/pagination.css">-->
+<!--<script src="/js/jquery.pagination.min.js"></script>-->
 
 
 <section class="section0 clearfix">
@@ -60,7 +60,6 @@
                         <p><span>TEL：</span><?php echo $company['companytel']?>9</p>
                         <p><span>Fax：</span><?php echo $company['companyfax']?></p>
                         <p><span>Mobile：</span><?php echo $company['companymobile']?></p>
-                        <img src="/img/qrcode.png" alt="">
                     </div>
                 </div>
             </div>

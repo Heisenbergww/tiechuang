@@ -123,7 +123,7 @@
 /*商业联系*/
 .business-contact{
     border: 1px solid #d8d8d8;
-    padding: 20px 10px 30px;
+    padding: 20px 10px 20px;
     margin-top: 40px;
 }
 .business-contact h5{
@@ -137,9 +137,9 @@
 .business-contact p span{
     color: #66676e;
 }
-.business-contact p:last-of-type{
-    margin-bottom:20px;
-}
+/*.business-contact p:last-of-type{*/
+    /*margin-bottom:20px;*/
+/*}*/
 .business-contact_ctrl{}
 
 

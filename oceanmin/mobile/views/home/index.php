@@ -21,7 +21,7 @@
 
 <section class="section1 clearfix container">
     <a href="<?php echo yii\helpers\Url::to(['/mobile/aboutus/technology'])?>">
-        <div class="ac">
+        <div class="ac clearfix">
             <div class="ac_pic">
                 <img src="/mobile/img/home_special_technology.png" alt="">
             </div>
@@ -32,8 +32,8 @@
             </div>
         </div>
     </a>
-    <a href="<?php echo yii\helpers\Url::to(['/mobile/fashion/index'])?>">
-        <div class="ac">
+    <a href="<?php echo yii\helpers\Url::to(['/mobile/support/faq'])?>">
+        <div class="ac clearfix">
             <div class="ac_pic">
                 <img src="/mobile/img/home_faq.png" alt="">
             </div>
@@ -45,7 +45,7 @@
         </div>
     </a>
     <a href="<?php echo yii\helpers\Url::to(['/mobile/aboutus/branch'])?>">
-        <div class="ac">
+        <div class="ac clearfix">
             <div class="ac_pic">
                 <img src="/mobile/img/home_branch.jpg" alt="">
             </div>
@@ -57,7 +57,7 @@
         </div>
     </a>
     <a href="<?php echo yii\helpers\Url::to(['/mobile/aboutus/news'])?>">
-        <div class="ac">
+        <div class="ac clearfix">
             <div class="ac_pic">
                 <img src="/mobile/img/home_news.png" alt="">
             </div>

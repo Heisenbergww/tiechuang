@@ -34,7 +34,7 @@
 }
 @media screen and (max-width: 374px){
     .section{
-        padding-top: 5.6rem;
+        padding-top: 56px;
     }
     .the_p{
         margin: 0 auto;
@@ -52,7 +52,7 @@
 }
 @media screen and (min-width: 375px) and (max-width: 900px){
     .section{
-        padding-top: 5.6rem;
+        padding-top: 56px;
     }
     .the_p{
         width: 375px;

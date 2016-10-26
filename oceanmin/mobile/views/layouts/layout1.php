@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-    <meta name="Keywords" Content=""/>
-    <meta name="description" Content=""/>
+    <meta name="Keywords" Content="WaaGee , high grade basins, wall-hung basins, intelligent toilets, shower doors , sanitary ware"/>
+    <meta name="description" Content="WaaGee is a brand of high grade basins, wall-hung basins, intelligent toilets, shower doors and other related products."/>
     <title>Waagee</title>
     <link rel="stylesheet" href="/mobile/css/main.css">
     <link rel="stylesheet" href="/mobile/css/font-awesome.min.css">
@@ -16,7 +16,7 @@
         <nav class="top_menu ">
             <i class="fa fa-bars fa-4x top_menu_bar" aria-hidden="true"></i>
             <div class="logo">
-                <a href="">
+                <a href="<?php echo yii\helpers\Url::to(['home/index'])?>">
                     <img src="/mobile/img/logo.png" alt="">
                 </a>
             </div>
@@ -32,7 +32,7 @@
         <p class="footer_menu_fa about_fa">About Us <span><img src="/mobile/img/add.png" alt=""></span></p>
         <ul class="footer_menu_child for_about">
             <li><a href="<?php echo yii\helpers\Url::to(['aboutus/index'])?>">Company Information</a></li>
-            <li><a href="<?php echo yii\helpers\Url::to(['aboutus/technology'])?>">Special Technology</a></li>
+            <li><a href="<?php echo yii\helpers\Url::to(['aboutus/technology'])?>">Certification</a></li>
             <li><a href="<?php echo yii\helpers\Url::to(['aboutus/news'])?>">News</a></li>
             <li><a href="<?php echo yii\helpers\Url::to(['aboutus/branch'])?>">Our Branch</a></li>
         </ul>
@@ -84,7 +84,7 @@
             </nav>
         </a>
     </footer>
-
+<!--侧边菜单-->
     <nav class="side_menu">
         <nav class="side_menu_content">
             <i class="fa fa-bars fa-4x side_menu_content_bar " aria-hidden="true"></i>
@@ -98,11 +98,12 @@
                 <p class="side_about_fa">ABOUT US<span><img src="/mobile/img/add.png" alt=""></span></p>
                 <ul class="side_menu_child side_for_about">
                     <li><a href="<?php echo yii\helpers\Url::to(['aboutus/index'])?>">Company Information</a></li>
-                    <li><a href="<?php echo yii\helpers\Url::to(['aboutus/technology'])?>">Special Technology</a></li>
+                    <li><a href="<?php echo yii\helpers\Url::to(['aboutus/technology'])?>">Certification</a></li>
                     <li><a href="<?php echo yii\helpers\Url::to(['aboutus/news'])?>">News</a></li>
                     <li><a href="<?php echo yii\helpers\Url::to(['aboutus/branch'])?>">Our Branch</a></li>
                 </ul>
                 <p><a href="<?php echo yii\helpers\Url::to(['contactus/index'])?>">CONTACT US</a></p>
+                <p><a href="<?php echo yii\helpers\Url::to(['joinus/index'])?>">Join US</a></p>
             </div>
         </nav>
     </nav>

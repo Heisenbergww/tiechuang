@@ -1,8 +1,8 @@
 .section{
-    padding-top: 5.6rem;
+    padding-top: 56px;
 }
 .section0{
-    background-image: url("../img/company_info.png");
+    background-image: url("../img/company_info.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 375px 175px;

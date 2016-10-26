@@ -4,13 +4,11 @@
 <section class="section0"></section>
 <section class="section1 container clearfix ">
     <div class="p">
-        <p>About Ercole Wire Shelving</p>
-        <p>Ercole is a new brand which was founded in 2015. International Company Name: BILL & FOX LIMITED, located in Hong Kong, China, and the detail as following: 7/F, SPA centre, NO.53-55 Lockhart Road, Wanchai. Manufacture Address：Jinghai, Tianjin, China.</p>
-        <p>The goal was continue to satisfy the customers challenging requirements, improving ourselves constantly, leading the fashion, simple, environment friendly idea.</p>
-        <p>Our products can bring a contemporary flair to your kitchen, home or office interior with this multi-tier display rack storage. This versatile rack offers great storage space for your belongings, ideal for home or office use, a great solution for additional space to your interior.</p>
-        <p>Ercole has set up warehouse in the Americas, Europe, Asia, therefore, we
-            will provide the best products and quality of service to your business with lower costs. All of our products are backed by a "Low Price Guarantee". Your complete satisfaction is our number one priority.</p>
-        <p>Thank you for visiting our website. We look forward to servicing your needs in the future.</p>
+        <p>About WaaGee</p>
+        <p>WaaGee is a new brand which was founded in 2015. It is short for luxembourgish "Waasser Geescht". Chinese name is the element of water. International Company Name: BILL & FOX LIMITED, located in Hong Kong, China, and the detail as following: 7/F, SPA centre, NO.53-55 Lockhart Road, Wanchai. </p>
+        <p>Manufacture Address：Tianjin, China. It is a sanitary ware factory specializing in producing high grade basins, wall-hung basins, intelligent toilet, shower door and other related products. Our factory applies itself to the development and research of sanitary ware science & technology. We are always persisting in the development tenet of "Gain Credit Standing by Honesty, and Quality Creates Brands".</p>
+        <p>WaaGee has set up warehouse in the Americas, Europe, Asia, therefore, we will provide the best products and quality of service to your business with lower costs. </p>
+        <p>Most of the day relaxing, and that is bathed in soft, elegant, romantic, comfortable and beautiful space, the constant pursuit of the good, so WaaGee firmly believe: Better quality, Life is more beautiful!</p>
     </div>
 </section>
 

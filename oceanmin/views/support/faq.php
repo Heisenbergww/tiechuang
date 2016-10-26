@@ -43,7 +43,7 @@ use yii\filters\PageCache;
             <div class="col-lg-11">
                 <div class="the_a_right">
                     <span class="triangle_a"></span>
-                    <p>Customer service is available Monday – Friday, 9AM to 5:30PM. Messages and emails can be left during non-working hours and you will be contacted the next business day. 
+                    <p>Customer service is available Monday – Friday, 9AM to 5:30PM. Messages and emails can be left during non-working hours and you will be contacted the next business day.  
                     </p>
                 </div>
             </div>
@@ -83,7 +83,7 @@ use yii\filters\PageCache;
             <div class="col-lg-11">
                 <div class="the_q_right">
                     <span class="triangle_q"></span>
-                    <p>Is the sample free?
+                    <p>How can I get some samples?
                     </p>
                 </div>
             </div>
@@ -95,7 +95,7 @@ use yii\filters\PageCache;
             <div class="col-lg-11">
                 <div class="the_a_right">
                     <span class="triangle_a"></span>
-                    <p>Our sample is not for free, but we can reimburse sample costs to buyer when bulk order.
+                    <p>We’re honored to supply samples for you. Our samples are free for customers who confirm the order, but the courier charge is on customer’s account.
                     </p>
                 </div>
             </div>
@@ -109,7 +109,7 @@ use yii\filters\PageCache;
             <div class="col-lg-11">
                 <div class="the_q_right">
                     <span class="triangle_q"></span>
-                    <p>I come from Africa, I want to wholesale your products, what should I do?
+                    <p>Can I bargain the price?
                     </p>
                 </div>
             </div>
@@ -121,7 +121,7 @@ use yii\filters\PageCache;
             <div class="col-lg-11">
                 <div class="the_a_right">
                     <span class="triangle_a"></span>
-                    <p>Please mail me to Ercole@beforeship.com, and tell me your request. Include products' quantity, SKU, send to the destination.
+                    <p>Yes, the price list is our general price, we'll offer you final price according to your quantity and requirements.
                     </p>
                 </div>
             </div>
@@ -147,7 +147,7 @@ use yii\filters\PageCache;
             <div class="col-lg-11">
                 <div class="the_a_right">
                     <span class="triangle_a"></span>
-                    <p>If you have any further questions, feel free to contact us at Ercole@beforeship.com. Please allow for a 24-hour response time especially with questions sent over the weekend. Thank you for your understanding.
+                    <p>If you have any further questions, feel free to contact us at WaaGee@beforeship.com. Please allow for a 24-hour response time especially with questions sent over the weekend. Thank you for your understanding.
                     </p>
                 </div>
             </div>

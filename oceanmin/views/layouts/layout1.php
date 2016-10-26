@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="csrf-token" content="<?= Yii::$app->request->csrfToken ?>"/>
-    <meta name="Keywords" Content=""/>
-    <meta name="description" Content=""/>
+    <meta name="Keywords" Content="WaaGee , high grade basins, wall-hung basins, intelligent toilets, shower doors , sanitary ware"/>
+    <meta name="description" Content="WaaGee is a brand of high grade basins, wall-hung basins, intelligent toilets, shower doors and other related products."/>
     <title>Waagee</title>
     <link type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="/css/normal.css">
@@ -48,11 +48,11 @@
                 <div class="menu fr">
                     <ul class=" ">
                         <li class=""><a href="/" class=""><?php echo Yii::t('app', 'Home');?></a></li>
-                        <!--<li class=""><a href="<?php echo yii\helpers\Url::to(['fashion/index'])?>" class=""><?php echo Yii::t('app', 'FASHION NOW');?></a></li>-->
                         <li><a href="<?php echo yii\helpers\Url::to(['product/index'])?>"><?php echo Yii::t('app', 'Product');?></a></li>
                         <li class="menu_support " id="menu_support"><a href="#"><?php echo Yii::t('app', 'Support');?><span class="home_trangle"></span></a></li>
                         <li class="menu_about_us" id="menu_about_us"><a href="#"><?php echo Yii::t('app', 'About Us');?><span class="home_trangle"></span></a></li>
                         <li><a href="<?php echo yii\helpers\Url::to(['contactus/index'])?>"><?php echo Yii::t('app', 'Contact Us');?></a></li>
+                        <li><a href="<?php echo yii\helpers\Url::to(['joinus/index'])?>"><?php echo Yii::t('app', 'Join Us');?></a></li>
                     </ul>
                 </div>
             </div>
@@ -65,7 +65,7 @@
         <div class="second_menu to_about_us menu_about_us ">
             <ul>
                 <a href="<?php echo yii\helpers\Url::to(['aboutus/index'])?>"><li>Company Information</li></a>
-                <a href="<?php echo yii\helpers\Url::to(['aboutus/technology'])?>"><li>Special Technology</li></a>
+                <a href="<?php echo yii\helpers\Url::to(['aboutus/technology'])?>"><li>Certification</li></a>
                 <a href="<?php echo yii\helpers\Url::to(['aboutus/news'])?>"><li>News</li></a>
                 <a href="<?php echo yii\helpers\Url::to(['aboutus/branch'])?>"><li>Our Branch</li></a>
             </ul>
@@ -115,12 +115,12 @@
                 <img src="/img/tp.png" alt="">
             </div>
         </a>
-        <div class="qrcode">
-            <img src="/img/qrcode.png" alt="">
-            <div class="qrcode_son">
-                <img src="/img/qrcode.png" alt="">
-            </div>
-        </div>
+<!--        <div class="qrcode">-->
+<!--            <img src="/img/qrcode.png" alt="">-->
+<!--            <div class="qrcode_son">-->
+<!--                <img src="/img/qrcode.png" alt="">-->
+<!--            </div>-->
+<!--        </div>-->
     </div>
     <script src="/js/main.js"></script>
     <!--分析代码-->

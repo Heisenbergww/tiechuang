@@ -2,11 +2,11 @@
 <!--主体部分-->
 <section class="section1 clearfix big_bg_menu ">
 <div class="container-fluid">
-    <h1>Special Technology</h1>
+    <h1>Certification</h1>
     <nav id="breadcrumb">
         <ol class="breadcrumb">
             <li><a href="<?php echo yii\helpers\Url::to(['home/index'])?>" class="">HOME/</a></li>
-            <li class="">Special Technology</li>
+            <li class="">Certification</li>
         </ol>
     </nav>
 </div>

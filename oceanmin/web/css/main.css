@@ -601,7 +601,6 @@ footer{
 .pagination ul > li {
   display: inline;
 }
-
 .pagination ul > li > a,
 .pagination ul > li > span {
   float: left;

@@ -4,7 +4,7 @@
 <!--主体部分-->
 
 <section class="product_menu_low">
-    <h3>All Products<span><img src="/mobile/img/Path%203.png" alt=""></span></h3>
+    <h3><?php echo $catetitle['title']?><span><img src="/mobile/img/Path%203.png" alt=""></span></h3>
 </section>
 
 <!--弹出层菜单-->
@@ -16,21 +16,18 @@
             </a>
             <hr>
         </div>
-        <?php foreach($menu as $m):?>
-        <div class="product_menu_top_fa the_category_product">
-            <h3 class="product_menu_top_fa_title"><?php echo $m['title']?><span><img src="/mobile/img/Path%203.png" alt=""></span></h3>
-            <?php foreach($m['children'] as $cate):?>
-            <a href="<?php echo yii\helpers\Url::to(['product/index', 'cateid' => $cate['cateid']]) ?>" class="product_menu_top_fa_content">
-                <p><?php echo $cate['title']?></p>
-            </a>
-            <?php endforeach;?>
-            <hr>
-        </div>
-        <?php endforeach;?>
+            <div class="product_menu_top_fa the_category_product">
+                <?php foreach($category as $c):?>
+                    <a href="<?php echo yii\helpers\Url::to(['product/index','cateid' => $c['cateid']]) ?>">
+                        <h3 class="product_menu_top_fa_title"><?php echo $c['title']?></h3>
+                    </a>
+                    <hr>
+                <?php endforeach;?>
+                </div>
+            </div>
     </div>
     <div class="product_menu_top_down_level"></div>
 </section>
-
 
 <section class="section1 clearfix container">
     <?php foreach($products as $pro):?>
@@ -58,6 +55,7 @@
 
 <script>
     $(document).ready(function(){
+        
 //        点击展开顶部二级菜单
         var productCategoryFa=$(".product_menu_top_fa_title");
         productCategoryFa.click(function(){

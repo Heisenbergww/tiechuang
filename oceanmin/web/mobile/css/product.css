@@ -1,7 +1,9 @@
 .product_menu_low{
-    padding-top:5.6rem;
+    padding-top:56px;
 }
 .product_menu_low h3{
+    min-width: 320px;
+    max-width: 900px;
     position: fixed;
     width: 100%;
     font-weight: normal;
@@ -22,7 +24,9 @@
 
 }
 .product_menu_top_fixed{
-    top:5.6rem;
+    min-width: 320px;
+    max-width: 900px;
+    top:56px;
     height: 100%;
     width: 100%;
     background-color: rgba(44,43,51,0.71);

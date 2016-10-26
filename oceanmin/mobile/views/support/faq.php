@@ -44,7 +44,8 @@
             </div>
             <div class="the_a_right">
                 <span class="triangle_a"></span>
-                <p>Yes. Our products are made in China’s factory, but We have set up warehouse in Americas, Europe, Asia.
+                <p>
+                    Yes. Our products are made in China’s factory, but We have set up warehouse in Americas, Europe, Asia.
                 </p>
             </div>
         </div>
@@ -56,7 +57,7 @@
             </div>
             <div class="the_q_right">
                 <span class="triangle_q"></span>
-                <p>Is the sample free?
+                <p>How can I get some samples?
                 </p>
             </div>
         </div>
@@ -66,7 +67,8 @@
             </div>
             <div class="the_a_right">
                 <span class="triangle_a"></span>
-                <p>Our sample is not for free, but we can reimburse sample costs to buyer when bulk order.
+                <p>
+                    We’re honored to supply samples for you. Our samples are free for customers who confirm the order, but the courier charge is on customer’s account.
                 </p>
             </div>
         </div>
@@ -79,7 +81,7 @@
             <div class="the_q_right">
                 <span class="triangle_q"></span>
                 <p>
-                    I come from Africa, I want to wholesale your products, what should I do?
+                    Can I bargain the price?
                 </p>
             </div>
         </div>
@@ -89,7 +91,8 @@
             </div>
             <div class="the_a_right">
                 <span class="triangle_a"></span>
-                <p>Please mail me to Ercole@beforeship.com, and tell me your request. Include products' quantity, SKU, send to the destination.
+                <p>
+                    Yes, the price list is our general price, we'll offer you final price according to your quantity and requirements.
                 </p>
             </div>
         </div>
@@ -101,7 +104,8 @@
             </div>
             <div class="the_q_right">
                 <span class="triangle_q"></span>
-                <p>Who can answer my questions about the products, including size, order status, shipping, etc.?
+                <p>
+                    Who can answer my questions about the products, including size, order status, shipping, etc.?
                 </p>
             </div>
         </div>
@@ -111,7 +115,8 @@
             </div>
             <div class="the_a_right">
                 <span class="triangle_a"></span>
-                <p>If you have any further questions, feel free to contact us at Ercole@beforeship.com. Please allow for a 24-hour response time especially with questions sent over the weekend. Thank you for your understanding.
+                <p>
+                    If you have any further questions, feel free to contact us at WaaGee@beforeship.com. Please allow for a 24-hour response time especially with questions sent over the weekend. Thank you for your understanding.
                 </p>
             </div>
         </div>
