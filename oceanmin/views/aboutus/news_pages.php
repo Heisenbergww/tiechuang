@@ -6,7 +6,7 @@
             <ol class="breadcrumb">
                 <li><a href="<?php echo yii\helpers\Url::to(['home/index'])?>" class="">HOME/</a></li>
                 <li><a href="<?php echo yii\helpers\Url::to(['aboutus/news'])?>" class="">news/</a></li>
-                <li class="">download pdf</li>
+                <li class="">detail</li>
             </ol>
         </nav>
     </div>

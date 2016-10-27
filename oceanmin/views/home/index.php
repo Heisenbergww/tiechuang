@@ -36,12 +36,12 @@ use yii\filters\PageCache;
         <a href="<?php echo yii\helpers\Url::to(['aboutus/technology'])?> " class="row_part_square_2">
             <?php if($this->beginCache('cache_home_img1')){?>
             <div class="col-lg-3 row_part_square_img">
-                <img src="/img/home_special_technology.png" alt="" >
+                <img src="/img/ce.jpg" alt="" >
             </div>
             <?php $this->endCache();}?>
             <div class="col-lg-3 row_part_square_words">
-                <h2>SPECIAL TECHNOLOGY</h2>
-                <p>International advanced technology, Industrial standard </p>
+                <h2>QUALITY  CERTIFICATION</h2>
+                <p>All products have passed CQC，EN and a series of certification.  </p>
                 <span>VIEW MORE</span>
             </div>
         </a>
