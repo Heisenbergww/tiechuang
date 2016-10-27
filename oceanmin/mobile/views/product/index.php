@@ -37,7 +37,7 @@
         <div class="category_product">
             <div class="product">
                 <div class="product_pic">
-                    <img src="<?php echo $pro["cover"]?>" alt="">
+                    <img src="/<?php echo $pro["cover"]?>" alt="">
                 </div>
                 <p class="product_word"><?php echo $pro['title']?></p>
             </div>

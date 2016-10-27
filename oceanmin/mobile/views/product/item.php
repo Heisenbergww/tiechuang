@@ -8,7 +8,7 @@
         <div class="swiper-wrapper">
             <?php foreach($product['pics'] as $key=>$v):?>
             <div class="swiper-slide" id="fivepic-<?php echo $key;?>">
-                <img src="<?php echo $v;?>" alt="" width="100%" height="auto">
+                <img src="/<?php echo $v;?>" alt="" width="100%" height="auto">
             </div>
             <?php endforeach;?>
         </div>

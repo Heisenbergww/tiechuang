@@ -79,7 +79,7 @@
                 <a href="<?php echo yii\helpers\Url::to(['product/detail', 'productid' => $pro['productid']]) ?>">
                     <div class="recommend">
                         <div class="recommend_pic">
-                            <img   src="<?php echo $pro['cover']?>" alt="">
+                            <img   src="/<?php echo $pro['cover']?>" alt="">
                         </div>
                         <p class="recommend_word"><?php echo $pro['title']?></p>
                     </div>
