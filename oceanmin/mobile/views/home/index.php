@@ -13,7 +13,7 @@
     <div class="owl-carousel owl-theme ppt">
         <?php foreach($model as $im):?>
         <div class="item">
-            <a href=""><img src="<?php echo $im['cover']?>" alt=""></a>
+            <a href=""><img src="/<?php echo $im['cover']?>" alt=""></a>
         </div>
         <?php endforeach;?>
     </div>
