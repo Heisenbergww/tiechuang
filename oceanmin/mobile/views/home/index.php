@@ -23,11 +23,11 @@
     <a href="<?php echo yii\helpers\Url::to(['/mobile/aboutus/technology'])?>">
         <div class="ac clearfix">
             <div class="ac_pic">
-                <img src="/mobile/img/home_special_technology.png" alt="">
+                <img src="/mobile/img/ce.jpg" alt="">
             </div>
             <div class="ac_words">
-                <h1>SPECIAL TECHNOLOGY</h1>
-                <p>International advanced technology, Industrial standard</p>
+                <h1>QUALITY  CERTIFICATION</h1>
+                <p>All products have passed CQC，EN and a series of certification.</p>
                 <p class="span">VIEW MORE</p>
             </div>
         </div>
