@@ -58,7 +58,7 @@
     font-size:14px;
     color: #2B2C33 ;
     padding: 14px  10px 10px 14px;
-    /*background: #FAFAFC;*/
+    background: #FAFAFC;
     border-radius: 8px;
     cursor: pointer;
     margin-bottom:10px;
@@ -66,16 +66,16 @@
 .business-name h3{
     font-size:14px;
     color: #2B2C33;
-    padding: 14px  10px 10px 14px;
-    /*background: #FAFAFC;*/
+    padding: 14px  10px 14px 10px;
+    background: #FAFAFC;
     border-radius: 8px;
     cursor: pointer;
 }
 
 .business-left-title h3:hover,
 .business-name h3:hover{
-    /*background-color: #66BE8C;*/
-    color: #69B889;
+    background-color: #66BE8C;
+    color: #fff;
 }
 .business-name h3 img{
     /*vertical-align:middle;*/
@@ -84,7 +84,6 @@
     margin-top: 6px;
     margin-right: 2px;
 }
-.business-left-title hr,
 .business-name hr{
     height: 1px;
     background: #efefef;
@@ -101,14 +100,14 @@
 .business-content p{
     font-size: 14px;
     padding: 14px 5px 14px 0;
-    text-indent: 20px;    
+    text-indent: 20px;
 }
 /*.business-content a span{*/
-    /*position: relative;*/
+/*position: relative;*/
 /*}*/
 .triangle_green{
     /*position: absolute;*/
-    top:17.5px;
+    margin-bottom:-3px;
     visibility: hidden;
 }
 .business-content a{

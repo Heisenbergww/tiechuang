@@ -27,30 +27,25 @@
                     <a href="<?php echo yii\helpers\Url::to(['product/index']) ?>">
                         <h3>All Products</h3>
                     </a>
-                    <hr>
                 </div>
-                <?php foreach($category as $c):?>
-                <div class="col-lg-12 business-one">
-                    <div class="business-name" >
-                        <a href="<?php echo yii\helpers\Url::to(['product/index','cateid' => $c['cateid']]) ?>">
-                            <h3><?php echo $c['title']?>
-<!--                                <span><img src="/img/Path%203.png" alt=""></span>-->
-                            </h3>
-                        </a>
-                        <hr>
+                <?php foreach($menu as $m):?>
+                    <div class="col-lg-12 business-one">
+                        <div class="business-name" >
+                            <h3><?php echo $m['title']?><span><img src="/img/Path%203.png" alt=""></span></h3>
+                            <hr>
+                        </div>
+                        <div class="business-content">
+                            <?php foreach($m['children'] as $cate):?>
+                                <a href="<?php echo yii\helpers\Url::to(['product/index', 'cateid' => $cate['cateid']]) ?>">
+                                    <p>
+                                        <img   src="/img/triangle_green.png" alt="" class="triangle_green">
+                                        <?php echo $cate['title']?>
+                                    </p>
+                                </a>
+                            <?php endforeach;?>
+                        </div>
                     </div>
-<!--                    <div class="business-content">-->
-<!--                        --><?php //foreach($m['children'] as $cate):?>
-<!--                        <a href="--><?php //echo yii\helpers\Url::to(['product/index', 'cateid' => $cate['cateid']]) ?><!--">-->
-<!--                            <p>-->
-<!--                                <img   src="/img/triangle_green.png" alt="" class="triangle_green">-->
-<!--                                --><?php //echo $cate['title']?>
-<!--                            </p>-->
-<!--                        </a>-->
-<!--                        --><?php //endforeach;?>
-<!--                    </div>-->
-                </div>
-               <?php endforeach;?>
+                <?php endforeach;?>
                
                 <div class="col-lg-12 business-contact" >
                     <div class="business-contact_ctrl">
@@ -90,15 +85,19 @@
 
 <script>
     $(window).ready(function(){
-        var theUrl=window.location.href;        
+        var theUrl=window.location.href;
+        // console.log(theUrl);
         var ipos = theUrl.indexOf("/product");
-        str1=theUrl.substring(ipos,theUrl.length);        
+        str1=theUrl.substring(ipos,theUrl.length);
+        // console.log(str1);
         $(".product_menu a").each(function(){
-            if($(this).attr("href")==str1){                
-                $(this).children("h3").css({"color":"#69B889"});
+            if($(this).attr("href")==str1){
+//                console.log($(this).attr("href"));
+                $(this).children("h3").css({"background-color":"#66BE8C","color":"#fff"});
                 $(this).children("p").children("img").css("visibility","visible");
                 $(this).parent("div").prev("div").children("h3").css({"background-color":"#66BE8C","color":"#fff"});
                 $(this).children("p").css("color","#009240");
+                $(this).parent("div").prev("div").children("hr").css("display","none");
                 $(this).parent("div").css("display","block");
             }
         });

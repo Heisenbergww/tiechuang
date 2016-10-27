@@ -50,18 +50,18 @@ $(".language").bind("click",function(){
      //首页商品展示轮播////////////////////////////////////////////////////////
 
 
-    //product页面////////////////////////////////////////////////////////////
-     //产品展示页二级菜单展开
-     // $(".business-name").click(function(){
-     //     $(this).next().toggle();
-     //     $(this).children("hr").toggle();
-     // })
-     ////点击后加样式以及图片文字变颜色
-     //$(".business-content a").click(function(){
-     //    $(".business-content a").css("color","#2B2C33");
-     //    $(this).css("color","#66BE8C");
-     //    $(this).children("img").toggle();
-     //})
+    // product页面////////////////////////////////////////////////////////////
+    //  产品展示页二级菜单展开
+     $(".business-name").click(function(){
+         $(this).next().toggle();
+         $(this).children("hr").toggle();
+     })
+     //点击后加样式以及图片文字变颜色
+     $(".business-content a").click(function(){
+        $(".business-content a").css("color","#2B2C33");
+        $(this).css("color","#66BE8C");
+        $(this).children("img").toggle();
+     })
 
     // 图片适应
      $(window).resize(function(){

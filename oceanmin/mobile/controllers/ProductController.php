@@ -31,11 +31,13 @@ class ProductController extends CommonController
 	public function actionIndex()
 	{
 		$this->layout = 'layout1';
-		$category = Category::find()->all();
+		$menu = Category::getMenu();
 		$cateid = Yii::$app->request->get('cateid');
 		$catetitle=Category::find()->where(['cateid'=>$cateid])->one();
-		if($catetitle==null){
-			$catetitle['title']='All Products';
+		$catetitlel=$catetitle['parentid'];
+		$catetitlef=Category::find()->where(['cateid'=>$catetitlel])->one();
+		if($catetitlef==null){
+			$catetitlef['title']='All Products';
 		}
 		if ($cateid) {
 			$model = Product::find();
@@ -45,12 +47,12 @@ class ProductController extends CommonController
 		}else{
 			$model = Product::find();
 			$count = $model->count();
-	        $pager = new Pagination(['totalCount' => $count, 'pageSize' => '9']);
+			$pager = new Pagination(['totalCount' => $count, 'pageSize' => '9']);
 			$products = $model->offset($pager->offset)->limit($pager->limit)->all();
 		}
 		$company = Company::find()->asArray()->one();
 		//var_dump($products);die;
-		return $this->render('index',['category'=>$category,'catetitle'=>$catetitle,'products'=>$products,'company'=>$company,'pager'=>$pager]);
+		return $this->render('index',['catetitlef'=>$catetitlef,'menu'=>$menu,'products'=>$products,'company'=>$company,'pager'=>$pager]);
 	}
 
 	public function actionDetail()

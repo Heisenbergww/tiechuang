@@ -4,7 +4,7 @@
 <!--主体部分-->
 
 <section class="product_menu_low">
-    <h3><?php echo $catetitle['title']?><span><img src="/mobile/img/Path%203.png" alt=""></span></h3>
+    <h3><?php echo $catetitlef['title']?><span><img src="/mobile/img/Path%203.png" alt=""></span></h3>
 </section>
 
 <!--弹出层菜单-->
@@ -16,15 +16,17 @@
             </a>
             <hr>
         </div>
+        <?php foreach($menu as $m):?>
             <div class="product_menu_top_fa the_category_product">
-                <?php foreach($category as $c):?>
-                    <a href="<?php echo yii\helpers\Url::to(['product/index','cateid' => $c['cateid']]) ?>">
-                        <h3 class="product_menu_top_fa_title"><?php echo $c['title']?></h3>
+                <h3 class="product_menu_top_fa_title"><?php echo $m['title']?><span><img src="/mobile/img/Path%203.png" alt=""></span></h3>
+                <?php foreach($m['children'] as $cate):?>
+                    <a href="<?php echo yii\helpers\Url::to(['product/index', 'cateid' => $cate['cateid']]) ?>" class="product_menu_top_fa_content">
+                        <p><?php echo $cate['title']?></p>
                     </a>
-                    <hr>
                 <?php endforeach;?>
-                </div>
+                <hr>
             </div>
+        <?php endforeach;?>
     </div>
     <div class="product_menu_top_down_level"></div>
 </section>
