@@ -99,15 +99,15 @@
 }
 .business-content p{
     font-size: 14px;
-    padding: 14px 5px 14px 0;
-    text-indent: 20px;
+    padding: 14px 5px 14px 30px;
 }
 /*.business-content a span{*/
 /*position: relative;*/
 /*}*/
 .triangle_green{
     /*position: absolute;*/
-    margin-bottom:-3px;
+    margin-bottom: -3px;
+    margin-left: -15px;
     visibility: hidden;
 }
 .business-content a{
