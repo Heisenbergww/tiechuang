@@ -4,7 +4,7 @@ namespace app\mobile\controllers;
 
 use yii\web\Controller;
 use Yii;
-use app\models\join;
+use app\models\Join;
 use app\mobile\controllers\CommonController;
 
 class JoinusController extends CommonController
