@@ -8,7 +8,7 @@ use yii\filters\PageCache;
 ?>
 <section class="section1 contact_us_pic">
     <img src="/img/join_us.jpg" alt="">
-    <h1>J O I N  U S</h1>
+    <h1>JOIN US</h1>
     <h2>Welcome to become one of us!</h2>
 </section> 
 <?php
@@ -41,7 +41,13 @@ $form = ActiveForm::begin([
                         <p>2. The minimum order quantity is one container</p>
                         <p>3. At least 1 lawful and registered local shop or sale place managed by yourself，or  you have your own sales channel.</p>
                         <p>4. Have some knowledge and strong interest in sanitary ware</p>
-                    </div>                      
+                    </div>
+                    <div class="join_us_company_info">
+                        <p><span>Company Name：</span><?php echo $company['companyname']?></p>
+                        <p><span>Address:  </span><?php echo $company['companyaddress']?></p>
+                        <p><span>TEL：</span><?php echo $company['companytel']?></p>
+                        <p><span>Email：</span><a href="mailto:<?php echo $company['companyemail']?>"><?php echo $company['companyemail']?></a></p>
+                    </div> 
                 </div>
                 <div class="col-lg-6">
                     <div class="join_us_form_child">

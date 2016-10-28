@@ -37,6 +37,9 @@
 .map_pic img{
     width: 100%;
 }
+.contact_us_map a{
+    color:rgb(102, 190, 140) ;
+}
 
 /*第三部分*/
 .contact_us_form h1{

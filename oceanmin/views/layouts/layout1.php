@@ -97,6 +97,7 @@
                             <li class=""><a href="<?php echo yii\helpers\Url::to(['support/faq'])?>"><?php echo Yii::t('app', 'Support');?></a></li>
                             <li class=""><a href="<?php echo yii\helpers\Url::to(['aboutus/index'])?>"><?php echo Yii::t('app', 'About Us');?></a></li>
                             <li><a href="<?php echo yii\helpers\Url::to(['contactus/index'])?>"><?php echo Yii::t('app', 'Contact Us');?></a></li>
+                            <li><a href="<?php echo yii\helpers\Url::to(['joinus/index'])?>"><?php echo Yii::t('app', 'Join Us');?></a></li>
                         </ul>
                     </div>
                     <p><?php echo Yii::t('app', 'BILL & FOX LIMITED');?></p>

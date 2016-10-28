@@ -51,8 +51,8 @@
                     <div class="business-contact_ctrl">
                         <h5>Contact Us</h5>
                         <p><span>Company Name：</span><?php echo $company['companyname']?></p>
-                        <p><span>Email：</span><?php echo $company['companyemail']?></p>
-                        <p><span>TEL：</span><?php echo $company['companytel']?>9</p>
+                        <p><span>Email：</span><a href="mailto:<?php echo $company['companyemail']?>"><?php echo $company['companyemail']?></a></p>
+                        <p><span>TEL：</span><?php echo $company['companytel']?></p>
                         <p><span>Fax：</span><?php echo $company['companyfax']?></p>
                         <p><span>Mobile：</span><?php echo $company['companymobile']?></p>
                     </div>

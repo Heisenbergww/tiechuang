@@ -11,14 +11,17 @@
 .section1 h1{
     font-size: 48px;
     color: #FFFFFF;
-    letter-spacing: 8px;
+    letter-spacing: 24px;
+    word-spacing: -8px;
     margin-top: -210px;
+    font-family: DINOT-Medium;
 }
 .section1 h2{
     font-size: 24px;
     color: #FFFFFF;
     letter-spacing: 4px;
     margin-top: 20px;
+    font-family: DINOT-Medium;
 }
 
 /*第2部分*/
@@ -45,6 +48,25 @@
     margin-bottom:30px;
     width: 480px;
 }
+
+/*公司信息*/
+.join_us_company_info{
+    margin-top:50px;
+}
+.join_us_company_info p{
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: #2b2c33;
+    width: 480px;
+}
+.join_us_company_info p span{
+    color: #66676e;
+}
+.join_us_company_info p a{
+    color: rgb(102, 190, 140);
+}
+
+/*表格*/
 .join_us_form_child h2{
     font-size:24px;
     margin-bottom:30px;

@@ -121,7 +121,7 @@
 }
 /*商业联系*/
 .business-contact{
-    border: 1px solid #d8d8d8;
+    border: 1px solid rgb(102, 190, 140);
     padding: 20px 10px 20px;
     margin-top: 40px;
 }
@@ -139,7 +139,9 @@
 /*.business-contact p:last-of-type{*/
     /*margin-bottom:20px;*/
 /*}*/
-.business-contact_ctrl{}
+.business-contact_ctrl a{
+    color:rgb(102, 190, 140) ;
+}
 
 
 /*右侧部分*********************************/

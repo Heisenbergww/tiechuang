@@ -16,6 +16,7 @@ class JoinusController extends CommonController
     {
         $this->layout = 'layout1';
         $model = new Join();
+        $company = Company::find()->asArray()->one() ;
         if (Yii::$app->request->isPost) {
             $post = Yii::$app->request->post();
             $post['Join']['createtime'] = time();
@@ -26,7 +27,7 @@ class JoinusController extends CommonController
                 Yii::$app->session->setFlash('error','添加失败');
             }
         }
-        return $this->render('index',['model'=>$model]);
+        return $this->render('index',['company'=>$company,'model'=>$model]);
     }
 
 
