@@ -73,8 +73,9 @@
      margin-top: 20px;
  }
 .Special_Technology_content .pic_s{
-    width: 22%;
-    margin-left: 2%;
+    border: solid 1px #d8d8d8;
+    width: 15%;
+    margin-right: 8%;
     height: auto;
     margin-top: 40px;
     margin-bottom: 40px;
