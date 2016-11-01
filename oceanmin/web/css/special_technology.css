@@ -72,10 +72,35 @@
 .Special_Technology_content p:first-of-type{
      margin-top: 20px;
  }
-.Special_Technology_content img{
-    width: 90%;
-    margin-left: 5%;
+.Special_Technology_content .pic_s{
+    width: 22%;
+    margin-left: 2%;
     height: auto;
     margin-top: 40px;
     margin-bottom: 40px;
+}
+
+/*弹窗*/
+.tanchuang{
+    display: none;
+    width:425px;
+    height: ;
+    position: fixed;
+    left:calc(50% - 425px / 2);
+    top:30px;
+    margin: auto;
+    z-index: 5;
+}
+.tanchuang_img{
+    width: 100%;
+    height: auto;
+}
+.tanchuang .close{
+    top:-20px;
+    right: -20px;
+    cursor: pointer;
+    position: absolute;
+}
+.pic_b{
+
 }

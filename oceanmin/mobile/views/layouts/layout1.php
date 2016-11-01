@@ -29,6 +29,7 @@
     <!-- 底部 -->
     <section class="footer_menu clearfix">
         <a href="mailto:Waagee@beforeship.com"><p class="footer_menu_fa contact_us_fa">Contact Us</p></a>
+        <a href="<?php echo yii\helpers\Url::to(['joinus/index'])?>"><p class="footer_menu_fa ">Join US</p></a>
         <p class="footer_menu_fa about_fa">About Us <span><img src="/mobile/img/add.png" alt=""></span></p>
         <ul class="footer_menu_child for_about">
             <li><a href="<?php echo yii\helpers\Url::to(['aboutus/index'])?>">Company Information</a></li>
@@ -103,7 +104,7 @@
                     <li><a href="<?php echo yii\helpers\Url::to(['aboutus/branch'])?>">Our Branch</a></li>
                 </ul>
                 <p><a href="<?php echo yii\helpers\Url::to(['contactus/index'])?>">CONTACT US</a></p>
-                <p><a href="<?php echo yii\helpers\Url::to(['joinus/index'])?>">Join US</a></p>
+                <p><a href="<?php echo yii\helpers\Url::to(['joinus/index'])?>">JOIN US</a></p>
             </div>
         </nav>
     </nav>

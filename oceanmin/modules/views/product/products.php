@@ -28,6 +28,9 @@
                                 <span class="line"></span>是否推荐
                             </th>
                             <th class="span2 sortable">
+                                <span class="line"></span>推荐顺序
+                            </th>
+                            <th class="span2 sortable">
                                 <span class="line"></span>添加时间
                             </th>
                             <th class="span3 sortable align-right">
@@ -48,7 +51,10 @@
                         </td>
                         <td>
                             <?php $is=['不推荐','推荐'];echo $is[$product->is_tui];?>
-                            </td>
+                        </td>
+                        <td>
+                            <?php echo $product['orderid']?>
+                        </td>
                         <td>
                            <?php echo date('Y-m-d H:m:s',$product['createtime'])?>
                         </td>

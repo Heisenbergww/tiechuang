@@ -62,6 +62,13 @@
                                 </div>
                                 <p class="help-block help-block-error"></p>
                             </div>
+                            <div class="form-group field-product-title required">
+                                <div class="span12 field-box">
+                                    <label class="control-label" for="product-title">推荐顺序</label>
+                                    <input type="text" id="product-title" class="span9" name="Product[orderid]" value="<?php echo $model['orderid'];?>">
+                                </div>
+                                <p class="help-block help-block-error"></p>
+                            </div>
                             <div class="form-group field-wysi required">
                                 <div class="span12 field-box">
                                     <label class="control-label" for="wysi">商品特征(Features)</label>

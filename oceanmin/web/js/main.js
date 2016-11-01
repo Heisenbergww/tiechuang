@@ -119,7 +119,7 @@ $(".language").bind("click",function(){
     function theTanChuangShow(){
 
         var ee=$('.bg');
-        $('.product_pdf_pic_fa').click(function() {
+        $('.pic_s').click(function() {
             var  dd=$(this).next();
             dd.fadeIn('slow');
             ee.fadeIn('fast');
