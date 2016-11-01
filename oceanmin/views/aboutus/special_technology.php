@@ -18,12 +18,12 @@
         <p>
             Our company products passes Chinese mass attestation centre CQC32-372121 mass system attestation on October,2013.
         </p>
-        <img src="/img/cqc_1.jpg" alt="" class="pic_s">
+        <img src="/img/cqc_s1.jpg" alt="" class="pic_s">
         <div class="tanchuang">
             <img class="tanchuang_img" src="/img/cqc_1.jpg" alt="" class="">
             <img  class="close" src="/img/close.png" alt="">
         </div>
-        <img src="/img/cqc_2.jpg" alt="" class="pic_s">
+        <img src="/img/cqc_s2.jpg" alt="" class="pic_s">
         <div class="tanchuang">
             <img class="tanchuang_img" src="/img/cqc_2.jpg" alt="" class="">
             <img  class="close" src="/img/close.png" alt="">
@@ -35,32 +35,32 @@
             EN 12150-1:2000 specifies safety requirements for glass .Compliance with the standard is legally required for all glass products sold in the European Union.
             Our products of shower door glass through the CE certification.
         </p>
-        <img src="/img/standard_1.jpg" alt="" class="pic_s">
+        <img src="/img/standard_s1.jpg" alt="" class="pic_s">
         <div class="tanchuang">
             <img class="tanchuang_img" src="/img/standard_1.jpg" alt="" class="">
             <img  class="close" src="/img/close.png" alt="">
         </div>
-        <img src="/img/standard_2.jpg" alt="" class="pic_s">
+        <img src="/img/standard_s2.jpg" alt="" class="pic_s">
         <div class="tanchuang">
             <img class="tanchuang_img" src="/img/standard_2.jpg" alt="" class="">
             <img  class="close" src="/img/close.png" alt="">
         </div>
-        <img src="/img/standard_3.jpg" alt="" class="pic_s">
+        <img src="/img/standard_s3.jpg" alt="" class="pic_s">
         <div class="tanchuang">
             <img class="tanchuang_img" src="/img/standard_3.jpg" alt="" class="">
             <img  class="close" src="/img/close.png" alt="">
         </div>
-        <img src="/img/standard_4.jpg" alt="" class="pic_s">
+        <img src="/img/standard_s4.jpg" alt="" class="pic_s">
         <div class="tanchuang">
             <img class="tanchuang_img" src="/img/standard_4.jpg" alt="" class="">
             <img  class="close" src="/img/close.png" alt="">
         </div>
-        <img src="/img/standard_5.jpg" alt="" class="pic_s">
+        <img src="/img/standard_s5.jpg" alt="" class="pic_s">
         <div class="tanchuang">
             <img class="tanchuang_img" src="/img/standard_5.jpg" alt="" class="">
             <img  class="close" src="/img/close.png" alt="">
         </div>
-        <img src="/img/standard_6.jpg" alt="" class="pic_s">
+        <img src="/img/standard_s6.jpg" alt="" class="pic_s">
         <div class="tanchuang">
             <img class="tanchuang_img" src="/img/standard_6.jpg" alt="" class="">
             <img  class="close" src="/img/close.png" alt="">
