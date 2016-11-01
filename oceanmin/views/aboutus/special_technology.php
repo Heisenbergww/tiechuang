@@ -20,12 +20,12 @@
         </p>
         <img src="/img/cqc_s1.jpg" alt="" class="pic_s">
         <div class="tanchuang">
-            <img class="tanchuang_img" src="/img/cqc_1.jpg" alt="" class="">
+            <img class="tanchuang_img" src="/img/cqc_s1.jpg" alt="" class="">
             <img  class="close" src="/img/close.png" alt="">
         </div>
         <img src="/img/cqc_s2.jpg" alt="" class="pic_s">
         <div class="tanchuang">
-            <img class="tanchuang_img" src="/img/cqc_2.jpg" alt="" class="">
+            <img class="tanchuang_img" src="/img/cqc_s2.jpg" alt="" class="">
             <img  class="close" src="/img/close.png" alt="">
         </div>
 
@@ -37,32 +37,32 @@
         </p>
         <img src="/img/standard_s1.jpg" alt="" class="pic_s">
         <div class="tanchuang">
-            <img class="tanchuang_img" src="/img/standard_1.jpg" alt="" class="">
+            <img class="tanchuang_img" src="/img/standard_s1.jpg" alt="" class="">
             <img  class="close" src="/img/close.png" alt="">
         </div>
         <img src="/img/standard_s2.jpg" alt="" class="pic_s">
         <div class="tanchuang">
-            <img class="tanchuang_img" src="/img/standard_2.jpg" alt="" class="">
+            <img class="tanchuang_img" src="/img/standard_s2.jpg" alt="" class="">
             <img  class="close" src="/img/close.png" alt="">
         </div>
         <img src="/img/standard_s3.jpg" alt="" class="pic_s">
         <div class="tanchuang">
-            <img class="tanchuang_img" src="/img/standard_3.jpg" alt="" class="">
+            <img class="tanchuang_img" src="/img/standard_s3.jpg" alt="" class="">
             <img  class="close" src="/img/close.png" alt="">
         </div>
         <img src="/img/standard_s4.jpg" alt="" class="pic_s">
         <div class="tanchuang">
-            <img class="tanchuang_img" src="/img/standard_4.jpg" alt="" class="">
+            <img class="tanchuang_img" src="/img/standard_s4.jpg" alt="" class="">
             <img  class="close" src="/img/close.png" alt="">
         </div>
         <img src="/img/standard_s5.jpg" alt="" class="pic_s">
         <div class="tanchuang">
-            <img class="tanchuang_img" src="/img/standard_5.jpg" alt="" class="">
+            <img class="tanchuang_img" src="/img/standard_s5.jpg" alt="" class="">
             <img  class="close" src="/img/close.png" alt="">
         </div>
         <img src="/img/standard_s6.jpg" alt="" class="pic_s">
         <div class="tanchuang">
-            <img class="tanchuang_img" src="/img/standard_6.jpg" alt="" class="">
+            <img class="tanchuang_img" src="/img/standard_s6.jpg" alt="" class="">
             <img  class="close" src="/img/close.png" alt="">
         </div>
         
