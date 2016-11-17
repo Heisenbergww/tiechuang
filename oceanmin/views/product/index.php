@@ -1,12 +1,12 @@
-<title>product</title>
+<title>产品展示</title>
 <link rel="stylesheet" href="/css/product-introduce.css">
-<script src="/js/jquery-3.1.0.min.js"></script>
 <!--分页-->
-<!--<link rel="stylesheet" href="/css/pagination.css">-->
-<!--<script src="/js/jquery.pagination.min.js"></script>-->
+<link rel="stylesheet" href="/css/pagination.css">
+<script src="/js/jquery.pagination.min.js"></script>
 
 
-<section class="section0 clearfix">
+
+<section class="section0 clearfix  ">
     <div class="container-fluid">
         <nav id="breadcrumb">
             <ol class="breadcrumb">
@@ -17,7 +17,7 @@
     </div>
 </section>
 <section class="container-fluid clearfix section1">
-    <img src="/img/product_info.jpg" alt="">
+    <img src="/<?php echo $front['product_img']?>" alt="">
 </section>
 <section class="container-fluid clearfix section2">
     <div class="row business">
@@ -25,36 +25,37 @@
             <div class="row product_menu">
                 <div class="col-lg-12 business-left-title">
                     <a href="<?php echo yii\helpers\Url::to(['product/index']) ?>">
-                        <h3>All Products</h3>
+                    <h3>All Products</h3>
                     </a>
                 </div>
                 <?php foreach($menu as $m):?>
-                    <div class="col-lg-12 business-one">
-                        <div class="business-name" >
-                            <h3><?php echo $m['title']?><span><img src="/img/Path%203.png" alt=""></span></h3>
-                            <hr>
-                        </div>
-                        <div class="business-content">
-                            <?php foreach($m['children'] as $cate):?>
-                                <a href="<?php echo yii\helpers\Url::to(['product/index', 'cateid' => $cate['cateid']]) ?>">
-                                    <p>
-                                        <img   src="/img/triangle_green.png" alt="" class="triangle_green">
-                                        <?php echo $cate['title']?>
-                                    </p>
-                                </a>
-                            <?php endforeach;?>
-                        </div>
+                <div class="col-lg-12 business-one">
+                    <div class="business-name" >
+                        <h3><?php echo $m['title']?><span><img src="/img/Path%203.png" alt=""></span></h3>
+                        <hr>
                     </div>
-                <?php endforeach;?>
+                    <div class="business-content">
+                        <?php foreach($m['children'] as $cate):?>
+                        <a href="<?php echo yii\helpers\Url::to(['product/index', 'cateid' => $cate['cateid']]) ?>">
+                            <p>
+                                <img   src="/img/triangle_green.png" alt="" class="triangle_green">
+                                <?php echo $cate['title']?>
+                            </p>
+                        </a>
+                        <?php endforeach;?>
+                    </div>
+                </div>
+               <?php endforeach;?>
                
                 <div class="col-lg-12 business-contact" >
                     <div class="business-contact_ctrl">
                         <h5>Contact Us</h5>
                         <p><span>Company Name：</span><?php echo $company['companyname']?></p>
-                        <p><span>Email：</span><a href="mailto:<?php echo $company['companyemail']?>"><?php echo $company['companyemail']?></a></p>
+                        <p><span>Email：</span><?php echo $company['companyemail']?></p>
                         <p><span>TEL：</span><?php echo $company['companytel']?></p>
                         <p><span>Fax：</span><?php echo $company['companyfax']?></p>
                         <p><span>Mobile：</span><?php echo $company['companymobile']?></p>
+                        <img src="/img/qrcode.png" alt="">
                     </div>
                 </div>
             </div>
@@ -71,14 +72,14 @@
                     </a>
                 </div>
                 <?php endforeach;?>
-            </div>
-            <div class="pagination pull-right">
-                <?php echo yii\widgets\LinkPager::widget([
-                    'pagination' => $pager,
-                    'prevPageLabel' => '&#8249;',
-                    'nextPageLabel' => '&#8250;',
-                ]); ?>
-            </div>
+                <div class="pagination pull-right">
+                    <?php echo yii\widgets\LinkPager::widget([
+                        'pagination' => $pager,
+                        'prevPageLabel' => '&#8249;',
+                        'nextPageLabel' => '&#8250;',
+                    ]); ?>
+                </div>                
+            </div           
         </div>       
     </div>    
 </section>
@@ -92,11 +93,11 @@
         // console.log(str1);
         $(".product_menu a").each(function(){
             if($(this).attr("href")==str1){
-//                console.log($(this).attr("href"));
-                $(this).children("h3").css({"background-color":"#66BE8C","color":"#fff"});
+                console.log($(this).attr("href"));
+                $(this).children("h3").css({"background-color":"#B7683F","color":"#fff"});
                 $(this).children("p").children("img").css("visibility","visible");
-                $(this).parent("div").prev("div").children("h3").css({"background-color":"#66BE8C","color":"#fff"});
-                $(this).children("p").css("color","#009240");
+                $(this).parent("div").prev("div").children("h3").css({"background-color":"#B7683F","color":"#fff"});
+                $(this).children("p").css("color","#B7683F");
                 $(this).parent("div").prev("div").children("hr").css("display","none");
                 $(this).parent("div").css("display","block");
             }

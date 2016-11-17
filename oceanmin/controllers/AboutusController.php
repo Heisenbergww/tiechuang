@@ -5,6 +5,7 @@ namespace app\controllers;
 use yii\web\Controller;
 use yii\data\Pagination;
 use app\models\Article;
+use app\models\Front;
 use Yii;
 use app\controllers\CommonController;
 
@@ -28,7 +29,8 @@ class AboutusController extends CommonController
 	public function actionIndex()
 	{
 		$this->layout = 'layout1';
-		return $this->render('index');
+		$front = Front::find()->where('frontid = :id', [':id' => '1'])->one();
+		return $this->render('index',['front' => $front]);
 	}
 
 	public function actionNews()

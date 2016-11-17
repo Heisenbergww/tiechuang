@@ -4,11 +4,7 @@
     padding-top: 56px;
 }
 .section0{
-    background-image: url("../img/faq.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 375px 94px;
-    height: 94px;
+
 }
 .section1{
     text-align: center;
@@ -72,17 +68,17 @@
 
 .faq:nth-of-type(odd) .the_q_left,
 .faq:nth-of-type(odd) .the_q_right{
-    background-color:#3774BA ;
+    background-color:#B7683F ;
 }
 .faq:nth-of-type(even) .the_q_left,
 .faq:nth-of-type(even) .the_q_right{
-    background-color:#27ad80 ;
+    background-color:#D94954 ;
 }
 .faq:nth-of-type(odd) .triangle_q{
-    border-right: 15px solid #3774BA;
+    border-right: 15px solid #B7683F;
 }
 .faq:nth-of-type(even) .triangle_q{
-    border-right: 15px solid #27ad80;
+    border-right: 15px solid #D94954;
 }
 .the_q_right{
     text-align: left;

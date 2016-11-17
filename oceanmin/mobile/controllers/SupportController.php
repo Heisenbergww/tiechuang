@@ -5,6 +5,7 @@ namespace app\mobile\controllers;
 use yii\web\Controller;
 use app\models\Category;
 use app\models\Product;
+use app\models\Front;
 use Yii;
 use app\mobile\controllers\CommonController;
 
@@ -40,7 +41,8 @@ class SupportController extends CommonController
 	public function actionFaq()
 	{
 		$this->layout = 'layout1';
-		return $this->render('faq');
+		$front = Front::find()->where('frontid = :id', [':id' => '1'])->one();
+		return $this->render('faq',['front'=>$front]);
 	}
 
 

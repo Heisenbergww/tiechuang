@@ -6,7 +6,7 @@ use yii\helpers\Html;
 <html class="login-bg">
     
     <head>
-        <title>Waagee - 后台管理</title>
+        <title>铁床 - 后台管理</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- bootstrap -->
         <link href="/assets/admin/css/bootstrap/bootstrap.css" rel="stylesheet" />
@@ -26,7 +26,7 @@ use yii\helpers\Html;
         <![endif]-->
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
     
-    <body>
+    <body oncontextmenu="return false">
         <div class="row-fluid login-wrapper">
             <a class="brand" href="index.html"></a>
             <?php $form = ActiveForm::begin([
@@ -36,7 +36,7 @@ use yii\helpers\Html;
             ]);?>
                 <div class="span4 box">
                     <div class="content-wrap">
-                        <h6>Waagee - 后台管理</h6>
+                        <h6>铁床 - 后台管理</h6>
                         <?php echo $form->field($model,'adminuser')->textInput(["class"=>"span12","placeholder"=>"管理员账号"]);?>
                          <?php echo $form->field($model,'adminpass')->passwordInput(["class"=>"span12","placeholder"=>"管理员密码"]);?>
                         <a href="<?php echo yii\helpers\Url::to(['public/seekpassword']);?>" class="forgot">忘记密码?</a>

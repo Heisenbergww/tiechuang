@@ -7,9 +7,7 @@ use yii\bootstrap\Alert;
 use yii\filters\PageCache;
 ?>
 <section class="section1 contact_us_pic">
-    <img src="/img/join_us.jpg" alt="">
-    <h1>JOIN US</h1>
-    <h2>Welcome to become one of us!</h2>
+    <img src="/<?php echo $front['join_img']?>" alt="">
 </section> 
 <?php
 if( Yii::$app->getSession()->hasFlash('success') ) {
@@ -40,7 +38,7 @@ $form = ActiveForm::begin([
                         <p>1. There is no limit to the area</p>
                         <p>2. The minimum order quantity is one container</p>
                         <p>3. At least 1 lawful and registered local shop or sale place managed by yourself，or  you have your own sales channel.</p>
-                        <p>4. Have some knowledge and strong interest in sanitary ware</p>
+                        <p>4. Have some knowledge and strong interest in Iron bed</p>
                     </div>
                     <div class="join_us_company_info">
                         <p><span>Company Name：</span><?php echo $company['companyname']?></p>
@@ -62,9 +60,9 @@ $form = ActiveForm::begin([
                         <input name="Join[country]"  type="text" value="<?= Html::encode($model->country) ?>" placeholder="">
                         <p>Products of interest</p>
                         <select name="Join[interest]">
-                            <option value="<?= Html::encode($model->interest='Basin') ?>">Basin</option>
-                            <option value="<?= Html::encode($model->interest='Toilet') ?>">Toilet</option>
-                            <option value="<?= Html::encode($model->interest='Shower door') ?>">Shower door</option>
+                            <?php foreach ($cate as $c): ?>
+                                <option value="<?= Html::encode($model->interest=$c->title) ?>"><?= Html::encode($c->title) ?></option>
+                            <?php endforeach;?>
                         </select>
                         <p>Message</p>
                         <textarea name="Join[comment]" type="text" placeholder="" class="message_s"></textarea>
@@ -78,24 +76,6 @@ $form = ActiveForm::begin([
 </section>
  <?php ActiveForm::end();?>
 
-<!-- Google Code for &#21355;&#28020;&#36716;&#21270; Conversion Page -->
-<script type="text/javascript">
-    /* <![CDATA[ */
-    var google_conversion_id = 869317973;
-    var google_conversion_language = "en";
-    var google_conversion_format = "3";
-    var google_conversion_color = "ffffff";
-    var google_conversion_label = "Vo-PCIypv2sQ1frCngM";
-    var google_remarketing_only = false;
-    /* ]]> */
-</script>
-<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
-</script>
-<noscript>
-    <div style="display:inline;">
-        <img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/869317973/?label=Vo-PCIypv2sQ1frCngM&amp;guid=ON&amp;script=0"/>
-    </div>
-</noscript>
 
 
 

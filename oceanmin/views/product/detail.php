@@ -3,6 +3,7 @@
 <link rel="stylesheet" href="/css/font-awesome.min.css">
 
 
+
 <section class="section0 clearfix  ">
     <div class="container-fluid">
         <nav id="breadcrumb">
@@ -39,7 +40,7 @@
                 <h5>Features:</h5>
               <?php echo $product['features']?>
                 <div class="item_info_call_me">
-                    <a href="mailto:waagee@beforeship.com">Contact Us</a>
+                    <a href="mailto:Ercole@beforeship.com">Contact Us</a>
                     <p>If you have any questions please contact me, we are sure any of your questions will get our prompt attention and reply.</p>
                 </div>
             </div>
@@ -54,6 +55,29 @@
         </div>
     </div>
 </section>
+<script>
+
+</script>
+
+<? if (isset($resnew)) :?>
+<section class="container-fluid clearfix section3">
+    <div class="row clearfix">
+        <h3>You May Alse Like</h3>
+        <?php foreach($resnew as $r):?>
+        <div class="col_one_fifth">
+            <div class="swiper-slide">
+                <a href="<?php echo yii\helpers\Url::to(['product/detail', 'productid' => $r['productid']]) ?>">
+                    <div class="you_may_buy">
+                        <img  src="/<?php echo $r['cover']?>" alt="">
+                        <p><?php echo $r['title']?></p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <?php endforeach;?>
+    </div>
+</section>
+<? endif ?>
 
 
 
@@ -106,13 +130,11 @@
         function beBig(){
             $(".fivepic img").click(function(){
                 var bigPicSrc=/s(?=\d)/g;
-                c=$(this).attr("src");
-                d= c.replace(bigPicSrc,'b');
+                c=$(this).attr("src");                
+                d= c.replace(bigPicSrc,'b');                
                 $(".big-pic img").attr("src",c);
             })
         }
     })
 
 </script>
-
-

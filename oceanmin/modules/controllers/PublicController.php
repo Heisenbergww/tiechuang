@@ -11,7 +11,7 @@ class PublicController extends Controller
     public function actionLogin()
     {
         $this->layout = false;
-        //if ($_SERVER['HTTP_HOST'] == 'www.ercolego.com' || $_SERVER['HTTP_HOST'] == 'ercolego.com' || $_SERVER['HTTP_HOST'] == 'web.shelf.com') {
+//        if ($_SERVER['HTTP_HOST'] == 'www.ercolego.com' || $_SERVER['HTTP_HOST'] == 'ercolego.com' || $_SERVER['HTTP_HOST'] == 'web.shelf.com' || $_SERVER['HTTP_HOST'] == 'shelf.com'||$_SERVER['HTTP_HOST']=='107.170.254.164') {
             $model = new Admin;
             if (Yii::$app->request->isPost) {
                 $post = Yii::$app->request->post();
@@ -21,9 +21,9 @@ class PublicController extends Controller
                 }
             }
             return $this->render('login', ['model' => $model]);
-        //} else {
-        //    return $this->redirect('http://www.ercolego.com/');
-        //}
+//        } else {
+//            return $this->redirect('http://www.ercolego.com/');
+//        }
 
     }
 

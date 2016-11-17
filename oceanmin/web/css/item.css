@@ -1,6 +1,6 @@
 /*导航的下划线*/
 .menu ul li:nth-child(2) a{
-    border-bottom:2px solid #009240;
+    border-bottom:2px solid #B7683F;
 }
 /*主体部分*/
 /*面包屑*/
@@ -135,4 +135,77 @@
 .product_descr td{
     padding-left: 10px;
     padding-right: 10px;
+}
+
+/*第三部分*/
+/*第三部分*/
+.section3{
+    padding-top:35px ;
+    min-width: 1200px;
+}
+.section3 h3{
+    text-align: center;
+    font-size: 24px;
+    font-family: DINOT-Medium;
+}
+.row_part_title h1{
+    font-size: 48px;
+    font-family:"Curlz MT";
+    margin-bottom: 20px;
+    color: #2b2c33;
+    text-align: center;
+}
+.row_part_title hr{
+    border: none;
+    height: 2px;
+    background:#F05E18;
+    width:76px ;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.row_part_title p{
+    font-family:"Didot";
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.5;
+    color: #444769;
+    padding-bottom: 10px;
+}
+.you_may_buy{
+    padding: 10px 10px 20px;
+    border: 1px solid #efefef;
+    margin: 20px 0;
+}
+.you_may_buy:hover {
+    /*border: 1px solid #F05E18;*/
+    box-shadow: 5px 5px 30px #d8d8d8;
+}
+.you_may_buy img{
+    width:100%;
+    height:auto;
+}
+.you_may_buy p{
+    font-family:"Didot";
+    height:56px;
+    padding: 20px 0 0 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #2D2D33;
+    letter-spacing: -0.34px;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-height: 1.3;
+    -webkit-box-orient: vertical;
+}
+.col_one_fifth{
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    float: left;
+    width: 20%;
 }

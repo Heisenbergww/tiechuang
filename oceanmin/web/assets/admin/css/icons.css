@@ -112,4 +112,14 @@ i.table-delete{
   	line-height: 14px;
   	vertical-align: text-top;
 }
+i.table-img{
+	background: url("../img/no-img-gallery.png") no-repeat;
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	margin-top: 1px;
+  	*margin-right: .3em;
+  	line-height: 14px;
+  	vertical-align: text-top;
+}
 

@@ -22,13 +22,13 @@
                                 <span class="line"></span>商品名称
                             </th>
                             <th class="span2 sortable">
+                                <span class="line"></span>商品ID
+                            </th>
+                            <th class="span2 sortable">
                                 <span class="line"></span>sku
                             </th>
                              <th class="span2 sortable">
                                 <span class="line"></span>是否推荐
-                            </th>
-                            <th class="span2 sortable">
-                                <span class="line"></span>推荐顺序
                             </th>
                             <th class="span2 sortable">
                                 <span class="line"></span>添加时间
@@ -47,14 +47,14 @@
                             <a href="#" class="name"><?php echo $product['title']?></a>
                         </td>
                         <td>
+                            <?php echo $product['productid']?>
+                        </td>
+                        <td>
                             <?php echo $product['sku']?>
                         </td>
                         <td>
                             <?php $is=['不推荐','推荐'];echo $is[$product->is_tui];?>
-                        </td>
-                        <td>
-                            <?php echo $product['orderid']?>
-                        </td>
+                            </td>
                         <td>
                            <?php echo date('Y-m-d H:m:s',$product['createtime'])?>
                         </td>
@@ -64,6 +64,7 @@
                         <a href="<?php echo yii\helpers\Url::to(['product/on', 'productid' => $product->productid]); ?>">推荐</a>
                         <a href="<?php echo yii\helpers\Url::to(['product/off', 'productid' => $product->productid]); ?>">不推荐</a> 
                         <a href="<?php echo yii\helpers\Url::to(['product/del','productid'=>$product->productid]);?>">删除</a>
+                        <a href="<?php echo yii\helpers\Url::to(['product/relation','productid'=>$product->productid]);?>">编辑商品关联</a>
                         </td>
                     </tr>
                     <?php endforeach; ?>

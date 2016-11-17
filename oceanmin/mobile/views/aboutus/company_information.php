@@ -1,7 +1,9 @@
 <link rel="stylesheet" href="/mobile/css/company_information.css">
 
 <section class="section"></section>
-<section class="section0"></section>
+<section class="section0">
+    <img src="/<?php echo $front['company_img']?>" alt="" style="width:100%;">
+</section>
 <section class="section1 container clearfix ">
     <div class="p">
         <p>About WaaGee</p>

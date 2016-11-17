@@ -1,6 +1,6 @@
 /*导航的下划线*/
 .menu ul li:nth-child(4) a{
-    border-bottom:2px solid #009240;
+    border-bottom:2px solid #B7683F;
 }
 .to_about_us ul li:nth-child(4) a{
     color: #0767bd;

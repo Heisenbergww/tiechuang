@@ -1,17 +1,21 @@
-<?php header("Access-Control-Allow-Origin: http://www.waagee.com/"); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="csrf-token" content="<?= Yii::$app->request->csrfToken ?>"/>
-    <meta name="Keywords" Content="WaaGee , high grade basins, wall-hung basins, intelligent toilets, shower doors , sanitary ware"/>
-    <meta name="description" Content="WaaGee is a brand of high grade basins, wall-hung basins, intelligent toilets, shower doors and other related products."/>
-    <title>Waagee</title>
+    <meta name="Keywords" Content="Iron bed, Bunk bed Frame, Metal Platform Bed Frame, Folding bed Frame, Metal bed Frame, Metal Bunk Bed Frame"/>
+    <meta name="description" Content="Rtto is a brand of Iron bed."/>
+    <title>Rtto</title>
     <link type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="/css/normal.css">
     <link rel="stylesheet" href="/css/main.css">
-    <script src="/js/jquery-3.1.0.min.js"></script>
-
+    <script src="/js/jquery-3.1.0.min.js"></script>  
+    <script type="text/javascript">
+        if (window != window.top) {
+        window.top.location.replace(window.location)
+        }
+    </script>
 
 </head>
 <body style="overflow-x:hidden">
@@ -20,7 +24,7 @@
             <a href="" name="top_top">
             </a>
             <div class="logo fl">
-                <a href="/" name="logo"><img src="/img/logo.png" alt="" ></a>
+                <a href="/" name="logo"><img src="/<?php echo $this->params['front']['logo'];?>" alt="" ></a>
             </div>
             <div class="logo-right fr">
                 <div class="language fr">
@@ -48,6 +52,7 @@
                 <div class="menu fr">
                     <ul class=" ">
                         <li class=""><a href="/" class=""><?php echo Yii::t('app', 'Home');?></a></li>
+                        <!--<li class=""><a href="<?php echo yii\helpers\Url::to(['fashion/index'])?>" class=""><?php echo Yii::t('app', 'FASHION NOW');?></a></li>-->
                         <li><a href="<?php echo yii\helpers\Url::to(['product/index'])?>"><?php echo Yii::t('app', 'Product');?></a></li>
                         <li class="menu_support " id="menu_support"><a href="#"><?php echo Yii::t('app', 'Support');?><span class="home_trangle"></span></a></li>
                         <li class="menu_about_us" id="menu_about_us"><a href="#"><?php echo Yii::t('app', 'About Us');?><span class="home_trangle"></span></a></li>
@@ -65,7 +70,7 @@
         <div class="second_menu to_about_us menu_about_us ">
             <ul>
                 <a href="<?php echo yii\helpers\Url::to(['aboutus/index'])?>"><li>Company Information</li></a>
-                <a href="<?php echo yii\helpers\Url::to(['aboutus/technology'])?>"><li>Certification</li></a>
+                <a href="<?php echo yii\helpers\Url::to(['aboutus/technology'])?>"><li>Special Technology</li></a>
                 <a href="<?php echo yii\helpers\Url::to(['aboutus/news'])?>"><li>News</li></a>
                 <a href="<?php echo yii\helpers\Url::to(['aboutus/branch'])?>"><li>Our Branch</li></a>
             </ul>
@@ -125,30 +130,8 @@
     </div>
     <script src="/js/main.js"></script>
     <!--分析代码-->
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-86667120-1', 'auto');
-        ga('send', 'pageview');
-
-    </script>
+  
     <!--再营销代码-->
-    <script type="text/javascript">
-        /* <![CDATA[ */
-        var google_conversion_id = 869317973;
-        var google_custom_params = window.google_tag_params;
-        var google_remarketing_only = true;
-        /* ]]> */
-    </script>
-    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
-    </script>
-    <noscript>
-        <div style="display:inline;">
-            <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/869317973/?guid=ON&amp;script=0"/>
-        </div>
-    </noscript>
+   
     </body>
     </html>

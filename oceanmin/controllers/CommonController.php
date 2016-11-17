@@ -5,6 +5,7 @@ namespace app\controllers;
 use yii\web\Controller;
 use Yii;
 use app\models\Social;
+use app\models\Front;
 
 class CommonController extends Controller
 {
@@ -22,9 +23,11 @@ class CommonController extends Controller
             echo '您的请求未通过我们的验证！';
             exit();
         }
+        $front = Front::find()->where('frontid = :id', [':id' => '1'])->one();
+        $this->view->params['front'] = $front;
         $footer = Social::find()->where('id = :id', [':id' => '1'])->one();
         $this->view->params['footer'] = $footer;
-        //if ($_SERVER['HTTP_HOST']=='www.ercolego.com'||$_SERVER['HTTP_HOST']=='ercolego.com'||$_SERVER['HTTP_HOST']=='web.shelf.com'||$_SERVER['HTTP_HOST']=='shelf.com'||$_SERVER['HTTP_HOST']=='192.168.199.60') {
+//         if ($_SERVER['HTTP_HOST']=='www.ercolego.com'||$_SERVER['HTTP_HOST']=='ercolego.com'||$_SERVER['HTTP_HOST']=='web.shelf.com'||$_SERVER['HTTP_HOST']=='shelf.com'||$_SERVER['HTTP_HOST']=='192.168.199.60'||$_SERVER['HTTP_HOST']=='107.170.254.164') {
             if (!empty($_COOKIE['lang'])) {
                 $lang = $_COOKIE['lang'];
             } else {
@@ -49,9 +52,10 @@ class CommonController extends Controller
             } else {
 
             }
-        //}else{
-        //    return $this->redirect('http://www.ercolego.com/');
-        //}
+//        }else{
+//            exit();
+//            return $this->redirect('http://www.ercolego.com/');
+//        }
         
     }
 

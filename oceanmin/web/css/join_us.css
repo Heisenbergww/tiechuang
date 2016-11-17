@@ -1,6 +1,6 @@
 /*导航的下划线*/
 .menu ul li:nth-child(6) a{
-    border-bottom:2px solid #009240;
+    border-bottom:2px solid #B7683F;
 }
 .contact_us_pic{
     text-align: center;
@@ -63,7 +63,7 @@
     color: #66676e;
 }
 .join_us_company_info p a{
-    color: rgb(102, 190, 140);
+    color: #B7683F;
 }
 
 /*表格*/
@@ -113,13 +113,13 @@
     text-indent: 0;
     margin-left:100px;
     text-align: center;
-    border:1px solid #68B888;
+    border:1px solid #B7683F;
     width: 280px;
     height: 50px;
     font-size: 18px;
     color: #FFFFFF;
     letter-spacing: 0;
-    background: #68B888;
+    background: #B7683F;
     border-radius: 4px;
     margin-top: 20px;
     cursor: pointer;

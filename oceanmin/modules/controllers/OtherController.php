@@ -61,9 +61,15 @@ class OtherController extends CommonController
     
     public function actionImage()
     {
-        $this->layout=false;
+        $this->layout = false;
         return $this->render('image');
     }
+
+
+
+
+
+
 
 
 }

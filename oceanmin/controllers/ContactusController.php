@@ -7,6 +7,7 @@ use yii\data\Pagination;
 use Yii;
 use app\models\Message;
 use app\models\Company;
+use app\models\Front;
 use app\controllers\CommonController;
 
 class ContactusController extends CommonController
@@ -36,12 +37,13 @@ class ContactusController extends CommonController
 			$post['Message']['createtime'] = time();
 			if ($model->add($post)) {
 				Yii::$app->session->setFlash('success','添加成功');
-				return $this->goBack(['contactus/index']);
+				return $this->goback(['contactus/index']);
 			}else{
 				Yii::$app->session->setFlash('error','添加失败');
 			}
 		}
-		return $this->render('index',['company'=>$company,'model'=>$model]);
+		$front = Front::find()->where('frontid = :id', [':id' => '1'])->one();
+		return $this->render('index',['front'=>$front,'company'=>$company,'model'=>$model]);
 	}
 
 

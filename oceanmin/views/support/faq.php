@@ -1,6 +1,3 @@
-<?php
-use yii\filters\PageCache;
-?>
 <!--该页-->
 <link rel="stylesheet" href="/css/faq.css">
 
@@ -15,11 +12,9 @@ use yii\filters\PageCache;
             </nav>
         </div>
     </section>
-    <?php if($this->beginCache('cache_faq_img')){?> 
     <section class="container-fluid clearfix section1">
-        <img src="/img/faq.jpg" alt="">
+        <img src="/<?php echo $front['faqimg']?>" alt="">
     </section>
-    <?php $this->endCache();}?> 
 <section class="section2  container_q_and_a">
     <div class="q_and_a">
         <div class="row the_q clearfix">
@@ -43,7 +38,7 @@ use yii\filters\PageCache;
             <div class="col-lg-11">
                 <div class="the_a_right">
                     <span class="triangle_a"></span>
-                    <p>Customer service is available Monday – Friday, 9AM to 5:30PM. Messages and emails can be left during non-working hours and you will be contacted the next business day.  
+                    <p>Customer service is available Monday – Friday, 9AM to 5:30PM. Messages and emails can be left during non-working hours and you will be contacted the next business day. 
                     </p>
                 </div>
             </div>
@@ -83,7 +78,7 @@ use yii\filters\PageCache;
             <div class="col-lg-11">
                 <div class="the_q_right">
                     <span class="triangle_q"></span>
-                    <p>How can I get some samples?
+                    <p>Is the sample free?
                     </p>
                 </div>
             </div>
@@ -95,7 +90,7 @@ use yii\filters\PageCache;
             <div class="col-lg-11">
                 <div class="the_a_right">
                     <span class="triangle_a"></span>
-                    <p>We’re honored to supply samples for you. Our samples are free for customers who confirm the order, but the courier charge is on customer’s account.
+                    <p>Our sample is not for free, but we can reimburse sample costs to buyer when bulk order.
                     </p>
                 </div>
             </div>
@@ -109,7 +104,7 @@ use yii\filters\PageCache;
             <div class="col-lg-11">
                 <div class="the_q_right">
                     <span class="triangle_q"></span>
-                    <p>Can I bargain the price?
+                    <p>I come from Africa, I want to wholesale your products, what should I do?
                     </p>
                 </div>
             </div>
@@ -121,7 +116,7 @@ use yii\filters\PageCache;
             <div class="col-lg-11">
                 <div class="the_a_right">
                     <span class="triangle_a"></span>
-                    <p>Yes, the price list is our general price, we'll offer you final price according to your quantity and requirements.
+                    <p>Please mail me to rtto@beforeship.com, and tell me your request. Include products' quantity, SKU, send to the destination.
                     </p>
                 </div>
             </div>
@@ -147,7 +142,7 @@ use yii\filters\PageCache;
             <div class="col-lg-11">
                 <div class="the_a_right">
                     <span class="triangle_a"></span>
-                    <p>If you have any further questions, feel free to contact us at WaaGee@beforeship.com. Please allow for a 24-hour response time especially with questions sent over the weekend. Thank you for your understanding.
+                    <p>If you have any further questions, feel free to contact us at rtto@beforeship.com. Please allow for a 24-hour response time especially with questions sent over the weekend. Thank you for your understanding.
                     </p>
                 </div>
             </div>

@@ -15,12 +15,23 @@
     <section class="section2 container-fluid clearfix">
         <div class="row">
             <div class="col-lg-12">
-<!--                <img src="/img/company_info.jpg" alt="">-->
-                <p>About WaaGee</p>
-                <p>WaaGee is a new brand which was founded in 2015. It is short for luxembourgish "Waasser Geescht". Chinese name is the element of water. International Company Name: BILL & FOX LIMITED, located in Hong Kong, China, and the detail as following: 7/F, SPA centre, NO.53-55 Lockhart Road, Wanchai. </p>
-                <p>Manufacture Address：Tianjin, China. It is a sanitary ware factory specializing in producing high grade basins, wall-hung basins, intelligent toilet, shower door and other related products. Our factory applies itself to the development and research of sanitary ware science & technology. We are always persisting in the development tenet of "Gain Credit Standing by Honesty, and Quality Creates Brands".</p>
-                <p>WaaGee has set up warehouse in the Americas, Europe, Asia, therefore, we will provide the best products and quality of service to your business with lower costs. </p>
-                <p>Most of the day relaxing, and that is bathed in soft, elegant, romantic, comfortable and beautiful space, the constant pursuit of the good, so WaaGee firmly believe: Better quality, Life is more beautiful!</p>
+                <img src="/<?php echo $front['company_img']?>" alt="">
+                <p>About RTTO</p>
+                <p>
+                    RTTO is a new brand which was founded in 2015. International Company Name: BILL & FOX LIMITED, located in Hong Kong, China, and the detail as following: 7/F, SPA centre, NO.53-55 Lockhart Road, Wanchai. Manufacture Address：Jinghai, Tianjin, China.
+                </p>
+                <p>
+                    The goal was continue to satisfy the customers challenging requirements, improving ourselves constantly, leading the fashion, simple, environment friendly idea.
+                </p>
+                <p>
+                    RTTO offers a wide range of designer Iron bed, We cut out the middleman of furniture,so we can offer original furniture design at affordable prices. We find the best manufacturers to build the furniture often the same people who make products for the top high street brands. we continually strive to provide you with a quick and convenient shopping experience first time, every time.
+                </p>
+                <p>
+                    RTTO have warehouses in London, UK; Antwerp, Belgium; Amsterdam, Netherlands; Tianjin, China; LA, US. Therefore, we will provide the best products and quality of service to your business with lower costs. All of our products are backed by a "Low Price Guarantee". Your complete satisfaction is our number one priority.
+                </p>
+                <p>
+                    Thank you for visiting our website. We look forward to servicing your needs in the future.
+                </p>
             </div>
         </div>
     </section>

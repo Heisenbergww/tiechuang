@@ -26,7 +26,7 @@ use yii\helpers\Html;
         <![endif]-->
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
     
-    <body>
+    <body oncontextmenu="return false">
         <div class="row-fluid login-wrapper">
             <a class="brand" href="index.html"></a>
             <?php $form = ActiveForm::begin([

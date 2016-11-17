@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="/css/contact_us.css">
 
 <section class="section1 contact_us_pic">
-    <img src="/img/contact_us.jpg" alt="">
+    <img src="/<?php echo $front['contact_img']?>" alt="">
 </section>
 <?php $this->endCache();}?>
 <section class="section2 container_contact_us_map clearfix">
@@ -59,7 +59,7 @@ $form = ActiveForm::begin([
                 <p>Please do not hesitate to let me know if you have any question or concern.</p>
                 <hr>
                 <textarea name="Message[detail]" type="text" placeholder="Messages" class="message_s"></textarea>
-                <input name="Message[name]" type="text" value="<?= Html::encode($model->name) ?>" placeholder="Name" class="input_left">
+                <input name="Message[name]" type="text" value="<?= Html::encode($model->name) ?>" placeholder="Name">
                 <input name="Message[email]"  type="text" value="<?= Html::encode($model->email) ?>" placeholder="Email">
                 <input name="Message[phone]"  type="text" value="<?= Html::encode($model->phone) ?>" placeholder="Phone Number">
             </div>
@@ -69,24 +69,8 @@ $form = ActiveForm::begin([
 </section>
  <?php ActiveForm::end();?>
 
-<!-- Google Code for &#21355;&#28020;&#36716;&#21270; Conversion Page -->
-<script type="text/javascript">
-    /* <![CDATA[ */
-    var google_conversion_id = 869317973;
-    var google_conversion_language = "en";
-    var google_conversion_format = "3";
-    var google_conversion_color = "ffffff";
-    var google_conversion_label = "Vo-PCIypv2sQ1frCngM";
-    var google_remarketing_only = false;
-    /* ]]> */
-</script>
-<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
-</script>
-<noscript>
-    <div style="display:inline;">
-        <img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/869317973/?label=Vo-PCIypv2sQ1frCngM&amp;guid=ON&amp;script=0"/>
-    </div>
-</noscript>
+<!--转化代码-->
+
 
 
 

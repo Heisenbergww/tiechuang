@@ -1,5 +1,5 @@
 .menu ul li:nth-child(5) a{
-    border-bottom:2px solid #009240 ;
+    border-bottom:2px solid #B7683F ;
 }
 /*主体部分*/
 /*第一部分*/
@@ -37,8 +37,8 @@
 .map_pic img{
     width: 100%;
 }
-.contact_us_map a{
-    color:rgb(102, 190, 140) ;
+.contact_us_map p a{
+    color: #B7683F;
 }
 
 /*第三部分*/
@@ -54,7 +54,7 @@
 }
 .contact_us_form_child{
     background-color: #efefef;
-    padding: 20px 20px 37px 20px;
+    padding: 20px 30px 37px 20px;
 }
 .contact_us_form_child hr{
     height: 1px;
@@ -73,19 +73,17 @@
 .contact_us_form input{
     border: 1px solid #D5D5D5;
     font-size: 14px;
-    width: 407px;
-    height: 40px;
+    width: 657px;
+    height: 50px;
     text-indent: 10px;
     margin-top: 15px;
-}
-.contact_us_form .input_left{
-    margin-right: 20px;
+    // display: none;
 }
 .contact_us_form  textarea{
     font-size: 14px;
     margin-top: 15px;
     border: 1px solid #D5D5D5;
-    width:100%;
+    width:850px;
     height: 100px;
     text-indent: 10px;
 }
@@ -99,7 +97,7 @@
     font-size: 18px;
     color: #FFFFFF;
     letter-spacing: 0;
-    background-color: #36bd9f;
+    background-color: #B7683F;
     margin-top: 20px;
     cursor: pointer;
     display: block;

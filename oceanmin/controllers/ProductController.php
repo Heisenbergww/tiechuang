@@ -7,6 +7,7 @@ use yii\data\Pagination;
 use app\models\Category;
 use app\models\Product;
 use app\models\Company;
+use app\models\Front;
 use Yii;
 use app\controllers\CommonController;
 
@@ -41,11 +42,12 @@ class ProductController extends CommonController
 		}else{
 			$model = Product::find();
 			$count = $model->count();
-			$pager = new Pagination(['totalCount' => $count, 'pageSize' => '9']);
+	        $pager = new Pagination(['totalCount' => $count, 'pageSize' => '9']);
 			$products = $model->offset($pager->offset)->limit($pager->limit)->all();
 		}
 		$company = Company::find()->asArray()->one();
-		return $this->render('index',['menu'=>$menu,'products'=>$products,'company'=>$company,'pager'=>$pager]);
+		$front = Front::find()->where('frontid = :id', [':id' => '1'])->one();
+		return $this->render('index',['front'=>$front,'menu'=>$menu,'products'=>$products,'company'=>$company,'pager'=>$pager]);
 	}
 
 	public function actionDetail()
@@ -60,6 +62,18 @@ class ProductController extends CommonController
 		$product['cate_id'] = $category_name['cateid'];
 		$category_parent_name = Category::find()->where('cateid = :id', [':id' => $category_name['parentid']])->asArray()->one();
 		$product['cate_parent_name'] = $category_parent_name['title'];
+
+		if($product['relation']!=null){
+			$relation=$product['relation'];
+			$relation = unserialize($relation);
+			$res = array_values($relation);
+			$l=count($res);
+			$resnew = array();
+			for($i=0;$i<$l;$i++){
+				$resnew[] = Product::find()->where('productid = :id', [':id' => $res[$i]])->asArray()->one();
+			}
+			return $this->render("detail", ['product' => $product,'resnew' => $resnew,'relation' => $relation]);
+		}
 		return $this->render("detail", ['product' => $product]);
 	}
 

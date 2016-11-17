@@ -1,5 +1,5 @@
-# WebWaagee
-云动力WebWaagee品牌网站
+# WebRtto
+云动力WebRtto品牌网站
 
 #modules目录下为PC端网站后台模块
     *********web/asseets/admin 为后台的资源文件(css js img等)

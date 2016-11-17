@@ -1,6 +1,6 @@
 /*导航的下划线*/
 .menu ul li:nth-child(2) a{
-    border-bottom:2px solid #009240;
+    border-bottom:2px solid #B7683F;
 }
 /*主体部分*/
 /*第0部分*/
@@ -66,7 +66,7 @@
 .business-name h3{
     font-size:14px;
     color: #2B2C33;
-    padding: 14px  10px 14px 10px;
+    padding: 14px  10px 10px 14px;
     background: #FAFAFC;
     border-radius: 8px;
     cursor: pointer;
@@ -74,7 +74,7 @@
 
 .business-left-title h3:hover,
 .business-name h3:hover{
-    background-color: #66BE8C;
+    background-color: #B7683F;
     color: #fff;
 }
 .business-name h3 img{
@@ -99,30 +99,30 @@
 }
 .business-content p{
     font-size: 14px;
-    padding: 14px 5px 14px 20px;
+    padding: 14px 5px 14px 0;
+    text-indent: 20px;    
 }
 /*.business-content a span{*/
-/*position: relative;*/
+    /*position: relative;*/
 /*}*/
 .triangle_green{
     /*position: absolute;*/
-    margin-bottom: -3px;
-    margin-left: -15px;
+    top:17.5px;
     visibility: hidden;
 }
 .business-content a{
-    color: #2B2C33;
+    color: #B7683F;
 }
 .business-content a:hover{
-    color: #009240;
+    color: #B7683F;
 }
 .business-content a:active{
-    color: #009240;
+    color: #B7683F;
 }
 /*商业联系*/
 .business-contact{
-    border: 1px solid rgb(102, 190, 140);
-    padding: 20px 10px 20px;
+    border: 1px solid #B7683F;
+    padding: 20px 10px 30px;
     margin-top: 40px;
 }
 .business-contact h5{
@@ -136,12 +136,10 @@
 .business-contact p span{
     color: #66676e;
 }
-/*.business-contact p:last-of-type{*/
-    /*margin-bottom:20px;*/
-/*}*/
-.business-contact_ctrl a{
-    color:rgb(102, 190, 140) ;
+.business-contact p:last-of-type{
+    margin-bottom:20px;
 }
+.business-contact_ctrl{}
 
 
 /*右侧部分*********************************/

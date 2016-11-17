@@ -1,11 +1,7 @@
-<?php 
-use yii\filters\PageCache;
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Waagee- 后台管理</title>
+    <title>铁床- 后台管理</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link type="image/x-icon" href="favicon.ico">
@@ -29,11 +25,7 @@ use yii\filters\PageCache;
     <link rel="stylesheet" href="/assets/admin/css/compiled/form-showcase.css" type="text/css" media="screen" />
     <!-- open sans font -->
 
-    <!-- lato font -->
-
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+  
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
 <body>
 
@@ -46,7 +38,7 @@ use yii\filters\PageCache;
                 <span class="icon-bar"></span>
             </button>
             
-            <a class="brand" href="" style="font-weight:700;font-family:Microsoft Yahei">waagee - 后台管理</a>
+            <a class="brand" href="" style="font-weight:700;font-family:Microsoft Yahei">铁床 - 后台管理</a>
 
             <ul class="nav pull-right">                
                 <li class="dropdown">
@@ -139,7 +131,7 @@ use yii\filters\PageCache;
                 </a>
                 <ul class="submenu">
                 <li><a href="<?php echo yii\helpers\Url::to(['message/listm'])?>">contact us留言列表</a></li>
-                <li><a href="<?php echo yii\helpers\Url::to(['message/listj'])?>">join us留言列表</a></li>    
+                <li><a href="<?php echo yii\helpers\Url::to(['message/listj'])?>">join us留言列表</a></li>
                 </ul>
             </li>
              <li>
@@ -152,7 +144,18 @@ use yii\filters\PageCache;
                 <li><a href="<?php echo yii\helpers\Url::to(['article/list'])?>">文章列表</a></li>
                 <li><a href="<?php echo yii\helpers\Url::to(['article/add'])?>">添加文章</a></li>
                 </ul>
-            </li> 
+            </li>
+            <li>
+                <a class="dropdown-toggle" href="#">
+                    <i class="attach"></i>
+                    <span>前端图片</span>
+                    <i class="icon-chevron-down"></i>
+                </a>
+                <ul class="submenu">
+                    <li><a href="<?php echo yii\helpers\Url::to(['front/add'])?>">添加图片</a></li>
+
+                </ul>
+            </li>
             <li>
                 <a class="dropdown-toggle" href="#">
                     <i class="icon-book"></i>
@@ -162,7 +165,7 @@ use yii\filters\PageCache;
                 <ul class="submenu">
                 <li><a href="<?php echo yii\helpers\Url::to(['other/edit'])?>">编辑公司详情</a></li>
                 <li><a href="<?php echo yii\helpers\Url::to(['other/footer'])?>">底部账号编辑</a></li>
-                <li><a href="<?php echo yii\helpers\Url::to(['other/image'])?>">压缩图片</a></li>
+                <li><a target="_blank" href="<?php echo yii\helpers\Url::to(['other/image'])?>">压缩图片</a></li>
                 </ul>
             </li>                     
 
@@ -187,7 +190,7 @@ use yii\filters\PageCache;
     <script src="/assets/admin/js/wysihtml5-0.3.0.js"></script>
     <script src="/assets/admin/js/bootstrap-wysihtml5-0.0.2.js"></script>
 
-    <script type="text/javascript">
+        <script type="text/javascript">
         $(function () {
 
             // jQuery Knobs
@@ -310,6 +313,7 @@ use yii\filters\PageCache;
 
     </script>
 
+   
 </body>
 </html>
 

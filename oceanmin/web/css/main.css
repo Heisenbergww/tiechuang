@@ -94,11 +94,11 @@ header .navbar{
 
 /*logo*/
 .logo{
-    margin-top:5px;
+    margin-top:10px;
 }
 .logo img{
-    width:;
-    height: 50px;
+    width: ;
+    height: 40px;
     margin-right: 5px;
     display: inline-block;
 }
@@ -144,7 +144,7 @@ header .navbar{
 }
 
 .menu ul li a:hover{
-    border-bottom:2px solid #009240;
+    border-bottom:2px solid #B7683F;
 }
 .menu ul li{
     position: relative;
@@ -187,7 +187,7 @@ header .navbar{
     color: #2b2c33;
 }
 .second_menu a:hover{
-    color: #0767bd;
+    color: #B7683F;
     /*font-weight: bold;*/
 }
 
@@ -601,6 +601,7 @@ footer{
 .pagination ul > li {
   display: inline;
 }
+
 .pagination ul > li > a,
 .pagination ul > li > span {
   float: left;

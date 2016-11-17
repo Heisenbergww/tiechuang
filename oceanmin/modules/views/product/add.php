@@ -1,9 +1,8 @@
-<?php
+ <?php
     use yii\bootstrap\ActiveForm;
     use yii\helpers\Html;
     use yii\bootstrap\Alert;
     use \kucha\ueditor\UEditor;
-    use yii\filters\PageCache;
 ?>
 <?php $this->beginPage() ?> 
 <?php $this->beginBody() ?> 
@@ -59,13 +58,6 @@
                                 <div class="span12 field-box">
                                     <label class="control-label" for="product-title">商品SKU</label>
                                     <input type="text" id="product-title" class="span9" name="Product[sku]" value="<?php echo $model['sku'];?>">
-                                </div>
-                                <p class="help-block help-block-error"></p>
-                            </div>
-                            <div class="form-group field-product-title required">
-                                <div class="span12 field-box">
-                                    <label class="control-label" for="product-title">推荐顺序</label>
-                                    <input type="text" id="product-title" class="span9" name="Product[orderid]" value="<?php echo $model['orderid'];?>">
                                 </div>
                                 <p class="help-block help-block-error"></p>
                             </div>
@@ -180,4 +172,5 @@
 
 <?php $this->endBody() ?> 
 <?php $this->endPage() ?>
+
 <!-- end main container -->	

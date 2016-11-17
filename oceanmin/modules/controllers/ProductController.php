@@ -8,7 +8,7 @@ use app\models\Product;
 use app\models\Category;
 use yii\web\UploadedFile;
 
-class ProductController extends Controller
+class ProductController extends CommonController
 {
     // 富文本编辑器设置
     public function actions()
@@ -164,6 +164,71 @@ class ProductController extends Controller
         Product::updateAll(['pics' => implode(",",$pic)], 'productid = :pid', [':pid' => $productid]);
         return $this->goBack(['admin/product/mod','productid' => $productid]);
     }
+    
+    //关联商品
+    
+    public function actionRelation(){
+        $this->layout = "layout1";
+        $productid = Yii::$app->request->get("productid");
+        $product = Product::find()->where('productid = :id', [':id' => $productid])->asArray()->one();
+
+
+        if($product['relation']!=null){
+            $relation=$product['relation'];
+            $relation = unserialize($relation);
+            $res = array_values($relation);
+            $l=count($res);
+            $resnew = array();
+            for($i=0;$i<$l;$i++){
+                $resnew[] = Product::find()->where('productid = :id', [':id' => $res[$i]])->asArray()->one();
+            }
+            return $this->render("relation", ['product' => $product,'resnew' => $resnew,'relation' => $relation]);
+        }
+
+
+        return $this->render("relation", ['product' => $product]);
+    }
+
+    public function actionBackrelation(){
+
+        if (Yii::$app->request->isAjax) {
+
+            $productid = Yii::$app->request->post("productid");
+            $products = Product::find()->where('productid != :id', [':id' => $productid])->asArray()->all();
+            $datas = array(
+                'code' => 200,
+                'status' => true,
+                'products' => $products
+            );
+            $jsonData = json_encode($datas);
+            return urldecode($jsonData);
+        }
+    }
+
+    public function actionRelations(){
+        $this->layout = "layout1";
+//        $product = new Product();
+        if (Yii::$app->request->isPost) {
+            $post = Yii::$app->request->post();
+            $post = array_splice($post,1);
+            $productid = $post[0];
+            $product = Product::find()->where('productid = :id', [':id' => $productid])->one();
+            $post = array_splice($post,1);
+            $post = serialize($post);
+            $update=Yii::$app->db->createCommand()->update('ocean_product', ['relation' => $post], ['productid' => $productid])->execute();
+            if($update){
+                Yii::$app->session->setFlash('success', '添加成功');
+                return $this->goBack(Yii::$app->request->getReferrer());
+            }
+            else{
+                Yii::$app->session->setFlash('success', '添加失败');
+                return $this->goBack(Yii::$app->request->getReferrer());
+            }
+
+
+        }
+    }
+
 
 
 

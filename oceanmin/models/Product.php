@@ -29,7 +29,6 @@ class Product extends ActiveRecord
             ['is_tui', 'required', 'message' => '商品简介不能为空'],
             [['pics','sku','createtime','is_tui'],'safe'],
             [['cover'], 'required'],
-            ['orderid', 'required', 'message' => '商品简介不能为空'],
         ];
     }
 
@@ -45,7 +44,6 @@ class Product extends ActiveRecord
             'is_tui'  => '是否推荐',
             'cover'  => '商品封面',
             'pics'   => '商品图片',
-            'orderid'   => '推荐顺序',
         ];
     }
 
@@ -56,5 +54,7 @@ class Product extends ActiveRecord
   	}
   	return false;
   }
+    
+    
 
 }
